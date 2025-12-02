@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Melitra - Radio Control Systems</title>
+    <meta name="description" content="Professional radio control systems for industrial applications" />
+    <link href="css/StyleMain.css" rel="stylesheet"/>
+</head>
+
+<body>
+    <header>
+        <div class="logo-group">
+            <img src="img/teleradio.png" alt="Teleradio" class="logo" onerror="this.style.display='none'">
+            <img src="img/Melitra.png" alt="Melitra" class="logo" onerror="this.style.display='none'">
+        </div>
+
+        <nav>
+            <a href="#products" data-translate="nav_products">Products</a>
+            <a href="#about-us" data-translate="nav_about">About Us</a>
+            <a href="#contact" data-translate="nav_contact">Contact</a>
+        </nav>
+
+        <div class="language-switcher">
+            <button class="lang-btn active" onclick="changeLanguage('en')">ENG</button>
+            <button class="lang-btn" onclick="changeLanguage('et')">EST</button>
+        </div>
+    </header>
+
+    <div class="hero-section">
+        <div class="hero-content">
+            <h1 data-translate="hero_title">Radio Control Excellence</h1>
+            <p data-translate="hero_subtitle">Innovation in wireless technology for over 60 years</p>
+        </div>
+    </div>
+    
+    <section id="products">
+        <h2 data-translate="products_title">Our Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-image">Tiger G2</div>
+                <div class="product-info">
+                    <h3>Tiger G2</h3>
+                    <p data-translate="product1_desc">Advanced radio remote control system designed for demanding industrial applications. Robust, reliable, and built to perform in harsh environments.</p>
+                    <a href="#" class="product-btn" data-translate="learn_more">Learn More</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">Panther</div>
+                <div class="product-info">
+                    <h3>Panther</h3>
+                    <p data-translate="product2_desc">Compact and powerful control system perfect for mobile and hydraulic applications. Ergonomic design meets cutting-edge technology.</p>
+                    <a href="#" class="product-btn" data-translate="learn_more">Learn More</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">T20/T60</div>
+                <div class="product-info">
+                    <h3>T20/T60 Series</h3>
+                    <p data-translate="product3_desc">Versatile control solutions for cranes and lifting equipment. Engineered for precision and safety in critical operations.</p>
+                    <a href="#" class="product-btn" data-translate="learn_more">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-us">
+        <h2 data-translate="about_title">About Us</h2>
+        <div class="about-content">
+            <h3 data-translate="about_heading1">We have developed radio control systems for more than 60 years</h3>
+            <div class="about-text" data-translate="about_text1">
+                Tele Radio has been at the forefront of wireless control technology since our founding. We specialize in developing innovative radio remote control systems that enhance safety, efficiency, and productivity across various industries worldwide.
+            </div>
+
+            <div class="highlight-box">
+                <h3 data-translate="about_heading2">We do our own research and development</h3>
+                <div class="about-text" data-translate="about_text2">
+                    Our commitment to innovation drives us to continuously improve our products. With our own dedicated R&D department, we stay ahead of market demands and technological advancements, ensuring that our customers always have access to the most advanced control solutions available.
+                </div>
+            </div>
+
+            <h3 data-translate="about_heading3">Quality and Safety First</h3>
+            <div class="about-text" data-translate="about_text3">
+                Every product we manufacture undergoes rigorous testing and quality control processes. We are ISO certified and comply with international safety standards, giving our customers confidence in the reliability and safety of our systems.
+            </div>
+
+            <h3 data-translate="about_heading4">Global Presence, Local Service</h3>
+            <div class="about-text" data-translate="about_text4">
+                With partners and distributors around the world, we provide local support backed by global expertise. Our team is committed to delivering exceptional service and support throughout the entire lifecycle of our products.
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 data-translate="contact_title">Contact Us</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">✉</div>
+                    <div class="contact-details">
+                        <h4 data-translate="contact_email">Email</h4>
+                        <p>melitraeesti@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">📞</div>
+                    <div class="contact-details">
+                        <h4 data-translate="contact_phone">Phone</h4>
+                        <p>+372 XXX XXXX</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <div class="contact-details">
+                        <h4 data-translate="contact_location">Location</h4>
+                        <p>Pärnu, Estonia</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <label for="name" data-translate="form_name">Name</label>
+                        <input type="text" id="name" name="name" data-translate-placeholder="form_name_placeholder" placeholder="Your name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" data-translate="form_email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" data-translate="form_message">Message</label>
+                        <textarea id="message" name="message" data-translate-placeholder="form_message_placeholder" placeholder="How can we help you?" required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn" data-translate="form_submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p data-translate="footer_text"> </p>
+    </footer>
+
+    <script>
+        // Translation dictionary
+        const translations = {
+            en: {
+                nav_products: "Products",
+                nav_about: "About Us",
+                nav_contact: "Contact",
+                hero_title: "Radio Control Excellence",
+                hero_subtitle: "Innovation in wireless technology for over 60 years",
+                products_title: "Our Products",
+                product1_desc: "Advanced radio remote control system designed for demanding industrial applications. Robust, reliable, and built to perform in harsh environments.",
+                product2_desc: "Compact and powerful control system perfect for mobile and hydraulic applications. Ergonomic design meets cutting-edge technology.",
+                product3_desc: "Versatile control solutions for cranes and lifting equipment. Engineered for precision and safety in critical operations.",
+                learn_more: "Learn More",
+                about_title: "About Us",
+                about_heading1: "We have developed radio control systems for more than 60 years",
+                about_text1: "Tele Radio has been at the forefront of wireless control technology since our founding. We specialize in developing innovative radio remote control systems that enhance safety, efficiency, and productivity across various industries worldwide.",
+                about_heading2: "We do our own research and development",
+                about_text2: "Our commitment to innovation drives us to continuously improve our products. With our own dedicated R&D department, we stay ahead of market demands and technological advancements, ensuring that our customers always have access to the most advanced control solutions available.",
+                about_heading3: "Quality and Safety First",
+                about_text3: "Every product we manufacture undergoes rigorous testing and quality control processes. We are ISO certified and comply with international safety standards, giving our customers confidence in the reliability and safety of our systems.",
+                about_heading4: "Global Presence, Local Service",
+                about_text4: "With partners and distributors around the world, we provide local support backed by global expertise. Our team is committed to delivering exceptional service and support throughout the entire lifecycle of our products.",
+                contact_title: "Contact Us",
+                contact_email: "Email",
+                contact_phone: "Phone",
+                contact_location: "Location",
+                form_name: "Name",
+                form_name_placeholder: "Your name",
+                form_email: "Email",
+                form_message: "Message",
+                form_message_placeholder: "How can we help you?",
+                form_submit: "Send Message",
+                footer_text: "© 2024 Melitra. All rights reserved."
+            },
+            et: {
+                nav_products: "Tooted",
+                nav_about: "Meist",
+                nav_contact: "Kontakt",
+                hero_title: "Raadio Juhtimise Tipptase",
+                hero_subtitle: "Uuenduslik juhtmeta tehnoloogia üle 60 aasta",
+                products_title: "Meie Tooted",
+                product1_desc: "Täiustatud raadio kaugjuhtimissüsteem, mis on loodud nõudlikeks tööstusrakendusteks. Tugev, usaldusväärne ja loodud töötama karmides keskkondades.",
+                product2_desc: "Kompaktne ja võimas juhtimissüsteem, mis sobib ideaalselt mobiil- ja hüdraulikarakendustele. Ergonoomne disain kohtub tipptasemel tehnoloogiaga.",
+                product3_desc: "Mitmekülgsed juhtimislahendused kraanidele ja tõsteseadmetele. Loodud täpsusega ja ohutusega kriitilistes operatsioonides.",
+                learn_more: "Loe Lisaks",
+                about_title: "Meist",
+                about_heading1: "Oleme arendanud raadio juhtimissüsteeme üle 60 aasta",
+                about_text1: "Tele Radio on olnud juhtmeta juhtimise tehnoloogia esirinnas alates meie asutamisest. Spetsialiseerume innovaatiliste raadio kaugjuhtimissüsteemide väljatöötamisele, mis suurendavad ohutust, tõhusust ja tootlikkust erinevates tööstusharudes üle maailma.",
+                about_heading2: "Teeme oma teadus- ja arendustööd",
+                about_text2: "Meie pühendumus innovatsioonile ajendab meid pidevalt oma tooteid täiustama. Oma pühendunud teadus- ja arendusosakonnaga oleme turunõudlustest ja tehnoloogilistest edusammudest ees, tagades, et meie klientidel on alati juurdepääs kõige arenenumatele juhtimislahendustele.",
+                about_heading3: "Kvaliteet ja Ohutus Esikohal",
+                about_text3: "Iga meie toodetud toode läbib range testimise ja kvaliteedikontrolli protsessid. Oleme ISO sertifitseeritud ja vastame rahvusvahelistele ohutusstandarditele, andes meie klientidele kindlustunde meie süsteemide usaldusväärsuses ja ohutuses.",
+                about_heading4: "Ülemaailmne Kohalolek, Kohalik Teenindus",
+                about_text4: "Partnerite ja turustajatega üle maailma pakume kohalikku tuge, mida toetab ülemaailmne ekspertiis. Meie meeskond on pühendunud erakordse teeninduse ja toe pakkumisele kogu meie toodete elutsükli jooksul.",
+                contact_title: "Võta Ühendust",
+                contact_email: "E-post",
+                contact_phone: "Telefon",
+                contact_location: "Asukoht",
+                form_name: "Nimi",
+                form_name_placeholder: "Teie nimi",
+                form_email: "E-post",
+                form_message: "Sõnum",
+                form_message_placeholder: "Kuidas saame teid aidata?",
+                form_submit: "Saada Sõnum",
+                footer_text: "© 2024 Melitra. Kõik õigused kaitstud."
+            }
+        };
+
+        // Function to change language
+        function changeLanguage(lang) {
+            // Update all elements with data-translate attribute
+            document.querySelectorAll('[data-translate]').forEach(element => {
+                const key = element.getAttribute('data-translate');
+                if (translations[lang][key]) {
+                    element.textContent = translations[lang][key];
+                }
+            });
+
+            // Update placeholders
+            document.querySelectorAll('[data-translate-placeholder]').forEach(element => {
+                const key = element.getAttribute('data-translate-placeholder');
+                if (translations[lang][key]) {
+                    element.placeholder = translations[lang][key];
+                }
+            });
+
+            // Update active button
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+
+            // Save language preference
+            localStorage.setItem('preferred-language', lang);
+        }
+
+        // Load saved language preference on page load
+        window.addEventListener('DOMContentLoaded', () => {
+            const savedLang = localStorage.getItem('preferred-language') || 'en';
+            if (savedLang === 'et') {
+                changeLanguage('et');
+                document.querySelectorAll('.lang-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                    if (btn.textContent === 'ET') {
+                        btn.classList.add('active');
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
