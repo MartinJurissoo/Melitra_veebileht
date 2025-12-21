@@ -11,23 +11,25 @@
 <body>
     <header>
         <div class="logo-group">
-            <img src="img/teleradio.png" alt="Teleradio" class="logo" onerror="this.style.display='none'">
-            <img src="img/Melitra.png" alt="Melitra" class="logo" onerror="this.style.display='none'">
+            <img src="img/Melitra.png" alt="Melitra" class="logo melitra-logo" onerror="this.style.display='none'">
+            <span class="partner-text" data-translate="partner_text">partners with</span>
+            <img src="img/teleradio.png" alt="Teleradio" class="logo teleradio-logo" onerror="this.style.display='none'">
         </div>
 
         <nav>
+            <a href="#home" data-translate="nav_home">Home</a>
             <a href="#products" data-translate="nav_products">Products</a>
             <a href="#about-us" data-translate="nav_about">About Us</a>
             <a href="#contact" data-translate="nav_contact">Contact</a>
         </nav>
 
         <div class="language-switcher">
-            <button class="lang-btn active" onclick="changeLanguage('en')">ENG</button>
-            <button class="lang-btn" onclick="changeLanguage('et')">EST</button>
+            <button class="lang-btn active" onclick="changeLanguage('en')">EN</button>
+            <button class="lang-btn" onclick="changeLanguage('et')">ET</button>
         </div>
     </header>
 
-    <div class="hero-section">
+    <div class="hero-section" id="home">
         <div class="hero-content">
             <h1 data-translate="hero_title">Radio Control Excellence</h1>
             <p data-translate="hero_subtitle">Innovation in wireless technology for over 60 years</p>
@@ -36,33 +38,8 @@
     
     <section id="products">
         <h2 data-translate="products_title">Our Products</h2>
-        <div class="product-grid">
-            <div class="product-card">
-                <div class="product-image">Tiger G2</div>
-                <div class="product-info">
-                    <h3>Tiger G2</h3>
-                    <p data-translate="product1_desc">Advanced radio remote control system designed for demanding industrial applications. Robust, reliable, and built to perform in harsh environments.</p>
-                    <a href="#" class="product-btn" data-translate="learn_more">Learn More</a>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="product-image">Panther</div>
-                <div class="product-info">
-                    <h3>Panther</h3>
-                    <p data-translate="product2_desc">Compact and powerful control system perfect for mobile and hydraulic applications. Ergonomic design meets cutting-edge technology.</p>
-                    <a href="#" class="product-btn" data-translate="learn_more">Learn More</a>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="product-image">T20/T60</div>
-                <div class="product-info">
-                    <h3>T20/T60 Series</h3>
-                    <p data-translate="product3_desc">Versatile control solutions for cranes and lifting equipment. Engineered for precision and safety in critical operations.</p>
-                    <a href="#" class="product-btn" data-translate="learn_more">Learn More</a>
-                </div>
-            </div>
+        <div class="product-grid" id="product-container">
+            <!-- Products will be loaded dynamically here -->
         </div>
     </section>
 
@@ -117,7 +94,7 @@
                     <div class="contact-icon">📍</div>
                     <div class="contact-details">
                         <h4 data-translate="contact_location">Location</h4>
-                        <p>Pärnu, Estonia</p>
+                        <p>Tallinn, Estonia</p>
                     </div>
                 </div>
             </div>
@@ -146,22 +123,89 @@
     </section>
 
     <footer>
-        <p data-translate="footer_text"> </p>
+        <p data-translate="footer_text">&copy; 2024 Melitra. All rights reserved.</p>
     </footer>
 
     <script>
+        // Product data
+        let productsData = [];
+        let currentLanguage = 'en';
+
+        // Load products from JSON
+        async function loadProducts() {
+            try {
+                const response = await fetch('products.json');
+                const data = await response.json();
+                productsData = data.products;
+                renderProducts();
+            } catch (error) {
+                console.error('Error loading products:', error);
+                // Fallback products if JSON fails to load
+                productsData = [
+                    {
+                        id: "tiger-g2",
+                        name: "Tiger G2",
+                        image: "img/products/tiger-g2.jpg",
+                        description: {
+                            en: "Advanced radio remote control system designed for demanding industrial applications. Robust, reliable, and built to perform in harsh environments.",
+                            et: "Täiustatud raadio kaugjuhtimissüsteem, mis on loodud nõudlikeks tööstusrakendusteks. Tugev, usaldusväärne ja loodud töötama karmides keskkondades."
+                        }
+                    },
+                    {
+                        id: "panther",
+                        name: "Panther",
+                        image: "img/products/panther.jpg",
+                        description: {
+                            en: "Compact and powerful control system perfect for mobile and hydraulic applications. Ergonomic design meets cutting-edge technology.",
+                            et: "Kompaktne ja võimas juhtimissüsteem, mis sobib ideaalselt mobiil- ja hüdraulikarakendustele. Ergonoomne disain kohtub tipptasemel tehnoloogiaga."
+                        }
+                    },
+                    {
+                        id: "t20-t60",
+                        name: "T20/T60 Series",
+                        image: "img/products/t20-t60.jpg",
+                        description: {
+                            en: "Versatile control solutions for cranes and lifting equipment. Engineered for precision and safety in critical operations.",
+                            et: "Mitmekülgsed juhtimislahendused kraanidele ja tõsteseadmetele. Loodud täpsusega ja ohutusega kriitilistes operatsioonides."
+                        }
+                    }
+                ];
+                renderProducts();
+            }
+        }
+
+        // Render products to the page
+        function renderProducts() {
+            const container = document.getElementById('product-container');
+            container.innerHTML = '';
+
+            productsData.forEach(product => {
+                const productCard = document.createElement('div');
+                productCard.className = 'product-card';
+                productCard.innerHTML = `
+                    <div class="product-image" style="background-image: url('${product.image}'); background-size: cover; background-position: center;">
+                        <span style="background: rgba(0,0,0,0.7); padding: 10px 20px; border-radius: 5px;">${product.name}</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>${product.name}</h3>
+                        <p class="product-description" data-product-id="${product.id}">${product.description[currentLanguage]}</p>
+                        <a href="#" class="product-btn" data-translate="learn_more">${translations[currentLanguage].learn_more}</a>
+                    </div>
+                `;
+                container.appendChild(productCard);
+            });
+        }
+
         // Translation dictionary
         const translations = {
             en: {
+                nav_home: "Home",
                 nav_products: "Products",
                 nav_about: "About Us",
                 nav_contact: "Contact",
                 hero_title: "Radio Control Excellence",
                 hero_subtitle: "Innovation in wireless technology for over 60 years",
                 products_title: "Our Products",
-                product1_desc: "Advanced radio remote control system designed for demanding industrial applications. Robust, reliable, and built to perform in harsh environments.",
-                product2_desc: "Compact and powerful control system perfect for mobile and hydraulic applications. Ergonomic design meets cutting-edge technology.",
-                product3_desc: "Versatile control solutions for cranes and lifting equipment. Engineered for precision and safety in critical operations.",
                 learn_more: "Learn More",
                 about_title: "About Us",
                 about_heading1: "We have developed radio control systems for more than 60 years",
@@ -182,18 +226,17 @@
                 form_message: "Message",
                 form_message_placeholder: "How can we help you?",
                 form_submit: "Send Message",
-                footer_text: "© 2024 Melitra. All rights reserved."
+                footer_text: "© 2024 Melitra. All rights reserved.",
+                partner_text: "partners with"
             },
             et: {
+                nav_home: "Avaleht",
                 nav_products: "Tooted",
                 nav_about: "Meist",
                 nav_contact: "Kontakt",
                 hero_title: "Raadio Juhtimise Tipptase",
                 hero_subtitle: "Uuenduslik juhtmeta tehnoloogia üle 60 aasta",
                 products_title: "Meie Tooted",
-                product1_desc: "Täiustatud raadio kaugjuhtimissüsteem, mis on loodud nõudlikeks tööstusrakendusteks. Tugev, usaldusväärne ja loodud töötama karmides keskkondades.",
-                product2_desc: "Kompaktne ja võimas juhtimissüsteem, mis sobib ideaalselt mobiil- ja hüdraulikarakendustele. Ergonoomne disain kohtub tipptasemel tehnoloogiaga.",
-                product3_desc: "Mitmekülgsed juhtimislahendused kraanidele ja tõsteseadmetele. Loodud täpsusega ja ohutusega kriitilistes operatsioonides.",
                 learn_more: "Loe Lisaks",
                 about_title: "Meist",
                 about_heading1: "Oleme arendanud raadio juhtimissüsteeme üle 60 aasta",
@@ -214,17 +257,29 @@
                 form_message: "Sõnum",
                 form_message_placeholder: "Kuidas saame teid aidata?",
                 form_submit: "Saada Sõnum",
-                footer_text: "© 2024 Melitra. Kõik õigused kaitstud."
+                footer_text: "© 2024 Melitra. Kõik õigused kaitstud.",
+                partner_text: "koostööpartner"
             }
         };
 
         // Function to change language
         function changeLanguage(lang) {
+            currentLanguage = lang;
+            
             // Update all elements with data-translate attribute
             document.querySelectorAll('[data-translate]').forEach(element => {
                 const key = element.getAttribute('data-translate');
                 if (translations[lang][key]) {
                     element.textContent = translations[lang][key];
+                }
+            });
+
+            // Update product descriptions
+            document.querySelectorAll('.product-description').forEach(element => {
+                const productId = element.getAttribute('data-product-id');
+                const product = productsData.find(p => p.id === productId);
+                if (product) {
+                    element.textContent = product.description[lang];
                 }
             });
 
@@ -248,7 +303,11 @@
 
         // Load saved language preference on page load
         window.addEventListener('DOMContentLoaded', () => {
+            // Load products first
+            loadProducts();
+            
             const savedLang = localStorage.getItem('preferred-language') || 'en';
+            currentLanguage = savedLang;
             if (savedLang === 'et') {
                 changeLanguage('et');
                 document.querySelectorAll('.lang-btn').forEach(btn => {

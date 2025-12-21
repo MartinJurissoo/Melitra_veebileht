@@ -1,0 +1,91 @@
+{
+  "products": [
+    {
+      "id": "tiger-g2",
+      "name": "Tiger G2",
+      "image": "img/products/tiger-g2.jpg",
+      "description": {
+        "en": "Advanced radio remote control system designed for demanding industrial applications. Robust, reliable, and built to perform in harsh environments.",
+        "et": "Täiustatud raadio kaugjuhtimissüsteem, mis on loodud nõudlikeks tööstusrakendusteks. Tugev, usaldusväärne ja loodud töötama karmides keskkondades."
+      },
+      "features": {
+        "en": [
+          "IP65 dust and water protection",
+          "2.4 GHz frequency hopping technology",
+          "Up to 16 programmable functions",
+          "Emergency stop function"
+        ],
+        "et": [
+          "IP65 tolmu- ja veekaitse",
+          "2,4 GHz sagedushüppe tehnoloogia",
+          "Kuni 16 programmeeritavat funktsiooni",
+          "Hädapeatamise funktsioon"
+        ]
+      },
+      "specifications": {
+        "frequency": "2.4 GHz",
+        "range": "100m",
+        "protection": "IP65",
+        "battery": "Li-ion rechargeable"
+      }
+    },
+    {
+      "id": "panther",
+      "name": "Panther",
+      "image": "img/products/panther.jpg",
+      "description": {
+        "en": "Compact and powerful control system perfect for mobile and hydraulic applications. Ergonomic design meets cutting-edge technology.",
+        "et": "Kompaktne ja võimas juhtimissüsteem, mis sobib ideaalselt mobiil- ja hüdraulikarakendustele. Ergonoomne disain kohtub tipptasemel tehnoloogiaga."
+      },
+      "features": {
+        "en": [
+          "Compact and lightweight design",
+          "Dual joystick control",
+          "Long battery life",
+          "Robust construction"
+        ],
+        "et": [
+          "Kompaktne ja kerge disain",
+          "Kahekordne juhtkang",
+          "Pikk akukestus",
+          "Tugev konstruktsioon"
+        ]
+      },
+      "specifications": {
+        "frequency": "2.4 GHz",
+        "range": "150m",
+        "protection": "IP54",
+        "battery": "Li-ion rechargeable"
+      }
+    },
+    {
+      "id": "t20-t60",
+      "name": "T20/T60 Series",
+      "image": "img/products/t20-t60.jpg",
+      "description": {
+        "en": "Versatile control solutions for cranes and lifting equipment. Engineered for precision and safety in critical operations.",
+        "et": "Mitmekülgsed juhtimislahendused kraanidele ja tõsteseadmetele. Loodud täpsusega ja ohutusega kriitilistes operatsioonides."
+      },
+      "features": {
+        "en": [
+          "Multiple safety features",
+          "Programmable speed control",
+          "Large display screen",
+          "Weatherproof design"
+        ],
+        "et": [
+          "Mitu ohutusfunktsiooni",
+          "Programmeeritav kiiruse juhtimine",
+          "Suur ekraan",
+          "Ilmastikukindel disain"
+        ]
+      },
+      "specifications": {
+        "frequency": "433 MHz / 2.4 GHz",
+        "range": "200m",
+        "protection": "IP65",
+        "battery": "Alkaline / Li-ion"
+      }
+    }
+  ]
+}
