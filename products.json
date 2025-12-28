@@ -8,25 +8,355 @@
         "en": "Advanced radio remote control system designed for demanding industrial applications. Robust, reliable, and built to perform in harsh environments.",
         "et": "Täiustatud raadio kaugjuhtimissüsteem, mis on loodud nõudlikeks tööstusrakendusteks. Tugev, usaldusväärne ja loodud töötama karmides keskkondades."
       },
+      "category": {
+        "en": "Industrial & Machines",
+        "et": "Tööstus ja Masinad"
+      },
+      "models": [
+        {
+          "name": "Tiger G2 Transmitter, 8x2-step buttons, PLe",
+          "image": "img/products/models/tiger-8x2.jpg",
+          "description": {
+            "en": "Compact transmitter with 8 two-step buttons and Performance Level e safety rating",
+            "et": "Kompaktne saatja 8 kaheastmelise nupuga ja Performance Level e ohutuse reitinguga"
+          },
+          "specifications": {
+            "article_433": "TG-T9-1 / 100-001-595-96",
+            "article_915": "TG-T9-1I / 100-001-596-09",
+            "frequency_433": "433 MHz (69 channels)",
+            "frequency_915": "915 MHz",
+            "battery": "Re-chargeable",
+            "protection": "IP66",
+            "certifications": "CE, G Lloyd, FCC, IC",
+            "weight": "295 gr",
+            "dimensions": "~76 x 160 x 37 mm",
+            "temperature": "-20 to +55 C"
+          }
+        },
+        {
+          "name": "Tiger G2 Transmitter, 6x2-step buttons",
+          "image": "img/products/models/tiger-6x2.jpg",
+          "description": {
+            "en": "Mid-size transmitter with 6 two-step programmable buttons",
+            "et": "Keskmise suurusega saatja 6 kaheastmelise programmeeritava nupuga"
+          },
+          "specifications": {
+            "article_433": "TG-T9-2 / 100-001-598-35",
+            "article_915": "TG-T9-12 / 100-001-597-22",
+            "frequency_433": "433 MHz (69 channels)",
+            "frequency_915": "915 MHz",
+            "battery": "Re-chargeable",
+            "protection": "IP66",
+            "certifications": "CE, G Lloyd, FCC, IC",
+            "weight": "295 gr",
+            "dimensions": "~76 x 160 x 37 mm",
+            "temperature": "-20 to +55 C"
+          }
+        },
+        {
+          "name": "Tiger G2 Transmitter, 10x2-step buttons",
+          "image": "img/products/models/tiger-10x2.jpg",
+          "description": {
+            "en": "Large capacity transmitter with 10 two-step buttons for complex operations",
+            "et": "Suure võimsusega saatja 10 kaheastmelise nupuga keerukateks operatsioonideks"
+          },
+          "specifications": {
+            "article_433": "TG-TH-4 / 100-001-567-23",
+            "article_915": "TG-TH-4 / 100-001-564-74",
+            "frequency_433": "433 MHz (69 channels)",
+            "frequency_915": "915 MHz",
+            "battery": "Re-chargeable",
+            "protection": "IP66",
+            "certifications": "CE, G Lloyd",
+            "weight": "320 gr",
+            "dimensions": "~76 x 185 x 37 mm",
+            "temperature": "-20 to +55 C"
+          }
+        },
+        {
+          "name": "Tiger G2 Transmitter, 12x2-step buttons, SIL3",
+          "image": "img/products/models/tiger-12x2.jpg",
+          "description": {
+            "en": "Maximum capacity transmitter with SIL3 safety certification",
+            "et": "Maksimaalse võimsusega saatja SIL3 ohutuse sertifikaadiga"
+          },
+          "specifications": {
+            "article_433": "TG-TH-5 / 100-001-568-06",
+            "article_915": "TG-TH-5 / 100-001-565-81",
+            "frequency_433": "433 MHz (69 channels)",
+            "frequency_915": "915 MHz",
+            "battery": "Re-chargeable",
+            "protection": "IP66",
+            "certifications": "CE, G Lloyd, SIL3",
+            "weight": "350 gr",
+            "dimensions": "~76 x 210 x 37 mm",
+            "temperature": "-20 to +55 C"
+          }
+        },
+        {
+          "name": "Tiger G2 Transmitter, 4x2-step buttons",
+          "image": "img/products/models/tiger-4x2-a.jpg",
+          "description": {
+            "en": "Compact 4-button transmitter for simple control applications",
+            "et": "Kompaktne 4-nupuline saatja lihtsateks juhtimisrakendusteks"
+          },
+          "specifications": {
+            "article_433": "TG-T14-7 / 100-001-584-91",
+            "article_915": "TG-T14-7 / 100-001-593-06",
+            "frequency_433": "433 MHz (69 channels)",
+            "frequency_915": "915 MHz",
+            "battery": "Re-chargeable",
+            "protection": "IP66",
+            "certifications": "CE, G Lloyd",
+            "weight": "250 gr",
+            "dimensions": "~76 x 135 x 37 mm",
+            "temperature": "-20 to +55 C"
+          }
+        },
+        {
+          "name": "Tiger G2 Transmitter, 4x2-step buttons",
+          "image": "img/products/models/tiger-4x2-b.jpg",
+          "description": {
+            "en": "Alternative 4-button transmitter model with different configuration",
+            "et": "Alternatiivne 4-nupuline saatja mudel erineva konfiguratsiooniga"
+          },
+          "specifications": {
+            "article_433": "TG-T15-7 / 100-001-591-44",
+            "article_915": "TG-T15-7 / 100-001-592-37",
+            "frequency_433": "433 MHz (69 channels)",
+            "frequency_915": "915 MHz",
+            "battery": "Re-chargeable",
+            "protection": "IP66",
+            "certifications": "CE, G Lloyd",
+            "weight": "255 gr",
+            "dimensions": "~76 x 135 x 37 mm",
+            "temperature": "-20 to +55 C"
+          }
+        },
+        {
+          "name": "Tiger G2 Receiver, 7 function relays with SIL3",
+          "image": "img/products/models/tiger-rx-7.jpg",
+          "description": {
+            "en": "7-relay receiver with SIL3 safety certification for critical applications",
+            "et": "7-releeväljundiga vastuvõtja SIL3 ohutuse sertifikaadiga kriitiliste rakenduste jaoks"
+          },
+          "specifications": {
+            "article_433": "TG-R4-1 / 100-001-516-27",
+            "article_915": "TG-R4-3 / 100-001-520-41",
+            "frequency_433": "433 MHz",
+            "frequency_915": "915 MHz",
+            "relays": "7 function relays",
+            "power": "12-48V DC",
+            "protection": "IP65",
+            "certifications": "CE, SIL3",
+            "dimensions": "~140 x 110 x 60 mm",
+            "temperature": "-20 to +55 C"
+          }
+        },
+        {
+          "name": "Tiger G2 Receiver, 17 function relays",
+          "image": "img/products/models/tiger-rx-17.jpg",
+          "description": {
+            "en": "High-capacity receiver with 17 programmable relay outputs",
+            "et": "Suure võimsusega vastuvõtja 17 programmeeritava releeväljundiga"
+          },
+          "specifications": {
+            "article_433": "TG-R4-6 / 100-001-528-94",
+            "article_915": "TG-R4-8 / 100-001-530-89",
+            "frequency_433": "433 MHz",
+            "frequency_915": "915 MHz",
+            "relays": "17 function relays",
+            "power": "12-48V DC",
+            "protection": "IP65",
+            "certifications": "CE, G Lloyd",
+            "dimensions": "~180 x 130 x 70 mm",
+            "temperature": "-20 to +55 C"
+          }
+        },
+        {
+          "name": "Tiger G2 Receiver, 28 function relays",
+          "image": "img/products/models/tiger-rx-28.jpg",
+          "description": {
+            "en": "Maximum capacity receiver with 28 relay outputs for complex systems",
+            "et": "Maksimaalse võimsusega vastuvõtja 28 releeväljundiga keerukatele süsteemidele"
+          },
+          "specifications": {
+            "article_433": "TG-R9-11 / 100-001-532-35",
+            "article_915": "TG-R9-12 / 100-001-532-59",
+            "frequency_433": "433 MHz",
+            "frequency_915": "915 MHz",
+            "relays": "28 function relays",
+            "power": "12-48V DC",
+            "protection": "IP65",
+            "certifications": "CE, G Lloyd",
+            "dimensions": "~220 x 150 x 80 mm",
+            "temperature": "-20 to +55 C"
+          }
+        },
+        {
+          "name": "Tiger G2 Receiver, 7 function relays",
+          "image": "img/products/models/tiger-rx-7b.jpg",
+          "description": {
+            "en": "Compact 7-relay receiver for standard applications",
+            "et": "Kompaktne 7-releeväljundiga vastuvõtja standardrakendusteks"
+          },
+          "specifications": {
+            "article_433": "TG-RO-2 / 100-001-514-00",
+            "frequency_433": "433 MHz",
+            "relays": "7 function relays",
+            "power": "12-48V DC",
+            "protection": "IP65",
+            "certifications": "CE",
+            "dimensions": "~140 x 110 x 60 mm",
+            "temperature": "-20 to +55 C"
+          }
+        },
+        {
+          "name": "Tiger G2 Receiver, 12 function relays",
+          "image": "img/products/models/tiger-rx-12.jpg",
+          "description": {
+            "en": "Mid-capacity receiver with 12 programmable relays",
+            "et": "Keskmise võimsusega vastuvõtja 12 programmeeritava releega"
+          },
+          "specifications": {
+            "article_433": "TG-R9-1 / 100-001-531-46",
+            "article_915": "TG-R9-2 / 100-001-534-85",
+            "frequency_433": "433 MHz",
+            "frequency_915": "915 MHz",
+            "relays": "12 function relays",
+            "power": "12-48V DC",
+            "protection": "IP65",
+            "certifications": "CE, G Lloyd",
+            "dimensions": "~160 x 120 x 65 mm",
+            "temperature": "-20 to +55 C"
+          }
+        },
+        {
+          "name": "Tiger G2 Receiver, 12 function relays",
+          "image": "img/products/models/tiger-rx-12b.jpg",
+          "description": {
+            "en": "Alternative 12-relay receiver configuration",
+            "et": "Alternatiivne 12-releeväljundiga vastuvõtja konfiguratsioon"
+          },
+          "specifications": {
+            "article_433": "TG-RR-6 / 100-001-535-98",
+            "frequency_433": "433 MHz",
+            "relays": "12 function relays",
+            "power": "12-48V DC",
+            "protection": "IP65",
+            "certifications": "CE",
+            "dimensions": "~160 x 120 x 65 mm",
+            "temperature": "-20 to +55 C"
+          }
+        },
+        {
+          "name": "Tiger G2 Receiver, 7 function relays, CANopen",
+          "image": "img/products/models/tiger-rx-can.jpg",
+          "description": {
+            "en": "CANopen bus system receiver with 7 relays for industrial networks",
+            "et": "CANopen siinisüsteemi vastuvõtja 7 releega tööstuslike võrkude jaoks"
+          },
+          "specifications": {
+            "article_433": "TG-R4-26 / 100-001-518-93",
+            "article_915": "TG-R4-28 / 100-001-519-86",
+            "frequency_433": "433 MHz",
+            "frequency_915": "915 MHz",
+            "relays": "7 function relays",
+            "interface": "CANopen",
+            "power": "12-48V DC",
+            "protection": "IP65",
+            "certifications": "CE, CANopen certified",
+            "dimensions": "~140 x 110 x 60 mm",
+            "temperature": "-20 to +55 C"
+          }
+        },
+        {
+          "name": "Tiger G2 Receiver, 7 function relays, J1939",
+          "image": "img/products/models/tiger-rx-j1939.jpg",
+          "description": {
+            "en": "J1939 protocol receiver for heavy-duty vehicle applications",
+            "et": "J1939 protokolli vastuvõtja raskete sõidukite rakenduste jaoks"
+          },
+          "specifications": {
+            "article_433": "TG-R4-47 / 100-001-524-93",
+            "article_915": "TG-R4-43 / 100-001-525-86",
+            "frequency_433": "433 MHz",
+            "frequency_915": "915 MHz",
+            "relays": "7 function relays",
+            "interface": "J1939",
+            "power": "12-48V DC",
+            "protection": "IP65",
+            "certifications": "CE, J1939 certified",
+            "dimensions": "~140 x 110 x 60 mm",
+            "temperature": "-20 to +55 C"
+          }
+        },
+        {
+          "name": "Tiger G2 Receiver, 7 function relays",
+          "image": "img/products/models/tiger-rx-7c.jpg",
+          "description": {
+            "en": "Standard 7-relay receiver for general applications",
+            "et": "Standardne 7-releeväljundiga vastuvõtja üldrakendusteks"
+          },
+          "specifications": {
+            "article_433": "TG-R9-1 / 100-001-513-88",
+            "frequency_433": "433 MHz",
+            "relays": "7 function relays",
+            "power": "12-48V DC",
+            "protection": "IP65",
+            "certifications": "CE",
+            "dimensions": "~140 x 110 x 60 mm",
+            "temperature": "-20 to +55 C"
+          }
+        },
+        {
+          "name": "Tiger G2 Receiver, 11 function relays",
+          "image": "img/products/models/tiger-rx-11.jpg",
+          "description": {
+            "en": "11-relay receiver for medium complexity applications",
+            "et": "11-releeväljundiga vastuvõtja keskmise keerukusega rakendusteks"
+          },
+          "specifications": {
+            "article_433": "TG-R4-36 / 100-001-521-54",
+            "article_915": "TG-R4-38 / 100-001-522-47",
+            "frequency_433": "433 MHz",
+            "frequency_915": "915 MHz",
+            "relays": "11 function relays",
+            "power": "12-48V DC",
+            "protection": "IP65",
+            "certifications": "CE, G Lloyd",
+            "dimensions": "~155 x 115 x 65 mm",
+            "temperature": "-20 to +55 C"
+          }
+        }
+      ],
       "features": {
         "en": [
           "IP65 dust and water protection",
           "2.4 GHz frequency hopping technology",
           "Up to 16 programmable functions",
-          "Emergency stop function"
+          "Emergency stop function",
+          "Long battery life up to 60 hours",
+          "Ergonomic design for comfortable use"
         ],
         "et": [
           "IP65 tolmu- ja veekaitse",
           "2,4 GHz sagedushüppe tehnoloogia",
           "Kuni 16 programmeeritavat funktsiooni",
-          "Hädapeatamise funktsioon"
+          "Hädapeatamise funktsioon",
+          "Pikk akukestus kuni 60 tundi",
+          "Ergonoomne disain mugavaks kasutamiseks"
         ]
       },
       "specifications": {
-        "frequency": "2.4 GHz",
+        "frequency": "433 MHz (69 channels) / 915 MHz",
         "range": "100m",
-        "protection": "IP65",
-        "battery": "Li-ion rechargeable"
+        "protection": "IP65 / IP66",
+        "battery": "Li-ion rechargeable",
+        "weight": "295 gr",
+        "dimensions": "~76 x 160 x 37 mm",
+        "temperature": "-20 to +55 C",
+        "certifications": "CE, G Lloyd, FCC, IC"
       }
     },
     {
@@ -37,25 +367,103 @@
         "en": "Compact and powerful control system perfect for mobile and hydraulic applications. Ergonomic design meets cutting-edge technology.",
         "et": "Kompaktne ja võimas juhtimissüsteem, mis sobib ideaalselt mobiil- ja hüdraulikarakendustele. Ergonoomne disain kohtub tipptasemel tehnoloogiaga."
       },
+      "category": {
+        "en": "Mobile & Hydraulic",
+        "et": "Mobiilne ja Hüdraulika"
+      },
+      "models": [
+        {
+          "name": "Panther Transmitter, 3x1-step buttons",
+          "image": "img/products/models/panther-3btn.jpg",
+          "description": {
+            "en": "Compact pocket transmitter for simple applications. 2.4 GHz frequency, 400ft range",
+            "et": "Kompaktne taskusaatja lihtsateks rakendusteks. 2,4 GHz sagedus, 120m ulatus"
+          }
+        },
+        {
+          "name": "Panther Transmitter, 6x1-step buttons",
+          "image": "img/products/models/panther-6btn.jpg",
+          "description": {
+            "en": "Mid-size transmitter with 6 programmable buttons. Ideal for door and gate control",
+            "et": "Keskmise suurusega saatja 6 programmeeritava nupuga. Ideaalne uste ja väravate juhtimiseks"
+          }
+        },
+        {
+          "name": "Panther PLd T19-2, 8 buttons (2-step)",
+          "image": "img/products/models/panther-t19.jpg",
+          "description": {
+            "en": "Professional grade PLd certified. 8 buttons with 2-step control. IP65 rated, 500m range",
+            "et": "Professionaalne tase PLd sertifitseeritud. 8 nuppu 2-astmelise juhtimisega. IP65, 500m ulatus"
+          }
+        },
+        {
+          "name": "Panther PLd T29-12, 12 buttons (2-step)",
+          "image": "img/products/models/panther-t29.jpg",
+          "description": {
+            "en": "Advanced PLd system with 12 buttons. Layer selection for up to 96 functions. IP65 rated",
+            "et": "Täiustatud PLd süsteem 12 nupuga. Kihivalik kuni 96 funktsiooniks. IP65"
+          }
+        },
+        {
+          "name": "Panther Receiver, 9 function relays",
+          "image": "img/products/models/panther-rx9.jpg",
+          "description": {
+            "en": "Base board receiver with 9 relay outputs. 12-24V AC/DC operation",
+            "et": "Alusplaadi vastuvõtja 9 releevä ljundiga. 12-24V AC/DC toide"
+          }
+        },
+        {
+          "name": "Panther Receiver, 14 function relays",
+          "image": "img/products/models/panther-rx14.jpg",
+          "description": {
+            "en": "Relay expansion board with 14 outputs. Compatible with all Panther transmitters",
+            "et": "Relede laiendusplaat 14 väljundiga. Ühilduv kõigi Panther saatjatega"
+          }
+        },
+        {
+          "name": "Panther Receiver, 19 function relays",
+          "image": "img/products/models/panther-rx19.jpg",
+          "description": {
+            "en": "Maximum capacity receiver with 19 relays. PLd rated for safety applications",
+            "et": "Maksimaalse võimsusega vastuvõtja 19 releega. PLd sertifitseeritud ohutusrakendusteks"
+          }
+        },
+        {
+          "name": "Panther Receiver, CANopen",
+          "image": "img/products/models/panther-rxcan.jpg",
+          "description": {
+            "en": "Compact CANopen receiver for bus system integration. Plug & play setup",
+            "et": "Kompaktne CANopen vastuvõtja siinisüsteemi integreerimiseks. Plug & play seadistus"
+          }
+        }
+      ],
       "features": {
         "en": [
           "Compact and lightweight design",
-          "Dual joystick control",
-          "Long battery life",
-          "Robust construction"
+          "2.4 GHz worldwide frequency",
+          "Range up to 500m in open field",
+          "Robust construction IP65/IP67",
+          "PLd safety rating available",
+          "Programmable relay functions"
         ],
         "et": [
           "Kompaktne ja kerge disain",
-          "Kahekordne juhtkang",
-          "Pikk akukestus",
-          "Tugev konstruktsioon"
+          "2,4 GHz ülemaailmne sagedus",
+          "Ulatus kuni 500m avatud väljas",
+          "Tugev konstruktsioon IP65/IP67",
+          "PLd ohutuse reiting saadaval",
+          "Programmeeritavad releefunktsioonid"
         ]
       },
       "specifications": {
-        "frequency": "2.4 GHz",
-        "range": "150m",
-        "protection": "IP54",
-        "battery": "Li-ion rechargeable"
+        "frequency": "2.4 GHz worldwide",
+        "range": "Up to 500m",
+        "protection": "IP65 / IP67",
+        "battery": "Li-ion rechargeable",
+        "weight": "Varies by model",
+        "dimensions": "Compact design",
+        "temperature": "-20 to +60 C",
+        "certifications": "CE, PLd safety rated"
       }
     },
     {
@@ -66,25 +474,111 @@
         "en": "Versatile control solutions for cranes and lifting equipment. Engineered for precision and safety in critical operations.",
         "et": "Mitmekülgsed juhtimislahendused kraanidele ja tõsteseadmetele. Loodud täpsusega ja ohutusega kriitilistes operatsioonides."
       },
+      "category": {
+        "en": "Lifting & Cranes",
+        "et": "Tõstmine ja Kraanid"
+      },
+      "models": [
+        {
+          "name": "T20 Transmitter, 1 button",
+          "image": "img/products/models/t20-tx1.jpg",
+          "description": {
+            "en": "Ultra-compact pocket transmitter. Perfect for simple on/off applications",
+            "et": "Ültra-kompaktne taskusaatja. Ideaalne lihtsateks sisse/välja rakendusteks"
+          }
+        },
+        {
+          "name": "T60 Transmitter, 3 buttons",
+          "image": "img/products/models/t60-tx3.jpg",
+          "description": {
+            "en": "Small form factor with 3 programmable buttons. 433 MHz frequency",
+            "et": "Väike vorm 3 programmeeritava nupuga. 433 MHz sagedus"
+          }
+        },
+        {
+          "name": "T60 Transmitter, 6 buttons",
+          "image": "img/products/models/t60-tx6.jpg",
+          "description": {
+            "en": "6-button transmitter with display. PC programmable via USB interface",
+            "et": "6-nupuline saatja ekraaniga. PC programmeeritav USB liidese kaudu"
+          }
+        },
+        {
+          "name": "T60 Transmitter, 8 buttons",
+          "image": "img/products/models/t60-tx8.jpg",
+          "description": {
+            "en": "8-button transmitter with on/off switch. Measures only 52 x 83 x 17 mm",
+            "et": "8-nupuline saatja sisse/välja lülitiga. Mõõdud ainult 52 x 83 x 17 mm"
+          }
+        },
+        {
+          "name": "T60 Transmitter, 15 buttons",
+          "image": "img/products/models/t60-tx15.jpg",
+          "description": {
+            "en": "Robust transmitter with 15 buttons. Optional display and stop button",
+            "et": "Tugev saatja 15 nupuga. Valikuline ekraan ja stoppnupp"
+          }
+        },
+        {
+          "name": "T20 Receiver, 2 function relays",
+          "image": "img/products/models/t20-rx2.jpg",
+          "description": {
+            "en": "Compact plug-in receiver. 12-30V AC/DC, IP20 rated. DIN rail mountable",
+            "et": "Kompaktne pistikuga vastuvõtja. 12-30V AC/DC, IP20. DIN liistule paigaldatav"
+          }
+        },
+        {
+          "name": "T20 Receiver, 3 function relays",
+          "image": "img/products/models/t20-rx3.jpg",
+          "description": {
+            "en": "Standard receiver with 3 relays. IP65 outdoor rated. BNC antenna connection",
+            "et": "Standardne vastuvõtja 3 releega. IP65 välitingimusteks. BNC antenni ühendus"
+          }
+        },
+        {
+          "name": "T60 Receiver, 5 function relays",
+          "image": "img/products/models/t60-rx5.jpg",
+          "description": {
+            "en": "5-relay receiver with advanced programming. Stores up to 60 transmitter codes",
+            "et": "5-releeväljundiga vastuvõtja täiustatud programmeerimisega. Salvestab kuni 60 saatja koodi"
+          }
+        },
+        {
+          "name": "T60 Receiver, 8 function relays",
+          "image": "img/products/models/t60-rx8.jpg",
+          "description": {
+            "en": "Maximum capacity receiver for T60 system. 8 programmable relays, DIN rail mount",
+            "et": "Maksimaalse võimsusega vastuvõtja T60 süsteemile. 8 programmeeritavat releed, DIN liist"
+          }
+        }
+      ],
       "features": {
         "en": [
-          "Multiple safety features",
-          "Programmable speed control",
-          "Large display screen",
-          "Weatherproof design"
+          "Plug & play system",
+          "Effective range up to 200m",
+          "Multiple transmitters per receiver",
+          "PC programmable options",
+          "Weatherproof design IP65",
+          "Easy installation and use"
         ],
         "et": [
-          "Mitu ohutusfunktsiooni",
-          "Programmeeritav kiiruse juhtimine",
-          "Suur ekraan",
-          "Ilmastikukindel disain"
+          "Plug & play süsteem",
+          "Efektiivne ulatus kuni 200m",
+          "Mitu saatjat vastuvõtja kohta",
+          "PC programmeeritavad valikud",
+          "Ilmastikukindel disain IP65",
+          "Lihtne paigaldamine ja kasutamine"
         ]
       },
       "specifications": {
-        "frequency": "433 MHz / 2.4 GHz",
-        "range": "200m",
-        "protection": "IP65",
-        "battery": "Alkaline / Li-ion"
+        "frequency": "433 MHz",
+        "range": "Up to 200m",
+        "protection": "IP20 (receiver) / IP65 (outdoor)",
+        "battery": "9V / CR2032",
+        "weight": "Ultra-lightweight",
+        "dimensions": "52 x 83 x 17 mm (varies)",
+        "temperature": "-10 to +50 C",
+        "certifications": "CE certified"
       }
     }
   ]

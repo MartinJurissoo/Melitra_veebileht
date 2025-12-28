@@ -43,6 +43,31 @@
         </div>
     </section>
 
+    <!-- Product Detail Modal -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalProductName"></h2>
+                <button class="close-btn" onclick="closeModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <span id="modalCategory" class="product-category"></span>
+                
+                <div class="product-overview">
+                    <div id="modalImage" class="product-detail-image"></div>
+                    <div id="specsTable" class="product-specs-table"></div>
+                </div>
+                
+                <p id="modalDescription" class="product-description-full"></p>
+                
+                <div class="models-section" id="modelsSection">
+                    <h3 id="modelsTitle"></h3>
+                    <div id="modelsList" class="model-list"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <section id="about-us">
         <h2 data-translate="about_title">About Us</h2>
         <div class="about-content">
@@ -131,71 +156,6 @@
         let productsData = [];
         let currentLanguage = 'en';
 
-        // Load products from JSON
-        async function loadProducts() {
-            try {
-                const response = await fetch('products.json');
-                const data = await response.json();
-                productsData = data.products;
-                renderProducts();
-            } catch (error) {
-                console.error('Error loading products:', error);
-                // Fallback products if JSON fails to load
-                productsData = [
-                    {
-                        id: "tiger-g2",
-                        name: "Tiger G2",
-                        image: "img/products/tiger-g2.jpg",
-                        description: {
-                            en: "Advanced radio remote control system designed for demanding industrial applications. Robust, reliable, and built to perform in harsh environments.",
-                            et: "Täiustatud raadio kaugjuhtimissüsteem, mis on loodud nõudlikeks tööstusrakendusteks. Tugev, usaldusväärne ja loodud töötama karmides keskkondades."
-                        }
-                    },
-                    {
-                        id: "panther",
-                        name: "Panther",
-                        image: "img/products/panther.jpg",
-                        description: {
-                            en: "Compact and powerful control system perfect for mobile and hydraulic applications. Ergonomic design meets cutting-edge technology.",
-                            et: "Kompaktne ja võimas juhtimissüsteem, mis sobib ideaalselt mobiil- ja hüdraulikarakendustele. Ergonoomne disain kohtub tipptasemel tehnoloogiaga."
-                        }
-                    },
-                    {
-                        id: "t20-t60",
-                        name: "T20/T60 Series",
-                        image: "img/products/t20-t60.jpg",
-                        description: {
-                            en: "Versatile control solutions for cranes and lifting equipment. Engineered for precision and safety in critical operations.",
-                            et: "Mitmekülgsed juhtimislahendused kraanidele ja tõsteseadmetele. Loodud täpsusega ja ohutusega kriitilistes operatsioonides."
-                        }
-                    }
-                ];
-                renderProducts();
-            }
-        }
-
-        // Render products to the page
-        function renderProducts() {
-            const container = document.getElementById('product-container');
-            container.innerHTML = '';
-
-            productsData.forEach(product => {
-                const productCard = document.createElement('div');
-                productCard.className = 'product-card';
-                productCard.innerHTML = `
-                    <div class="product-image" style="background-image: url('${product.image}'); background-size: cover; background-position: center;">
-                        <span style="background: rgba(0,0,0,0.7); padding: 10px 20px; border-radius: 5px;">${product.name}</span>
-                    </div>
-                    <div class="product-info">
-                        <h3>${product.name}</h3>
-                        <p class="product-description" data-product-id="${product.id}">${product.description[currentLanguage]}</p>
-                        <a href="#" class="product-btn" data-translate="learn_more">${translations[currentLanguage].learn_more}</a>
-                    </div>
-                `;
-                container.appendChild(productCard);
-            });
-        }
-
         // Translation dictionary
         const translations = {
             en: {
@@ -262,11 +222,230 @@
             }
         };
 
-        // Function to change language
+        // Open product modal with details
+        function openProductModal(productId) {
+            console.log('Opening modal for product:', productId);
+            const product = productsData.find(p => p.id === productId);
+            if (!product) {
+                console.error('Product not found:', productId);
+                return;
+            }
+
+            console.log('Product found:', product);
+            console.log('Product has models:', product.models ? product.models.length : 0);
+
+            const modal = document.getElementById('productModal');
+            
+            document.getElementById('modalProductName').textContent = product.name;
+            document.getElementById('modalCategory').textContent = product.category ? product.category[currentLanguage] : '';
+            
+            const modalImage = document.getElementById('modalImage');
+            modalImage.style.backgroundImage = `url('${product.image}')`;
+            modalImage.innerHTML = `<span style="background: rgba(0,0,0,0.7); padding: 15px 30px; border-radius: 8px;">${product.name}</span>`;
+            
+            document.getElementById('modalDescription').textContent = product.description[currentLanguage];
+            
+            // Build specifications table combining features and specs
+            const specsTable = document.getElementById('specsTable');
+            let tableHTML = '<table><thead><tr><th colspan="2">';
+            tableHTML += currentLanguage === 'en' ? 'Key Features & Technical Specifications' : 'Peamised Omadused ja Tehnilised Andmed';
+            tableHTML += '</th></tr></thead><tbody>';
+            
+            // Add features to table
+            if (product.features && product.features[currentLanguage]) {
+                product.features[currentLanguage].forEach(feature => {
+                    tableHTML += `<tr><td colspan="2" class="spec-value-col">✓ ${feature}</td></tr>`;
+                });
+            }
+            
+            // Add specifications to table
+            if (product.specifications) {
+                const specLabels = {
+                    frequency: { en: 'Frequency', et: 'Sagedus' },
+                    range: { en: 'Range', et: 'Ulatus' },
+                    protection: { en: 'Protection', et: 'Kaitse' },
+                    battery: { en: 'Battery', et: 'Aku' },
+                    weight: { en: 'Weight', et: 'Kaal' },
+                    dimensions: { en: 'Dimensions', et: 'Mõõtmed' },
+                    temperature: { en: 'Temperature', et: 'Temperatuur' },
+                    certifications: { en: 'Certifications', et: 'Sertifikaadid' }
+                };
+                
+                Object.entries(product.specifications).forEach(([key, value]) => {
+                    const label = specLabels[key] ? specLabels[key][currentLanguage] : key;
+                    tableHTML += `
+                        <tr>
+                            <td class="spec-label-col">${label}</td>
+                            <td class="spec-value-col">${value}</td>
+                        </tr>
+                    `;
+                });
+            }
+            
+            tableHTML += '</tbody></table>';
+            specsTable.innerHTML = tableHTML;
+            
+            if (product.models && product.models.length > 0) {
+                document.getElementById('modelsSection').style.display = 'block';
+                document.getElementById('modelsTitle').textContent = currentLanguage === 'en' ? 'Available Models' : 'Saadaolevad Mudelid';
+                
+                const modelsList = document.getElementById('modelsList');
+                modelsList.innerHTML = '';
+                product.models.forEach(model => {
+                    const modelItem = document.createElement('div');
+                    modelItem.className = 'model-item';
+                    const description = model.description[currentLanguage] || model.description.en;
+                    const hasImage = model.image ? true : false;
+                    
+                    // Build model header
+                    let modelHTML = `
+                        <div class="model-item-header">
+                            ${hasImage ? `<div class="model-item-image" style="background-image: url('${model.image}')"></div>` : ''}
+                            <div class="model-item-info">
+                                <h4>${model.name}</h4>
+                                <p>${description}</p>
+                            </div>
+                        </div>
+                    `;
+                    
+                    // Build specifications table if model has specs
+                    if (model.specifications) {
+                        const specLabels = {
+                            article_433: { en: 'Article number (433 MHz)', et: 'Artikli number (433 MHz)' },
+                            article_915: { en: 'Article number (915 MHz)', et: 'Artikli number (915 MHz)' },
+                            frequency_433: { en: 'Frequency (433 MHz)', et: 'Sagedus (433 MHz)' },
+                            frequency_915: { en: 'Frequency (915 MHz)', et: 'Sagedus (915 MHz)' },
+                            battery: { en: 'Battery', et: 'Aku' },
+                            protection: { en: 'Protection', et: 'Kaitse' },
+                            certifications: { en: 'Certifications', et: 'Sertifikaadid' },
+                            weight: { en: 'Weight', et: 'Kaal' },
+                            dimensions: { en: 'Dimensions', et: 'Mõõtmed' },
+                            temperature: { en: 'Temperature', et: 'Temperatuur' },
+                            relays: { en: 'Relays', et: 'Relee' },
+                            power: { en: 'Power', et: 'Toide' },
+                            interface: { en: 'Interface', et: 'Liides' }
+                        };
+                        
+                        modelHTML += '<table class="model-specs-table"><tbody>';
+                        Object.entries(model.specifications).forEach(([key, value]) => {
+                            const label = specLabels[key] ? specLabels[key][currentLanguage] : key;
+                            modelHTML += `
+                                <tr>
+                                    <td class="model-spec-label">${label}</td>
+                                    <td class="model-spec-value">${value}</td>
+                                </tr>
+                            `;
+                        });
+                        modelHTML += '</tbody></table>';
+                    }
+                    
+                    modelItem.innerHTML = modelHTML;
+                    modelsList.appendChild(modelItem);
+                });
+            } else {
+                document.getElementById('modelsSection').style.display = 'none';
+            }
+            
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+            console.log('Modal should be visible now');
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('productModal');
+            modal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        async function loadProducts() {
+            try {
+                const response = await fetch('products.json');
+                const data = await response.json();
+                productsData = data.products;
+                console.log('Products loaded:', productsData);
+                renderProducts();
+            } catch (error) {
+                console.error('Error loading products:', error);
+                productsData = [
+                    {
+                        id: "tiger-g2",
+                        name: "Tiger G2",
+                        image: "img/products/tiger-g2.jpg",
+                        category: { en: "Industrial & Machines", et: "Tööstus ja Masinad" },
+                        description: {
+                            en: "Advanced radio remote control system designed for demanding industrial applications.",
+                            et: "Täiustatud raadio kaugjuhtimissüsteem, mis on loodud nõudlikeks tööstusrakendusteks."
+                        },
+                        models: [],
+                        features: { en: [], et: [] },
+                        specifications: {}
+                    },
+                    {
+                        id: "panther",
+                        name: "Panther",
+                        image: "img/products/panther.jpg",
+                        category: { en: "Mobile & Hydraulic", et: "Mobiilne ja Hüdraulika" },
+                        description: {
+                            en: "Compact and powerful control system perfect for mobile and hydraulic applications.",
+                            et: "Kompaktne ja võimas juhtimissüsteem mobiil- ja hüdraulikarakendustele."
+                        },
+                        models: [],
+                        features: { en: [], et: [] },
+                        specifications: {}
+                    },
+                    {
+                        id: "t20-t60",
+                        name: "T20/T60 Series",
+                        image: "img/products/t20-t60.jpg",
+                        category: { en: "Lifting & Cranes", et: "Tõstmine ja Kraanid" },
+                        description: {
+                            en: "Versatile control solutions for cranes and lifting equipment.",
+                            et: "Mitmekülgsed juhtimislahendused kraanidele ja tõsteseadmetele."
+                        },
+                        models: [],
+                        features: { en: [], et: [] },
+                        specifications: {}
+                    }
+                ];
+                console.log('Using fallback products');
+                renderProducts();
+            }
+        }
+
+        function renderProducts() {
+            const container = document.getElementById('product-container');
+            container.innerHTML = '';
+            console.log('Rendering products:', productsData);
+
+            productsData.forEach(product => {
+                const productCard = document.createElement('div');
+                productCard.className = 'product-card';
+                productCard.innerHTML = `
+                    <div class="product-image" style="background-image: url('${product.image}'); background-size: cover; background-position: center;">
+                        <span style="background: rgba(0,0,0,0.7); padding: 10px 20px; border-radius: 5px;">${product.name}</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>${product.name}</h3>
+                        <p class="product-description" data-product-id="${product.id}">${product.description[currentLanguage]}</p>
+                        <button class="product-btn" data-translate="learn_more" data-product-id="${product.id}">${translations[currentLanguage].learn_more}</button>
+                    </div>
+                `;
+                container.appendChild(productCard);
+            });
+
+            document.querySelectorAll('.product-btn').forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const productId = this.getAttribute('data-product-id');
+                    console.log('Button clicked, product ID:', productId);
+                    openProductModal(productId);
+                });
+            });
+        }
+
         function changeLanguage(lang) {
             currentLanguage = lang;
             
-            // Update all elements with data-translate attribute
             document.querySelectorAll('[data-translate]').forEach(element => {
                 const key = element.getAttribute('data-translate');
                 if (translations[lang][key]) {
@@ -274,7 +453,6 @@
                 }
             });
 
-            // Update product descriptions
             document.querySelectorAll('.product-description').forEach(element => {
                 const productId = element.getAttribute('data-product-id');
                 const product = productsData.find(p => p.id === productId);
@@ -283,7 +461,6 @@
                 }
             });
 
-            // Update placeholders
             document.querySelectorAll('[data-translate-placeholder]').forEach(element => {
                 const key = element.getAttribute('data-translate-placeholder');
                 if (translations[lang][key]) {
@@ -291,25 +468,20 @@
                 }
             });
 
-            // Update active button
             document.querySelectorAll('.lang-btn').forEach(btn => {
                 btn.classList.remove('active');
             });
             event.target.classList.add('active');
 
-            // Save language preference
             localStorage.setItem('preferred-language', lang);
         }
 
-        // Load saved language preference on page load
         window.addEventListener('DOMContentLoaded', () => {
-            // Load products first
             loadProducts();
             
             const savedLang = localStorage.getItem('preferred-language') || 'en';
             currentLanguage = savedLang;
             if (savedLang === 'et') {
-                changeLanguage('et');
                 document.querySelectorAll('.lang-btn').forEach(btn => {
                     btn.classList.remove('active');
                     if (btn.textContent === 'ET') {
@@ -317,6 +489,18 @@
                     }
                 });
             }
+
+            document.getElementById('productModal').addEventListener('click', function(e) {
+                if (e.target === this) {
+                    closeModal();
+                }
+            });
+
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    closeModal();
+                }
+            });
         });
     </script>
 </body>
