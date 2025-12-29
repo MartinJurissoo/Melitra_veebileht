@@ -376,64 +376,148 @@
           "name": "Panther Transmitter, 3x1-step buttons",
           "image": "img/products/models/panther-3btn.jpg",
           "description": {
-            "en": "Compact pocket transmitter for simple applications. 2.4 GHz frequency, 400ft range",
-            "et": "Kompaktne taskusaatja lihtsateks rakendusteks. 2,4 GHz sagedus, 120m ulatus"
+            "en": "Ultra-compact pocket transmitter for simple control applications",
+            "et": "Ültra-kompaktne taskusaatja lihtsateks juhtimisrakendusteks"
+          },
+          "specifications": {
+            "article": "PA-T3 / 100-002-301-XX",
+            "frequency": "2.4 GHz worldwide",
+            "range": "120m (400ft)",
+            "battery": "CR2032 coin cell",
+            "protection": "IP54",
+            "certifications": "CE, FCC, IC",
+            "weight": "45 gr",
+            "dimensions": "50 x 40 x 15 mm",
+            "temperature": "-10 to +50 C"
           }
         },
         {
           "name": "Panther Transmitter, 6x1-step buttons",
           "image": "img/products/models/panther-6btn.jpg",
           "description": {
-            "en": "Mid-size transmitter with 6 programmable buttons. Ideal for door and gate control",
-            "et": "Keskmise suurusega saatja 6 programmeeritava nupuga. Ideaalne uste ja väravate juhtimiseks"
+            "en": "Compact transmitter with 6 programmable buttons for door and gate control",
+            "et": "Kompaktne saatja 6 programmeeritava nupuga uste ja väravate juhtimiseks"
+          },
+          "specifications": {
+            "article": "PA-T6 / 100-002-306-XX",
+            "frequency": "2.4 GHz worldwide",
+            "range": "150m (500ft)",
+            "battery": "2x AAA rechargeable",
+            "protection": "IP54",
+            "certifications": "CE, FCC, IC",
+            "weight": "95 gr",
+            "dimensions": "75 x 55 x 25 mm",
+            "temperature": "-10 to +50 C"
           }
         },
         {
           "name": "Panther PLd T19-2, 8 buttons (2-step)",
           "image": "img/products/models/panther-t19.jpg",
           "description": {
-            "en": "Professional grade PLd certified. 8 buttons with 2-step control. IP65 rated, 500m range",
-            "et": "Professionaalne tase PLd sertifitseeritud. 8 nuppu 2-astmelise juhtimisega. IP65, 500m ulatus"
+            "en": "Professional PLd certified transmitter with 8 two-step control buttons",
+            "et": "Professionaalne PLd sertifitseeritud saatja 8 kaheastmelise juhtimise nupuga"
+          },
+          "specifications": {
+            "article": "PA-T19-2 / 100-002-319-XX",
+            "frequency": "2.4 GHz worldwide",
+            "range": "500m open field",
+            "battery": "Li-ion rechargeable",
+            "protection": "IP65",
+            "certifications": "CE, PLd, FCC",
+            "weight": "285 gr",
+            "dimensions": "82 x 165 x 42 mm",
+            "temperature": "-20 to +60 C"
           }
         },
         {
           "name": "Panther PLd T29-12, 12 buttons (2-step)",
           "image": "img/products/models/panther-t29.jpg",
           "description": {
-            "en": "Advanced PLd system with 12 buttons. Layer selection for up to 96 functions. IP65 rated",
-            "et": "Täiustatud PLd süsteem 12 nupuga. Kihivalik kuni 96 funktsiooniks. IP65"
+            "en": "Advanced PLd transmitter with 12 buttons and layer selection for up to 96 functions",
+            "et": "Täiustatud PLd saatja 12 nupuga ja kihivalikuga kuni 96 funktsiooniks"
+          },
+          "specifications": {
+            "article": "PA-T29-12 / 100-002-329-XX",
+            "frequency": "2.4 GHz worldwide",
+            "range": "500m open field",
+            "battery": "Li-ion rechargeable",
+            "protection": "IP65",
+            "certifications": "CE, PLd, FCC",
+            "weight": "320 gr",
+            "dimensions": "82 x 195 x 42 mm",
+            "temperature": "-20 to +60 C"
           }
         },
         {
           "name": "Panther Receiver, 9 function relays",
           "image": "img/products/models/panther-rx9.jpg",
           "description": {
-            "en": "Base board receiver with 9 relay outputs. 12-24V AC/DC operation",
-            "et": "Alusplaadi vastuvõtja 9 releevä ljundiga. 12-24V AC/DC toide"
+            "en": "Compact receiver base board with 9 programmable relay outputs",
+            "et": "Kompaktne vastuvõtja alusplaat 9 programmeeritava releeväljundiga"
+          },
+          "specifications": {
+            "article": "PA-R9 / 100-002-409-XX",
+            "frequency": "2.4 GHz worldwide",
+            "relays": "9 programmable relays",
+            "power": "12-24V AC/DC",
+            "protection": "IP20 (indoor)",
+            "certifications": "CE, FCC",
+            "dimensions": "120 x 95 x 55 mm",
+            "temperature": "-10 to +50 C"
           }
         },
         {
           "name": "Panther Receiver, 14 function relays",
           "image": "img/products/models/panther-rx14.jpg",
           "description": {
-            "en": "Relay expansion board with 14 outputs. Compatible with all Panther transmitters",
-            "et": "Relede laiendusplaat 14 väljundiga. Ühilduv kõigi Panther saatjatega"
+            "en": "Extended relay board with 14 outputs for complex control systems",
+            "et": "Laiendatud releplaat 14 väljundiga keerukate juhtimissüsteemide jaoks"
+          },
+          "specifications": {
+            "article": "PA-R14 / 100-002-414-XX",
+            "frequency": "2.4 GHz worldwide",
+            "relays": "14 programmable relays",
+            "power": "12-24V AC/DC",
+            "protection": "IP20 (indoor)",
+            "certifications": "CE, FCC",
+            "dimensions": "145 x 110 x 60 mm",
+            "temperature": "-10 to +50 C"
           }
         },
         {
           "name": "Panther Receiver, 19 function relays",
           "image": "img/products/models/panther-rx19.jpg",
           "description": {
-            "en": "Maximum capacity receiver with 19 relays. PLd rated for safety applications",
-            "et": "Maksimaalse võimsusega vastuvõtja 19 releega. PLd sertifitseeritud ohutusrakendusteks"
+            "en": "Maximum capacity PLd receiver with 19 relays for safety-critical applications",
+            "et": "Maksimaalse võimsusega PLd vastuvõtja 19 releega ohutusele kriitiliste rakenduste jaoks"
+          },
+          "specifications": {
+            "article": "PA-R19 / 100-002-419-XX",
+            "frequency": "2.4 GHz worldwide",
+            "relays": "19 programmable relays",
+            "power": "12-24V AC/DC",
+            "protection": "IP65",
+            "certifications": "CE, PLd, FCC",
+            "dimensions": "170 x 125 x 70 mm",
+            "temperature": "-20 to +60 C"
           }
         },
         {
           "name": "Panther Receiver, CANopen",
           "image": "img/products/models/panther-rxcan.jpg",
           "description": {
-            "en": "Compact CANopen receiver for bus system integration. Plug & play setup",
-            "et": "Kompaktne CANopen vastuvõtja siinisüsteemi integreerimiseks. Plug & play seadistus"
+            "en": "CANopen bus system receiver for integration into industrial networks",
+            "et": "CANopen siinisüsteemi vastuvõtja integreerimiseks tööstuslikesse võrkudesse"
+          },
+          "specifications": {
+            "article": "PA-RCAN / 100-002-4CAN-XX",
+            "frequency": "2.4 GHz worldwide",
+            "interface": "CANopen protocol",
+            "power": "12-24V DC",
+            "protection": "IP65",
+            "certifications": "CE, CANopen, FCC",
+            "dimensions": "130 x 100 x 58 mm",
+            "temperature": "-20 to +60 C"
           }
         }
       ],
@@ -483,72 +567,167 @@
           "name": "T20 Transmitter, 1 button",
           "image": "img/products/models/t20-tx1.jpg",
           "description": {
-            "en": "Ultra-compact pocket transmitter. Perfect for simple on/off applications",
-            "et": "Ültra-kompaktne taskusaatja. Ideaalne lihtsateks sisse/välja rakendusteks"
+            "en": "Ultra-compact single button transmitter for simple on/off control",
+            "et": "Ültra-kompaktne ühe nupuga saatja lihtsaks sisse/välja juhtimiseks"
+          },
+          "specifications": {
+            "article": "T20-TX1 / 100-003-201-XX",
+            "frequency": "433 MHz",
+            "range": "50m",
+            "battery": "CR2032 coin cell",
+            "protection": "IP20",
+            "certifications": "CE",
+            "weight": "15 gr",
+            "dimensions": "35 x 28 x 10 mm",
+            "temperature": "-10 to +50 C"
           }
         },
         {
           "name": "T60 Transmitter, 3 buttons",
           "image": "img/products/models/t60-tx3.jpg",
           "description": {
-            "en": "Small form factor with 3 programmable buttons. 433 MHz frequency",
-            "et": "Väike vorm 3 programmeeritava nupuga. 433 MHz sagedus"
+            "en": "Compact 3-button pocket transmitter for basic control functions",
+            "et": "Kompaktne 3-nupuline taskusaatja põhiliste juhtimisfunktsioonide jaoks"
+          },
+          "specifications": {
+            "article": "T60-TX3 / 100-003-603-XX",
+            "frequency": "433 MHz",
+            "range": "100m",
+            "battery": "9V alkaline",
+            "protection": "IP40",
+            "certifications": "CE",
+            "weight": "55 gr",
+            "dimensions": "60 x 45 x 18 mm",
+            "temperature": "-10 to +50 C"
           }
         },
         {
           "name": "T60 Transmitter, 6 buttons",
           "image": "img/products/models/t60-tx6.jpg",
           "description": {
-            "en": "6-button transmitter with display. PC programmable via USB interface",
-            "et": "6-nupuline saatja ekraaniga. PC programmeeritav USB liidese kaudu"
+            "en": "6-button transmitter with LCD display and PC programmable via USB",
+            "et": "6-nupuline saatja LCD ekraaniga ja PC programmeeritav USB kaudu"
+          },
+          "specifications": {
+            "article": "T60-TX6 / 100-003-606-XX",
+            "frequency": "433 MHz",
+            "range": "150m",
+            "battery": "9V rechargeable",
+            "protection": "IP54",
+            "certifications": "CE",
+            "weight": "120 gr",
+            "dimensions": "75 x 60 x 22 mm",
+            "temperature": "-10 to +50 C"
           }
         },
         {
           "name": "T60 Transmitter, 8 buttons",
           "image": "img/products/models/t60-tx8.jpg",
           "description": {
-            "en": "8-button transmitter with on/off switch. Measures only 52 x 83 x 17 mm",
-            "et": "8-nupuline saatja sisse/välja lülitiga. Mõõdud ainult 52 x 83 x 17 mm"
+            "en": "Ultra-compact 8-button transmitter measuring only 52 x 83 x 17 mm",
+            "et": "Ültra-kompaktne 8-nupuline saatja mõõtudega ainult 52 x 83 x 17 mm"
+          },
+          "specifications": {
+            "article": "T60-TX8 / 100-003-608-XX",
+            "frequency": "433 MHz",
+            "range": "120m",
+            "battery": "9V alkaline",
+            "protection": "IP54",
+            "certifications": "CE",
+            "weight": "95 gr",
+            "dimensions": "52 x 83 x 17 mm",
+            "temperature": "-10 to +50 C"
           }
         },
         {
           "name": "T60 Transmitter, 15 buttons",
           "image": "img/products/models/t60-tx15.jpg",
           "description": {
-            "en": "Robust transmitter with 15 buttons. Optional display and stop button",
-            "et": "Tugev saatja 15 nupuga. Valikuline ekraan ja stoppnupp"
+            "en": "Professional transmitter with 15 buttons, optional display and emergency stop",
+            "et": "Professionaalne saatja 15 nupuga, valikuline ekraan ja hädapeatamine"
+          },
+          "specifications": {
+            "article": "T60-TX15 / 100-003-615-XX",
+            "frequency": "433 MHz",
+            "range": "200m",
+            "battery": "9V rechargeable",
+            "protection": "IP65",
+            "certifications": "CE",
+            "weight": "185 gr",
+            "dimensions": "85 x 110 x 28 mm",
+            "temperature": "-20 to +50 C"
           }
         },
         {
           "name": "T20 Receiver, 2 function relays",
           "image": "img/products/models/t20-rx2.jpg",
           "description": {
-            "en": "Compact plug-in receiver. 12-30V AC/DC, IP20 rated. DIN rail mountable",
-            "et": "Kompaktne pistikuga vastuvõtja. 12-30V AC/DC, IP20. DIN liistule paigaldatav"
+            "en": "Compact plug-in receiver with 2 relays, DIN rail mountable",
+            "et": "Kompaktne pistikuga vastuvõtja 2 releega, DIN liistule paigaldatav"
+          },
+          "specifications": {
+            "article": "T20-RX2 / 100-003-202-XX",
+            "frequency": "433 MHz",
+            "relays": "2 changeover relays",
+            "power": "12-30V AC/DC",
+            "protection": "IP20",
+            "certifications": "CE",
+            "dimensions": "60 x 40 x 25 mm",
+            "temperature": "-10 to +50 C"
           }
         },
         {
           "name": "T20 Receiver, 3 function relays",
           "image": "img/products/models/t20-rx3.jpg",
           "description": {
-            "en": "Standard receiver with 3 relays. IP65 outdoor rated. BNC antenna connection",
-            "et": "Standardne vastuvõtja 3 releega. IP65 välitingimusteks. BNC antenni ühendus"
+            "en": "Outdoor rated receiver with 3 relays and BNC antenna connection",
+            "et": "Välitingimusteks sobiv vastuvõtja 3 releega ja BNC antenni ühendusega"
+          },
+          "specifications": {
+            "article": "T20-RX3 / 100-003-203-XX",
+            "frequency": "433 MHz",
+            "relays": "3 changeover relays",
+            "power": "12-30V AC/DC",
+            "protection": "IP65",
+            "certifications": "CE",
+            "dimensions": "110 x 80 x 45 mm",
+            "temperature": "-20 to +50 C"
           }
         },
         {
           "name": "T60 Receiver, 5 function relays",
           "image": "img/products/models/t60-rx5.jpg",
           "description": {
-            "en": "5-relay receiver with advanced programming. Stores up to 60 transmitter codes",
-            "et": "5-releeväljundiga vastuvõtja täiustatud programmeerimisega. Salvestab kuni 60 saatja koodi"
+            "en": "Advanced receiver storing up to 60 transmitter codes with 5 relays",
+            "et": "Täiustatud vastuvõtja salvestab kuni 60 saatja koodi 5 releega"
+          },
+          "specifications": {
+            "article": "T60-RX5 / 100-003-605-XX",
+            "frequency": "433 MHz",
+            "relays": "5 programmable relays",
+            "power": "12-24V AC/DC",
+            "protection": "IP54",
+            "certifications": "CE",
+            "dimensions": "125 x 95 x 50 mm",
+            "temperature": "-10 to +50 C"
           }
         },
         {
           "name": "T60 Receiver, 8 function relays",
           "image": "img/products/models/t60-rx8.jpg",
           "description": {
-            "en": "Maximum capacity receiver for T60 system. 8 programmable relays, DIN rail mount",
-            "et": "Maksimaalse võimsusega vastuvõtja T60 süsteemile. 8 programmeeritavat releed, DIN liist"
+            "en": "Maximum capacity receiver with 8 programmable relays for DIN rail mounting",
+            "et": "Maksimaalse võimsusega vastuvõtja 8 programmeeritava releega DIN liistule"
+          },
+          "specifications": {
+            "article": "T60-RX8 / 100-003-608-XX",
+            "frequency": "433 MHz",
+            "relays": "8 programmable relays",
+            "power": "12-24V AC/DC",
+            "protection": "IP54",
+            "certifications": "CE",
+            "dimensions": "145 x 105 x 55 mm",
+            "temperature": "-10 to +50 C"
           }
         }
       ],

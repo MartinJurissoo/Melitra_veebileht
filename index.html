@@ -53,11 +53,7 @@
             <div class="modal-body">
                 <span id="modalCategory" class="product-category"></span>
                 
-                <div class="product-overview">
-                    <div id="modalImage" class="product-detail-image"></div>
-                    <div id="specsTable" class="product-specs-table"></div>
-                </div>
-                
+                <div id="modalImage" class="product-detail-image"></div>
                 <p id="modalDescription" class="product-description-full"></p>
                 
                 <div class="models-section" id="modelsSection">
@@ -244,46 +240,6 @@
             modalImage.innerHTML = `<span style="background: rgba(0,0,0,0.7); padding: 15px 30px; border-radius: 8px;">${product.name}</span>`;
             
             document.getElementById('modalDescription').textContent = product.description[currentLanguage];
-            
-            // Build specifications table combining features and specs
-            const specsTable = document.getElementById('specsTable');
-            let tableHTML = '<table><thead><tr><th colspan="2">';
-            tableHTML += currentLanguage === 'en' ? 'Key Features & Technical Specifications' : 'Peamised Omadused ja Tehnilised Andmed';
-            tableHTML += '</th></tr></thead><tbody>';
-            
-            // Add features to table
-            if (product.features && product.features[currentLanguage]) {
-                product.features[currentLanguage].forEach(feature => {
-                    tableHTML += `<tr><td colspan="2" class="spec-value-col">✓ ${feature}</td></tr>`;
-                });
-            }
-            
-            // Add specifications to table
-            if (product.specifications) {
-                const specLabels = {
-                    frequency: { en: 'Frequency', et: 'Sagedus' },
-                    range: { en: 'Range', et: 'Ulatus' },
-                    protection: { en: 'Protection', et: 'Kaitse' },
-                    battery: { en: 'Battery', et: 'Aku' },
-                    weight: { en: 'Weight', et: 'Kaal' },
-                    dimensions: { en: 'Dimensions', et: 'Mõõtmed' },
-                    temperature: { en: 'Temperature', et: 'Temperatuur' },
-                    certifications: { en: 'Certifications', et: 'Sertifikaadid' }
-                };
-                
-                Object.entries(product.specifications).forEach(([key, value]) => {
-                    const label = specLabels[key] ? specLabels[key][currentLanguage] : key;
-                    tableHTML += `
-                        <tr>
-                            <td class="spec-label-col">${label}</td>
-                            <td class="spec-value-col">${value}</td>
-                        </tr>
-                    `;
-                });
-            }
-            
-            tableHTML += '</tbody></table>';
-            specsTable.innerHTML = tableHTML;
             
             if (product.models && product.models.length > 0) {
                 document.getElementById('modelsSection').style.display = 'block';
