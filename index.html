@@ -24,8 +24,8 @@
         </nav>
 
         <div class="language-switcher">
-            <button class="lang-btn active" onclick="changeLanguage('en')">EN</button>
-            <button class="lang-btn" onclick="changeLanguage('et')">ET</button>
+            <button class="lang-btn active" onclick="changeLanguage('en')">ENG</button>
+            <button class="lang-btn" onclick="changeLanguage('et')">EST</button>
         </div>
     </header>
 
@@ -183,7 +183,10 @@
                 form_message_placeholder: "How can we help you?",
                 form_submit: "Send Message",
                 footer_text: "© 2024 Melitra. All rights reserved.",
-                partner_text: "partners with"
+                partner_text: "partners with",
+                product_tiger: "Tiger G2",
+                product_panther: "Panther",
+                product_t20t60: "T20/T60 Series"
             },
             et: {
                 nav_home: "Avaleht",
@@ -214,7 +217,10 @@
                 form_message_placeholder: "Kuidas saame teid aidata?",
                 form_submit: "Saada Sõnum",
                 footer_text: "© 2024 Melitra. Kõik õigused kaitstud.",
-                partner_text: "koostööpartner"
+                partner_text: "koostööpartner",
+                product_tiger: "Tiger G2",
+                product_panther: "Panther",
+                product_t20t60: "T20/T60 Seeria"
             }
         };
 
@@ -232,7 +238,13 @@
 
             const modal = document.getElementById('productModal');
             
-            document.getElementById('modalProductName').textContent = product.name;
+            // Get translated product name
+            let productName = product.name;
+            if (product.id === 'tiger-g2') productName = translations[currentLanguage].product_tiger;
+            if (product.id === 'panther') productName = translations[currentLanguage].product_panther;
+            if (product.id === 't20-t60') productName = translations[currentLanguage].product_t20t60;
+            
+            document.getElementById('modalProductName').textContent = productName;
             document.getElementById('modalCategory').textContent = product.category ? product.category[currentLanguage] : '';
             
             const modalImage = document.getElementById('modalImage');
@@ -253,12 +265,23 @@
                     const description = model.description[currentLanguage] || model.description.en;
                     const hasImage = model.image ? true : false;
                     
+                    // Translate model name
+                    let modelName = model.name;
+                    if (currentLanguage === 'et') {
+                        modelName = modelName.replace(/Transmitter/g, 'Saatja');
+                        modelName = modelName.replace(/Receiver/g, 'Vastuvõtja');
+                        modelName = modelName.replace(/buttons/g, 'nuppu');
+                        modelName = modelName.replace(/button/g, 'nupp');
+                        modelName = modelName.replace(/step/g, 'astmelist');
+                        modelName = modelName.replace(/function relays/g, 'funktsiooni relee');
+                    }
+                    
                     // Build model header
                     let modelHTML = `
                         <div class="model-item-header">
                             ${hasImage ? `<div class="model-item-image" style="background-image: url('${model.image}')"></div>` : ''}
                             <div class="model-item-info">
-                                <h4>${model.name}</h4>
+                                <h4>${modelName}</h4>
                                 <p>${description}</p>
                             </div>
                         </div>
@@ -269,8 +292,10 @@
                         const specLabels = {
                             article_433: { en: 'Article number (433 MHz)', et: 'Artikli number (433 MHz)' },
                             article_915: { en: 'Article number (915 MHz)', et: 'Artikli number (915 MHz)' },
+                            article: { en: 'Article number', et: 'Artikli number' },
                             frequency_433: { en: 'Frequency (433 MHz)', et: 'Sagedus (433 MHz)' },
                             frequency_915: { en: 'Frequency (915 MHz)', et: 'Sagedus (915 MHz)' },
+                            frequency: { en: 'Frequency', et: 'Sagedus' },
                             battery: { en: 'Battery', et: 'Aku' },
                             protection: { en: 'Protection', et: 'Kaitse' },
                             certifications: { en: 'Certifications', et: 'Sertifikaadid' },
@@ -279,16 +304,53 @@
                             temperature: { en: 'Temperature', et: 'Temperatuur' },
                             relays: { en: 'Relays', et: 'Relee' },
                             power: { en: 'Power', et: 'Toide' },
-                            interface: { en: 'Interface', et: 'Liides' }
+                            interface: { en: 'Interface', et: 'Liides' },
+                            range: { en: 'Range', et: 'Ulatus' }
                         };
+                        
+                        // Function to translate spec values
+                        function translateSpecValue(value) {
+                            if (currentLanguage === 'en') return value;
+                            
+                            // Common translations
+                            let translated = value;
+                            translated = translated.replace(/channels/g, 'kanalit');
+                            translated = translated.replace(/channel/g, 'kanal');
+                            translated = translated.replace(/Re-chargeable/g, 'Taaslaetav');
+                            translated = translated.replace(/rechargeable/gi, 'taaslaetav');
+                            translated = translated.replace(/coin cell/g, 'mündaku');
+                            translated = translated.replace(/alkaline/gi, 'leeliseline');
+                            translated = translated.replace(/worldwide/gi, 'ülemaailmne');
+                            translated = translated.replace(/open field/gi, 'avatud väli');
+                            translated = translated.replace(/indoor/gi, 'siseruumides');
+                            translated = translated.replace(/outdoor/gi, 'välistingimustes');
+                            translated = translated.replace(/programmable/gi, 'programmeeritav');
+                            translated = translated.replace(/changeover/gi, 'ümberlülitus');
+                            translated = translated.replace(/function relays/gi, 'funktsiooni relee');
+                            translated = translated.replace(/protocol/gi, 'protokoll');
+                            translated = translated.replace(/certified/gi, 'sertifitseeritud');
+                            translated = translated.replace(/ to /g, ' kuni ');
+                            
+                            // Model name translations
+                            translated = translated.replace(/Transmitter/g, 'Saatja');
+                            translated = translated.replace(/transmitter/g, 'saatja');
+                            translated = translated.replace(/Receiver/g, 'Vastuvõtja');
+                            translated = translated.replace(/receiver/g, 'vastuvõtja');
+                            translated = translated.replace(/buttons/g, 'nuppu');
+                            translated = translated.replace(/button/g, 'nupp');
+                            translated = translated.replace(/step/g, 'astmelist');
+                            
+                            return translated;
+                        }
                         
                         modelHTML += '<table class="model-specs-table"><tbody>';
                         Object.entries(model.specifications).forEach(([key, value]) => {
                             const label = specLabels[key] ? specLabels[key][currentLanguage] : key;
+                            const translatedValue = typeof value === 'object' ? value[currentLanguage] : translateSpecValue(value);
                             modelHTML += `
                                 <tr>
                                     <td class="model-spec-label">${label}</td>
-                                    <td class="model-spec-value">${value}</td>
+                                    <td class="model-spec-value">${translatedValue}</td>
                                 </tr>
                             `;
                         });
@@ -376,12 +438,19 @@
             productsData.forEach(product => {
                 const productCard = document.createElement('div');
                 productCard.className = 'product-card';
+                
+                // Get translated product name
+                let productName = product.name;
+                if (product.id === 'tiger-g2') productName = translations[currentLanguage].product_tiger;
+                if (product.id === 'panther') productName = translations[currentLanguage].product_panther;
+                if (product.id === 't20-t60') productName = translations[currentLanguage].product_t20t60;
+                
                 productCard.innerHTML = `
                     <div class="product-image" style="background-image: url('${product.image}'); background-size: cover; background-position: center;">
-                        <span style="background: rgba(0,0,0,0.7); padding: 10px 20px; border-radius: 5px;">${product.name}</span>
+                        <span style="background: rgba(0,0,0,0.7); padding: 10px 20px; border-radius: 5px;">${productName}</span>
                     </div>
                     <div class="product-info">
-                        <h3>${product.name}</h3>
+                        <h3>${productName}</h3>
                         <p class="product-description" data-product-id="${product.id}">${product.description[currentLanguage]}</p>
                         <button class="product-btn" data-translate="learn_more" data-product-id="${product.id}">${translations[currentLanguage].learn_more}</button>
                     </div>
@@ -416,6 +485,22 @@
                     element.textContent = product.description[lang];
                 }
             });
+            
+            // Update product names on cards
+            document.querySelectorAll('.product-card').forEach((card, index) => {
+                const product = productsData[index];
+                if (product) {
+                    let productName = product.name;
+                    if (product.id === 'tiger-g2') productName = translations[lang].product_tiger;
+                    if (product.id === 'panther') productName = translations[lang].product_panther;
+                    if (product.id === 't20-t60') productName = translations[lang].product_t20t60;
+                    
+                    const h3 = card.querySelector('h3');
+                    const imageSpan = card.querySelector('.product-image span');
+                    if (h3) h3.textContent = productName;
+                    if (imageSpan) imageSpan.textContent = productName;
+                }
+            });
 
             document.querySelectorAll('[data-translate-placeholder]').forEach(element => {
                 const key = element.getAttribute('data-translate-placeholder');
@@ -440,7 +525,7 @@
             if (savedLang === 'et') {
                 document.querySelectorAll('.lang-btn').forEach(btn => {
                     btn.classList.remove('active');
-                    if (btn.textContent === 'ET') {
+                    if (btn.textContent === 'EST') {
                         btn.classList.add('active');
                     }
                 });
