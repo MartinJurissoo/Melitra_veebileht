@@ -373,14 +373,14 @@
       },
       "models": [
         {
-          "name": "Panther Transmitter, 3x1-step buttons",
+          "name": "Panther Transmitter, 3x1-step buttons (PN-T3)",
           "image": "img/products/models/panther-3btn.jpg",
           "description": {
             "en": "Ultra-compact pocket transmitter for simple control applications",
             "et": "Ültra-kompaktne taskusaatja lihtsateks juhtimisrakendusteks"
           },
           "specifications": {
-            "article": "PA-T3 / 100-002-301-XX",
+            "article": "PN-T3 / 100-002-301-XX",
             "frequency": "2.4 GHz worldwide",
             "range": "120m (400ft)",
             "battery": "CR2032 coin cell",
@@ -392,14 +392,14 @@
           }
         },
         {
-          "name": "Panther Transmitter, 6x1-step buttons",
+          "name": "Panther Transmitter, 6x1-step buttons (PN-T13-06)",
           "image": "img/products/models/panther-6btn.jpg",
           "description": {
             "en": "Compact transmitter with 6 programmable buttons for door and gate control",
             "et": "Kompaktne saatja 6 programmeeritava nupuga uste ja väravate juhtimiseks"
           },
           "specifications": {
-            "article": "PA-T6 / 100-002-306-XX",
+            "article": "PN-T13-06 / 100-002-306-XX",
             "frequency": "2.4 GHz worldwide",
             "range": "150m (500ft)",
             "battery": "2x AAA rechargeable",
@@ -411,6 +411,25 @@
           }
         },
         {
+          "name": "Panther Transmitter, 8 buttons (PN-TX-MX8)",
+          "image": "img/products/models/panther-tx8.jpg",
+          "description": {
+            "en": "Transmitter with 8 programmable buttons for standard industrial applications",
+            "et": "Saatja 8 programmeeritava nupuga standardsed tööstusrakendused"
+          },
+          "specifications": {
+            "article": "PN-TX-MX8 / PN-T7-2",
+            "frequency": "2.4 GHz worldwide",
+            "range": "400m open field",
+            "battery": "Li-ion rechargeable",
+            "protection": "IP65",
+            "certifications": "CE, FCC",
+            "weight": "280 gr",
+            "dimensions": "80 x 160 x 40 mm",
+            "temperature": "-20 to +60 C"
+          }
+        },
+        {
           "name": "Panther PLd T19-2, 8 buttons (2-step)",
           "image": "img/products/models/panther-t19.jpg",
           "description": {
@@ -418,7 +437,7 @@
             "et": "Professionaalne PLd sertifitseeritud saatja 8 kaheastmelise juhtimise nupuga"
           },
           "specifications": {
-            "article": "PA-T19-2 / 100-002-319-XX",
+            "article": "PN-T19-2 / 100-002-319-XX",
             "frequency": "2.4 GHz worldwide",
             "range": "500m open field",
             "battery": "Li-ion rechargeable",
@@ -437,7 +456,7 @@
             "et": "Täiustatud PLd saatja 12 nupuga ja kihivalikuga kuni 96 funktsiooniks"
           },
           "specifications": {
-            "article": "PA-T29-12 / 100-002-329-XX",
+            "article": "PN-T29-12 / 100-002-329-XX",
             "frequency": "2.4 GHz worldwide",
             "range": "500m open field",
             "battery": "Li-ion rechargeable",
@@ -449,56 +468,164 @@
           }
         },
         {
-          "name": "Panther Receiver, 9 function relays",
+          "name": "Panther Receiver, 5 relays (PN-R8-1)",
+          "image": "img/products/models/panther-rx5.jpg",
+          "description": {
+            "en": "Compact 5-relay receiver for standard applications",
+            "et": "Kompaktne 5-releeväljundiga vastuvõtja standardrakendusteks"
+          },
+          "specifications": {
+            "article": "PN-R8-1 / PN-RX-MN5",
+            "frequency": "2.4 GHz worldwide",
+            "relays": "5 programmable relays",
+            "power": "12-24V DC",
+            "protection": "IP65",
+            "certifications": "CE, FCC",
+            "dimensions": "120 x 116 x 50 mm",
+            "temperature": "-20 to +55 C"
+          }
+        },
+        {
+          "name": "Panther Receiver, 11 relays (PN-R8-6)",
+          "image": "img/products/models/panther-rx11.jpg",
+          "description": {
+            "en": "11-relay receiver for medium complexity applications",
+            "et": "11-releeväljundiga vastuvõtja keskmise keerukusega rakendusteks"
+          },
+          "specifications": {
+            "article": "PN-R8-6 / PN-RX-MD11",
+            "frequency": "2.4 GHz worldwide",
+            "relays": "11 programmable relays",
+            "power": "12-24V DC",
+            "protection": "IP65",
+            "certifications": "CE, FCC",
+            "dimensions": "140 x 130 x 60 mm",
+            "temperature": "-20 to +55 C"
+          }
+        },
+        {
+          "name": "Panther Receiver, 9 function relays (PN-RX-MX9)",
           "image": "img/products/models/panther-rx9.jpg",
           "description": {
             "en": "Compact receiver base board with 9 programmable relay outputs",
             "et": "Kompaktne vastuvõtja alusplaat 9 programmeeritava releeväljundiga"
           },
           "specifications": {
-            "article": "PA-R9 / 100-002-409-XX",
+            "article": "PN-RX-MX9 / PN-R8-3",
             "frequency": "2.4 GHz worldwide",
             "relays": "9 programmable relays",
             "power": "12-24V AC/DC",
-            "protection": "IP20 (indoor)",
+            "protection": "IP65",
             "certifications": "CE, FCC",
             "dimensions": "120 x 95 x 55 mm",
-            "temperature": "-10 to +50 C"
+            "temperature": "-20 to +60 C"
           }
         },
         {
-          "name": "Panther Receiver, 14 function relays",
+          "name": "Panther Receiver, 14 function relays (PN-RX-MXX14)",
           "image": "img/products/models/panther-rx14.jpg",
           "description": {
             "en": "Extended relay board with 14 outputs for complex control systems",
             "et": "Laiendatud releplaat 14 väljundiga keerukate juhtimissüsteemide jaoks"
           },
           "specifications": {
-            "article": "PA-R14 / 100-002-414-XX",
+            "article": "PN-RX-MXX14 / PN-R8-13",
             "frequency": "2.4 GHz worldwide",
             "relays": "14 programmable relays",
             "power": "12-24V AC/DC",
-            "protection": "IP20 (indoor)",
+            "protection": "IP65",
             "certifications": "CE, FCC",
             "dimensions": "145 x 110 x 60 mm",
-            "temperature": "-10 to +50 C"
+            "temperature": "-20 to +60 C"
           }
         },
         {
-          "name": "Panther Receiver, 19 function relays",
+          "name": "Panther Receiver, 19 function relays (PN-RX-MXX19)",
           "image": "img/products/models/panther-rx19.jpg",
           "description": {
             "en": "Maximum capacity PLd receiver with 19 relays for safety-critical applications",
             "et": "Maksimaalse võimsusega PLd vastuvõtja 19 releega ohutusele kriitiliste rakenduste jaoks"
           },
           "specifications": {
-            "article": "PA-R19 / 100-002-419-XX",
+            "article": "PN-RX-MXX19 / PN-R8-7",
             "frequency": "2.4 GHz worldwide",
             "relays": "19 programmable relays",
             "power": "12-24V AC/DC",
             "protection": "IP65",
             "certifications": "CE, PLd, FCC",
             "dimensions": "170 x 125 x 70 mm",
+            "temperature": "-20 to +60 C"
+          }
+        },
+        {
+          "name": "Panther Receiver, 10 relays (PN-R15-1)",
+          "image": "img/products/models/panther-rx10a.jpg",
+          "description": {
+            "en": "PLd certified receiver with 10 relays powered by 48-230V AC",
+            "et": "PLd sertifitseeritud vastuvõtja 10 releega, toiteallikas 48-230V AC"
+          },
+          "specifications": {
+            "article": "PN-R15-1",
+            "frequency": "2.4 GHz worldwide",
+            "relays": "10 programmable relays",
+            "power": "48-230V AC",
+            "protection": "IP66",
+            "certifications": "CE, PLd, FCC",
+            "dimensions": "165 x 135 x 75 mm",
+            "temperature": "-20 to +60 C"
+          }
+        },
+        {
+          "name": "Panther Receiver, 10 relays (PN-R15-2)",
+          "image": "img/products/models/panther-rx10b.jpg",
+          "description": {
+            "en": "PLd certified receiver with 10 relays powered by 48-230V AC, alternate configuration",
+            "et": "PLd sertifitseeritud vastuvõtja 10 releega, toiteallikas 48-230V AC, alternatiivne konfiguratsioon"
+          },
+          "specifications": {
+            "article": "PN-R15-2",
+            "frequency": "2.4 GHz worldwide",
+            "relays": "10 programmable relays",
+            "power": "48-230V AC",
+            "protection": "IP66",
+            "certifications": "CE, PLd, FCC",
+            "dimensions": "165 x 135 x 75 mm",
+            "temperature": "-20 to +60 C"
+          }
+        },
+        {
+          "name": "Panther Receiver, 10 relays (PN-R15-13)",
+          "image": "img/products/models/panther-rx10c.jpg",
+          "description": {
+            "en": "PLd certified receiver with 10 relays powered by 12-24V DC",
+            "et": "PLd sertifitseeritud vastuvõtja 10 releega, toiteallikas 12-24V DC"
+          },
+          "specifications": {
+            "article": "PN-R15-13",
+            "frequency": "2.4 GHz worldwide",
+            "relays": "10 programmable relays",
+            "power": "12-24V DC",
+            "protection": "IP66",
+            "certifications": "CE, PLd, FCC",
+            "dimensions": "165 x 135 x 75 mm",
+            "temperature": "-20 to +60 C"
+          }
+        },
+        {
+          "name": "Panther Receiver, 10 relays (PN-R15-14)",
+          "image": "img/products/models/panther-rx10d.jpg",
+          "description": {
+            "en": "PLd certified receiver with 10 relays powered by 12-24V AC/DC",
+            "et": "PLd sertifitseeritud vastuvõtja 10 releega, toiteallikas 12-24V AC/DC"
+          },
+          "specifications": {
+            "article": "PN-R15-14",
+            "frequency": "2.4 GHz worldwide",
+            "relays": "10 programmable relays",
+            "power": "12-24V AC/DC",
+            "protection": "IP66",
+            "certifications": "CE, PLd, FCC",
+            "dimensions": "165 x 135 x 75 mm",
             "temperature": "-20 to +60 C"
           }
         },
