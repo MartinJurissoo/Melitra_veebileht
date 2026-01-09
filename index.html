@@ -249,7 +249,7 @@
             
             const modalImage = document.getElementById('modalImage');
             modalImage.style.backgroundImage = `url('${product.image}')`;
-            modalImage.innerHTML = `<span style="background: rgba(0,0,0,0.7); padding: 15px 30px; border-radius: 8px;">${product.name}</span>`;
+            modalImage.innerHTML = '';
             
             document.getElementById('modalDescription').textContent = product.description[currentLanguage];
             
@@ -446,8 +446,7 @@
                 if (product.id === 't20-t60') productName = translations[currentLanguage].product_t20t60;
                 
                 productCard.innerHTML = `
-                    <div class="product-image" style="background-image: url('${product.image}'); background-size: cover; background-position: center;">
-                        <span style="background: rgba(0,0,0,0.7); padding: 10px 20px; border-radius: 5px;">${productName}</span>
+                    <div class="product-image" style="background-image: url('${product.image}');">
                     </div>
                     <div class="product-info">
                         <h3>${productName}</h3>
