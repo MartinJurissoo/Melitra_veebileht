@@ -121,7 +121,7 @@
             </div>
 
             <div class="contact-form">
-                <form>
+                <form id="contactForm">
                     <div class="form-group">
                         <label for="name" data-translate="form_name">Name</label>
                         <input type="text" id="name" name="name" data-translate-placeholder="form_name_placeholder" placeholder="Your name" required>
@@ -138,6 +138,8 @@
                     </div>
 
                     <button type="submit" class="submit-btn" data-translate="form_submit">Send Message</button>
+                    
+                    <div class="status-message"></div>
                 </form>
             </div>
         </div>
@@ -148,7 +150,80 @@
     </footer>
 
     <script>
-        // Product data
+        // ==========================================
+        // ⚠️ IMPORTANT: REPLACE THIS WITH YOUR WEB3FORMS ACCESS KEY
+        // Get it from: https://web3forms.com
+        // ==========================================
+        const WEB3FORMS_ACCESS_KEY = 'ad5d94dc-a9b7-4b79-982f-65218d78e9a8';
+        
+        // ==========================================
+        // CONTACT FORM EMAIL FUNCTIONALITY
+        // ==========================================
+        function initContactForm() {
+            const contactForm = document.getElementById('contactForm');
+            const statusMessage = contactForm.querySelector('.status-message');
+            
+            contactForm.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                
+                const submitBtn = contactForm.querySelector('.submit-btn');
+                const originalBtnText = submitBtn.textContent;
+                
+                // Disable button and show loading state
+                submitBtn.disabled = true;
+                submitBtn.textContent = translations[currentLanguage].form_sending;
+                statusMessage.style.display = 'none';
+                
+                // Get form data
+                const formData = new FormData(contactForm);
+                formData.append('access_key', WEB3FORMS_ACCESS_KEY);
+                
+                // Add custom subject line
+                const senderName = formData.get('name');
+                const senderEmail = formData.get('email');
+                formData.append('subject', `New Contact Form Message from ${senderName}`);
+                formData.append('from_name', 'Melitra Website');
+                formData.append('replyto', senderEmail);
+                
+                try {
+                    const response = await fetch('https://api.web3forms.com/submit', {
+                        method: 'POST',
+                        body: formData
+                    });
+                    
+                    const data = await response.json();
+                    
+                    if (data.success) {
+                        showMessage(translations[currentLanguage].form_success, 'success');
+                        contactForm.reset();
+                    } else {
+                        showMessage(translations[currentLanguage].form_error, 'error');
+                    }
+                } catch (error) {
+                    console.error('Form submission error:', error);
+                    showMessage(translations[currentLanguage].form_error, 'error');
+                } finally {
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = translations[currentLanguage].form_submit;
+                }
+            });
+
+            function showMessage(message, type) {
+                statusMessage.textContent = message;
+                statusMessage.className = `status-message ${type}`;
+                statusMessage.style.display = 'block';
+                
+                if (type === 'success') {
+                    setTimeout(() => {
+                        statusMessage.style.display = 'none';
+                    }, 5000);
+                }
+            }
+        }
+
+        // ==========================================
+        // PRODUCT DATA AND TRANSLATIONS
+        // ==========================================
         let productsData = [];
         let currentLanguage = 'en';
 
@@ -182,7 +257,10 @@
                 form_message: "Message",
                 form_message_placeholder: "How can we help you?",
                 form_submit: "Send Message",
-                footer_text: "© 2024 Melitra. All rights reserved.",
+                form_sending: "Sending...",
+                form_success: "Message sent successfully! We'll get back to you soon.",
+                form_error: "Something went wrong. Please try again.",
+                footer_text: "© 2026 Melitra. All rights reserved.",
                 partner_text: "partners with",
                 product_tiger: "Tiger G2",
                 product_panther: "Panther",
@@ -216,7 +294,10 @@
                 form_message: "Sõnum",
                 form_message_placeholder: "Kuidas saame teid aidata?",
                 form_submit: "Saada Sõnum",
-                footer_text: "© 2024 Melitra. Kõik õigused kaitstud.",
+                form_sending: "Saadan...",
+                form_success: "Sõnum edukalt saadetud! Võtame teiega peagi ühendust.",
+                form_error: "Midagi läks valesti. Palun proovige uuesti.",
+                footer_text: "© 2026 Melitra. Kõik õigused kaitstud.",
                 partner_text: "koostööpartner",
                 product_tiger: "Tiger G2",
                 product_panther: "Panther",
@@ -224,7 +305,9 @@
             }
         };
 
-        // Open product modal with details
+        // ==========================================
+        // PRODUCT MODAL FUNCTIONS
+        // ==========================================
         function openProductModal(productId) {
             console.log('Opening modal for product:', productId);
             const product = productsData.find(p => p.id === productId);
@@ -305,7 +388,8 @@
                             relays: { en: 'Relays', et: 'Relee' },
                             power: { en: 'Power', et: 'Toide' },
                             interface: { en: 'Interface', et: 'Liides' },
-                            range: { en: 'Range', et: 'Ulatus' }
+                            range: { en: 'Range', et: 'Ulatus' },
+                            outputs: { en: 'Outputs', et: 'Väljundid' }
                         };
                         
                         // Function to translate spec values
@@ -375,6 +459,9 @@
             document.body.style.overflow = 'auto';
         }
 
+        // ==========================================
+        // LOAD AND RENDER PRODUCTS
+        // ==========================================
         async function loadProducts() {
             try {
                 const response = await fetch('products.json');
@@ -467,6 +554,9 @@
             });
         }
 
+        // ==========================================
+        // LANGUAGE SWITCHING
+        // ==========================================
         function changeLanguage(lang) {
             currentLanguage = lang;
             
@@ -516,8 +606,12 @@
             localStorage.setItem('preferred-language', lang);
         }
 
+        // ==========================================
+        // INITIALIZE ON PAGE LOAD
+        // ==========================================
         window.addEventListener('DOMContentLoaded', () => {
             loadProducts();
+            initContactForm();
             
             const savedLang = localStorage.getItem('preferred-language') || 'en';
             currentLanguage = savedLang;
