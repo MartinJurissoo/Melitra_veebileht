@@ -401,145 +401,208 @@
         };
 
         function openProductModal(productId) {
-            const product = productsData.find(p => p.id === productId);
-            if (!product) return;
+        const product = productsData.find(p => p.id === productId);
+        if (!product) return;
 
-            const modal = document.getElementById('productModal');
-            
-            let productName = product.name;
-            if (product.id === 'tiger-g2') productName = translations[currentLanguage].product_tiger;
-            if (product.id === 'panther') productName = translations[currentLanguage].product_panther;
-            if (product.id === 't20-t60') productName = translations[currentLanguage].product_t20t60;
-            
-            document.getElementById('modalProductName').textContent = productName;
-            document.getElementById('modalCategory').textContent = product.category ? product.category[currentLanguage] : '';
-            
-            const modalImage = document.getElementById('modalImage');
-            modalImage.style.backgroundImage = `url('${product.image}')`;
-            modalImage.innerHTML = '';
-            
-            // Format the description with proper line breaks and bullet points
-            const description = product.description[currentLanguage];
-            const modalDescElem = document.getElementById('modalDescription');
+        const modal = document.getElementById('productModal');
+    
+        let productName = product.name;
+        if (product.id === 'tiger-g2') productName = translations[currentLanguage].product_tiger;
+        if (product.id === 'panther') productName = translations[currentLanguage].product_panther;
+        if (product.id === 't20-t60') productName = translations[currentLanguage].product_t20t60;
+    
+        document.getElementById('modalProductName').textContent = productName;
+        document.getElementById('modalCategory').textContent = product.category ? product.category[currentLanguage] : '';
+    
+        const modalImage = document.getElementById('modalImage');
+        modalImage.style.backgroundImage = `url('${product.image}')`;
+        modalImage.innerHTML = '';
+    
+        // Format the description with proper line breaks and bullet points
+        const description = product.description[currentLanguage];
+        const modalDescElem = document.getElementById('modalDescription');
 
-            // Split by newlines and process each line
-            const lines = description.split('\n');
-            let formattedHTML = '';
+        // Split by newlines and process each line
+        const lines = description.split('\n');
+        let formattedHTML = '';
 
-            lines.forEach(line => {
-            line = line.trim();
-            if (line === '') {
+        lines.forEach(line => {
+        line = line.trim();
+        if (line === '') {
             // Empty line = paragraph break
             formattedHTML += '<br>';
-            } else if (line.startsWith('•')) {
+        } else if (line.startsWith('•')) {
             // Bullet point with better styling
             formattedHTML += `<div style="margin-left: 0; margin-bottom: 10px; text-align: left;">• ${line.substring(1).trim()}</div>`;
-            } else {
+        } else {
             // Regular paragraph with text alignment
             formattedHTML += `<p style="margin-bottom: 15px; text-align: left; line-height: 1.6;">${line}</p>`;
-            }
-            });
+        }
+        });
 
-            modalDescElem.innerHTML = formattedHTML;
+        modalDescElem.innerHTML = formattedHTML;
+    
+        // Show models section with transmitters and receivers
+        if (product.models && product.models.length > 0) {
+        document.getElementById('modelsSection').style.display = 'block';
+        document.getElementById('modelsTitle').textContent = currentLanguage === 'en' ? 'Available Models' : 'Saadaolevad Mudelid';
+        
+        const modelsList = document.getElementById('modelsList');
+        modelsList.innerHTML = '';
+        
+        // Separate transmitters and receivers
+        const transmitters = product.models.filter(m => 
+            m.name.toLowerCase().includes('transmitter') || 
+            m.name.toLowerCase().includes('saatja')
+        );
+        const receivers = product.models.filter(m => 
+            m.name.toLowerCase().includes('receiver') || 
+            m.name.toLowerCase().includes('vastuvõtja')
+        );
+        
+        // Add Transmitters section
+        if (transmitters.length > 0) {
+            const transmittersHeader = document.createElement('h3');
+            transmittersHeader.textContent = currentLanguage === 'en' ? 'Transmitters' : 'Saatjad';
+            transmittersHeader.style.marginTop = '30px';
+            transmittersHeader.style.marginBottom = '15px';
+            transmittersHeader.style.fontSize = '1.5em';
+            transmittersHeader.style.color = '#333';
+            modelsList.appendChild(transmittersHeader);
             
-            if (product.models && product.models.length > 0) {
-                document.getElementById('modelsSection').style.display = 'block';
-                document.getElementById('modelsTitle').textContent = currentLanguage === 'en' ? 'Available Models' : 'Saadaolevad Mudelid';
-                
-                const modelsList = document.getElementById('modelsList');
-                modelsList.innerHTML = '';
-                product.models.forEach(model => {
-                    const modelItem = document.createElement('div');
-                    modelItem.className = 'model-item';
-                    const description = model.description[currentLanguage] || model.description.en;
-                    const hasImage = model.image ? true : false;
-                    
-                    let modelName = model.name;
-                    if (currentLanguage === 'et') {
-                        modelName = modelName.replace(/Transmitter/g, 'Saatja');
-                        modelName = modelName.replace(/Receiver/g, 'Vastuvõtja');
-                        modelName = modelName.replace(/buttons/g, 'nuppu');
-                        modelName = modelName.replace(/button/g, 'nupp');
-                        modelName = modelName.replace(/step/g, 'astmelist');
-                        modelName = modelName.replace(/function relays/g, 'funktsiooni relee');
-                    }
-                    
-                    let modelHTML = `
-                        <div class="model-item-header">
-                            ${hasImage ? `<div class="model-item-image" style="background-image: url('${model.image}')"></div>` : ''}
-                            <div class="model-item-info">
-                                <h4>${modelName}</h4>
-                                <p>${description}</p>
-                            </div>
-                        </div>
-                    `;
-                    
-                    if (model.specifications) {
-                        const specLabels = {
-                            article_433: { en: 'Article number (433 MHz)', et: 'Artikli number (433 MHz)' },
-                            article_915: { en: 'Article number (915 MHz)', et: 'Artikli number (915 MHz)' },
-                            article: { en: 'Article number', et: 'Artikli number' },
-                            frequency_433: { en: 'Frequency (433 MHz)', et: 'Sagedus (433 MHz)' },
-                            frequency_915: { en: 'Frequency (915 MHz)', et: 'Sagedus (915 MHz)' },
-                            frequency: { en: 'Frequency', et: 'Sagedus' },
-                            battery: { en: 'Battery', et: 'Aku' },
-                            protection: { en: 'Protection', et: 'Kaitse' },
-                            certifications: { en: 'Certifications', et: 'Sertifikaadid' },
-                            weight: { en: 'Weight', et: 'Kaal' },
-                            dimensions: { en: 'Dimensions', et: 'Mõõtmed' },
-                            temperature: { en: 'Temperature', et: 'Temperatuur' },
-                            relays: { en: 'Relays', et: 'Relee' },
-                            power: { en: 'Power', et: 'Toide' },
-                            interface: { en: 'Interface', et: 'Liides' },
-                            range: { en: 'Range', et: 'Ulatus' },
-                            outputs: { en: 'Outputs', et: 'Väljundid' }
-                        };
-                        
-                        function translateSpecValue(value) {
-                            if (currentLanguage === 'en') return value;
-                            
-                            let translated = value;
-                            translated = translated.replace(/channels/g, 'kanalit');
-                            translated = translated.replace(/channel/g, 'kanal');
-                            translated = translated.replace(/Re-chargeable/g, 'Taaslaetav');
-                            translated = translated.replace(/rechargeable/gi, 'taaslaetav');
-                            translated = translated.replace(/coin cell/g, 'mündaku');
-                            translated = translated.replace(/alkaline/gi, 'leeliseline');
-                            translated = translated.replace(/worldwide/gi, 'ülemaailmne');
-                            translated = translated.replace(/open field/gi, 'avatud väli');
-                            translated = translated.replace(/programmable/gi, 'programmeeritav');
-                            translated = translated.replace(/changeover/gi, 'ümberlülitus');
-                            translated = translated.replace(/function relays/gi, 'funktsiooni relee');
-                            translated = translated.replace(/protocol/gi, 'protokoll');
-                            translated = translated.replace(/certified/gi, 'sertifitseeritud');
-                            translated = translated.replace(/ to /g, ' kuni ');
-                            
-                            return translated;
-                        }
-                        
-                        modelHTML += '<table class="model-specs-table"><tbody>';
-                        Object.entries(model.specifications).forEach(([key, value]) => {
-                            const label = specLabels[key] ? specLabels[key][currentLanguage] : key;
-                            const translatedValue = typeof value === 'object' ? value[currentLanguage] : translateSpecValue(value);
-                            modelHTML += `
-                                <tr>
-                                    <td class="model-spec-label">${label}</td>
-                                    <td class="model-spec-value">${translatedValue}</td>
-                                </tr>
-                            `;
-                        });
-                        modelHTML += '</tbody></table>';
-                    }
-                    
-                    modelItem.innerHTML = modelHTML;
-                    modelsList.appendChild(modelItem);
-                });
-            } else {
-                document.getElementById('modelsSection').style.display = 'none';
+            // Add transmitters introductory text if available
+            if (product.transmittersText && product.transmittersText[currentLanguage]) {
+                const transmittersTextDiv = document.createElement('p');
+                transmittersTextDiv.textContent = product.transmittersText[currentLanguage];
+                transmittersTextDiv.style.marginBottom = '20px';
+                transmittersTextDiv.style.lineHeight = '1.6';
+                transmittersTextDiv.style.color = '#666';
+                modelsList.appendChild(transmittersTextDiv);
             }
             
-            modal.classList.add('active');
-            document.body.style.overflow = 'hidden';
+            transmitters.forEach(model => {
+                modelsList.appendChild(createModelItem(model));
+            });
+        }
+        
+        // Add Receivers section
+        if (receivers.length > 0) {
+            const receiversHeader = document.createElement('h3');
+            receiversHeader.textContent = currentLanguage === 'en' ? 'Receivers' : 'Vastuvõtjad';
+            receiversHeader.style.marginTop = '40px';
+            receiversHeader.style.marginBottom = '15px';
+            receiversHeader.style.fontSize = '1.5em';
+            receiversHeader.style.color = '#333';
+            modelsList.appendChild(receiversHeader);
+            
+            // Add receivers introductory text if available
+            if (product.receiversText && product.receiversText[currentLanguage]) {
+                const receiversTextDiv = document.createElement('p');
+                receiversTextDiv.textContent = product.receiversText[currentLanguage];
+                receiversTextDiv.style.marginBottom = '20px';
+                receiversTextDiv.style.lineHeight = '1.6';
+                receiversTextDiv.style.color = '#666';
+                modelsList.appendChild(receiversTextDiv);
+            }
+            
+            receivers.forEach(model => {
+                modelsList.appendChild(createModelItem(model));
+            });
+        }
+        } else {
+        document.getElementById('modelsSection').style.display = 'none';
+        }
+    
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+        }
+
+        // Helper function to create model items
+        function createModelItem(model) {
+        const modelItem = document.createElement('div');
+        modelItem.className = 'model-item';
+        const description = model.description[currentLanguage] || model.description.en;
+        const hasImage = model.image ? true : false;
+    
+        let modelName = model.name;
+        if (currentLanguage === 'et') {
+        modelName = modelName.replace(/Transmitter/g, 'Saatja');
+        modelName = modelName.replace(/Receiver/g, 'Vastuvõtja');
+        modelName = modelName.replace(/buttons/g, 'nuppu');
+        modelName = modelName.replace(/button/g, 'nupp');
+        modelName = modelName.replace(/step/g, 'astmelist');
+        modelName = modelName.replace(/function relays/g, 'funktsiooni relee');
+        }
+    
+        let modelHTML = `
+        <div class="model-item-header">
+            ${hasImage ? `<div class="model-item-image" style="background-image: url('${model.image}')"></div>` : ''}
+            <div class="model-item-info">
+                <h4>${modelName}</h4>
+                <p>${description}</p>
+            </div>
+        </div>
+        `;
+    
+        if (model.specifications) {
+        const specLabels = {
+            article_433: { en: 'Article number (433 MHz)', et: 'Artikli number (433 MHz)' },
+            article_915: { en: 'Article number (915 MHz)', et: 'Artikli number (915 MHz)' },
+            article: { en: 'Article number', et: 'Artikli number' },
+            frequency_433: { en: 'Frequency (433 MHz)', et: 'Sagedus (433 MHz)' },
+            frequency_915: { en: 'Frequency (915 MHz)', et: 'Sagedus (915 MHz)' },
+            frequency: { en: 'Frequency', et: 'Sagedus' },
+            battery: { en: 'Battery', et: 'Aku' },
+            protection: { en: 'Protection', et: 'Kaitse' },
+            certifications: { en: 'Certifications', et: 'Sertifikaadid' },
+            weight: { en: 'Weight', et: 'Kaal' },
+            dimensions: { en: 'Dimensions', et: 'Mõõtmed' },
+            temperature: { en: 'Temperature', et: 'Temperatuur' },
+            relays: { en: 'Relays', et: 'Relee' },
+            power: { en: 'Power', et: 'Toide' },
+            interface: { en: 'Interface', et: 'Liides' },
+            range: { en: 'Range', et: 'Ulatus' },
+            outputs: { en: 'Outputs', et: 'Väljundid' }
+        };
+        
+        function translateSpecValue(value) {
+            if (currentLanguage === 'en') return value;
+            
+            let translated = value;
+            translated = translated.replace(/channels/g, 'kanalit');
+            translated = translated.replace(/channel/g, 'kanal');
+            translated = translated.replace(/Re-chargeable/g, 'Taaslaetav');
+            translated = translated.replace(/rechargeable/gi, 'taaslaetav');
+            translated = translated.replace(/coin cell/g, 'mündaku');
+            translated = translated.replace(/alkaline/gi, 'leeliseline');
+            translated = translated.replace(/worldwide/gi, 'ülemaailmne');
+            translated = translated.replace(/open field/gi, 'avatud väli');
+            translated = translated.replace(/programmable/gi, 'programmeeritav');
+            translated = translated.replace(/changeover/gi, 'ümberlülitus');
+            translated = translated.replace(/function relays/gi, 'funktsiooni relee');
+            translated = translated.replace(/protocol/gi, 'protokoll');
+            translated = translated.replace(/certified/gi, 'sertifitseeritud');
+            translated = translated.replace(/ to /g, ' kuni ');
+            
+            return translated;
+        }
+        
+        modelHTML += '<table class="model-specs-table"><tbody>';
+        Object.entries(model.specifications).forEach(([key, value]) => {
+            const label = specLabels[key] ? specLabels[key][currentLanguage] : key;
+            const translatedValue = typeof value === 'object' ? value[currentLanguage] : translateSpecValue(value);
+            modelHTML += `
+                <tr>
+                    <td class="model-spec-label">${label}</td>
+                    <td class="model-spec-value">${translatedValue}</td>
+                </tr>
+            `;
+        });
+            modelHTML += '</tbody></table>';
+        }   
+    
+        modelItem.innerHTML = modelHTML;
+            return modelItem;
         }
 
         function closeModal() {
