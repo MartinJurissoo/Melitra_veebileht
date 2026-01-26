@@ -418,7 +418,29 @@
             modalImage.style.backgroundImage = `url('${product.image}')`;
             modalImage.innerHTML = '';
             
-            document.getElementById('modalDescription').textContent = product.description[currentLanguage];
+            // Format the description with proper line breaks and bullet points
+            const description = product.description[currentLanguage];
+            const modalDescElem = document.getElementById('modalDescription');
+
+            // Split by newlines and process each line
+            const lines = description.split('\n');
+            let formattedHTML = '';
+
+            lines.forEach(line => {
+            line = line.trim();
+            if (line === '') {
+            // Empty line = paragraph break
+            formattedHTML += '<br><br>';
+            } else if (line.startsWith('•')) {
+            // Bullet point
+            formattedHTML += `<div style="margin-left: 20px; margin-bottom: 8px;">• ${line.substring(1).trim()}</div>`;
+            } else {
+            // Regular paragraph
+            formattedHTML += `<p style="margin-bottom: 12px;">${line}</p>`;
+            }
+            });
+
+            modalDescElem.innerHTML = formattedHTML;
             
             if (product.models && product.models.length > 0) {
                 document.getElementById('modelsSection').style.display = 'block';
