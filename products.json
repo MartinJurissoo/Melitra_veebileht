@@ -13,12 +13,12 @@
         "et": ""
       },
       "transmittersText": {
-        "en": "T20 and T60 transmitters come in many different forms and variations. The smallest one fit inside your pocket but there are also larger more robust versions for heavy duty use. Their stable performance and build will keep you running day-in and day-out.",
-        "et": "T20 ja T60 saatjad on saadaval paljudes erinevates vormides ja variatsioonides. Väikseim mahub tasku, kuid on olemas ka suuremad ja tugevamad versioonid rasketeks töödeks. Nende stabiilne jõudlus ja konstruktsioon tagavad igapäevase töö."
+        "en": "The T20 and T60 transmitters come in several shapes and sizes, from small pocket transmitters with one button to larger transmitters with up to 15 buttons. The smallest of the transmitters are good for simpler applications but still protected at a level of IP65. The larger transmitters come in various sizes and more rugged constructions. The largest transmitter with 15 buttons is a great choice for an application area with many objects that can be controlled, up to 1000 objects, such as a warehouse with many doors.",
+        "et": "T20 ja T60 saatjad on saadaval mitmesuguse kuju ja suurusega, alates väikestest ühe nupuga taskusaatjatest kuni suuremate saatjateni, millel on kuni 15 nuppu. Väikseimad saatjad sobivad lihtsamate rakenduste jaoks, kuid on siiski kaitstud IP65 tasemel. Suuremad saatjad on saadaval erinevates suurustes ja vastupidavama konstruktsiooniga. Suurim 15 nupuga saatja on suurepärane valik rakendusaladele, kus on palju objekte, mida saab juhtida, kuni 1000 objekti, näiteks paljude ustega ladu."
       },
       "receiversText": {
-        "en": "T20 and T60 receivers come in a variety of sizes, from compact plug-in models to robust outdoor-rated units with up to 8 relays. Several receivers feature programmable relays and multiple power options, making them versatile solutions for any application.",
-        "et": "T20 ja T60 vastuvõtjad on saadaval erinevates suurustes, alates kompaktsetest pistikmudelitest kuni tugeva välitingimustele vastupidava seadmeteni, millel on kuni 8 releed. Mitmel vastuvõtjal on programmeeritavad releefunktsioonid ja mitu toitevalikut, muutes need mitmekülgseteks lahendusteks mis tahes rakenduse jaoks."
+        "en": "The receivers come in a couple of different sizes with relay configurations of two, three, five and eight relays. Our receivers are robust and rugged to withstand outside use in various environments. We can also offer a receiver configured to fit on a DIN rail.",
+        "et": "Vastuvõtjad on saadaval mitmes erinevas suuruses ning kahe, kolme, viie ja kaheksa releega releekonfiguratsioonidega. Meie vastuvõtjad on vastupidavad ja töökindlad, et taluda välistingimustes kasutamist erinevates keskkondades. Pakume ka DIN-rööpale paigaldatavat vastuvõtjat."
       },
       "models": [
         {
@@ -420,12 +420,12 @@
         "et": ""
       },
       "transmittersText": {
-        "en": "Panther's push button transmitters come in many different forms and variations. The smallest one fit inside your pocket but there are also larger more robust versions for heavy duty use. Their stable performance and build will keep you running day-in and day-out. The push button transmitters are at a minimum of IP65 and most are IP67.",
-        "et": "Pantheri nupuvajutusega saatjad on saadaval paljudes erinevates vormides ja variatsioonides. Väikseim mahub tasku, kuid on olemas ka suuremad ja tugevamad versioonid rasketeks töödeks. Nende stabiilne jõudlus ja konstruktsioon tagavad igapäevase töö. Nupuvajutusega saatjate minimaalne kaitseaste on IP65 ja enamik on IP67."
+        "en": "Panther’s push button transmitters come in many different forms and variations. The smallest one fit inside your pocket but there are also larger more robust versions for heavy duty use. Their stable performance and build will keep you running day-in and day-out. The push button transmitters are at a minimum of IP65 and most are IP67.",
+        "et": "Pantheri nupuvajutusega saatjad on saadaval paljudes erinevates vormides ja variatsioonides. Väikseim mahub taskusse, kuid saadaval on ka suuremad ja vastupidavamad versioonid raskeks kasutamiseks. Nende stabiilne jõudlus ja konstruktsioon tagavad teile igapäevase töö. Nupuvajutusega saatjad on vähemalt IP65 ja enamiku puhul IP67 kaitseklassiga."
       },
       "receiversText": {
         "en": "Panther receivers come in a variety of sizes, from tiny CANopen receivers to receivers with up to 19 relays. Several receivers are also rated for PLd making them one of the safest products on the remote control market. They all come in a high-quality and robust housing with IP65 or IP66 depending on size.",
-        "et": "Pantheri vastuvõtjad on saadaval erinevates suurustes, alates väikestest CANopen vastuvõtjatest kuni vastuvõtjateni, millel on kuni 19 releed. Mitmed vastuvõtjad on sertifitseeritud PLd tasemele, muutes need üheks kaugjuhtimise turu turvalisemaks tooteks. Kõik on kvaliteetses ja tugevas korpuses IP65 või IP66 kaitseastmega, sõltuvalt suurusest."
+        "et": "Pantheri vastuvõtjaid on saadaval erinevates suurustes, alates pisikestest CANopen vastuvõtjatest kuni kuni 19 releega vastuvõtjateni. Mitmed vastuvõtjad on ka PLd-reitinguga, mis teeb neist ühe ohutuma toote kaugjuhtimispuldi turul. Kõik need on varustatud kvaliteetse ja vastupidava korpusega, mille kaitseklass on olenevalt suurusest kas IP65 või IP66."
       },
       "models": [
         {
@@ -858,12 +858,12 @@
         "et": ""
       },
       "transmittersText": {
-        "en": "Tiger G2's pushbutton transmitters are the best in the market. Their stable performance and build will keep you running day-in and day-out. The push button transmitters are at a minimum of IP65 and most are IP66. You can get the handheld units with or without screen depending on your requirements. Transmitters with screens can show a variety of data feedback depending on your applications capabilities.",
-        "et": "Tiger G2 nupuvajutusega saatjad on turu parimad. Nende stabiilne jõudlus ja konstruktsioon tagavad teile igapäevase töö. Nupuvajutusega saatjate minimaalne kaitseaste on IP65 ja enamiku puhul IP66. Käeshoitavaid seadmeid saab vastavalt teie vajadustele hankida ekraaniga või ilma. Ekraaniga saatjad saavad kuvada mitmesugust andmetagasisidet, olenevalt teie rakenduse võimalustest."
+        "en": "",
+        "et": ""
       },
       "receiversText": {
-        "en": "Tiger G2 receivers provide standard relay and analogue in/outputs, digital inputs and communication via different fieldbus systems. Available in configurations from 7 to 28 relays, with options for SIL3/PLe safety certifications, CANopen, and J1939 protocols. All receivers feature robust IP65 protection for industrial environments.",
-        "et": "Tiger G2 vastuvõtjad pakuvad standardseid relee- ja analoogsisendeid/väljundeid, digitaalsisendeid ja sidet erinevate väljasiinisüsteemide kaudu. Saadaval konfiguratsioonides 7 kuni 28 releega, valikutega SIL3/PLe ohutussertifikaatideks, CANopen ja J1939 protokollideks. Kõigil vastuvõtjatel on tugev IP65 kaitse tööstuskeskkondade jaoks."
+        "en": "Our system wouldn’t be complete without a wide range of receivers. We can offer smaller seven relay receivers up to very large receivers with 28 relays. In this range you will also find receivers with bus technology: Profibus, Modbus, CANopen and J1939. There is also the option of an analogue receiver which supports step less, analogue control. Furthermore we also have receivers that can plug-in directly to an application that supports a 10-pin Harting connector. All receivers have high quality casings at IP65 or IP66.",
+        "et": "Meie süsteem ei oleks täielik ilma laia vastuvõtjate valikuta. Pakume nii väiksemaid seitsme releega vastuvõtjaid kui ka väga suuri 28 releega vastuvõtjaid. Sellest valikust leiate ka siinitehnoloogiaga vastuvõtjaid: Profibus, Modbus, CANopen ja J1939. Saadaval on ka analoogvastuvõtja variant, mis toetab astmevaba analoogjuhtimist. Lisaks on meil ka vastuvõtjaid, mida saab otse ühendada rakendusega, mis toetab 10-kontaktilist Hartingi pistikut. Kõigil vastuvõtjatel on kvaliteetsed korpused kaitseklassiga IP65 või IP66."
       },
       "models": [
         {
