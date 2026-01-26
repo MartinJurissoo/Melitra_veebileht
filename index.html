@@ -600,31 +600,55 @@
             container.innerHTML = '';
 
             productsData.forEach(product => {
-                const productCard = document.createElement('div');
-                productCard.className = 'product-card';
-                
-                let productName = product.name;
-                if (product.id === 'tiger-g2') productName = translations[currentLanguage].product_tiger;
-                if (product.id === 'panther') productName = translations[currentLanguage].product_panther;
-                if (product.id === 't20-t60') productName = translations[currentLanguage].product_t20t60;
-                
-                productCard.innerHTML = `
-                    <div class="product-image" style="background-image: url('${product.image}');"></div>
-                    <div class="product-info">
-                        <h3>${productName}</h3>
-                        <p class="product-description" data-product-id="${product.id}">${product.description[currentLanguage]}</p>
-                        <button class="product-btn" data-translate="learn_more" data-product-id="${product.id}">${translations[currentLanguage].learn_more}</button>
-                    </div>
-                `;
-                container.appendChild(productCard);
+            const productCard = document.createElement('div');
+            productCard.className = 'product-card';
+        
+            let productName = product.name;
+            if (product.id === 'tiger-g2') productName = translations[currentLanguage].product_tiger;
+            if (product.id === 'panther') productName = translations[currentLanguage].product_panther;
+            if (product.id === 't20-t60') productName = translations[currentLanguage].product_t20t60;
+        
+            // Format the description for preview (remove line breaks, limit length)
+            let descriptionText = product.description[currentLanguage];
+        
+            // Remove all \n characters and extra spaces
+            descriptionText = descriptionText.replace(/\n/g, ' ').replace(/\s+/g, ' ').trim();
+        
+            // Limit to first 2-3 sentences or ~250 characters
+            const sentences = descriptionText.split('. ');
+            let previewText = '';
+        
+            if (sentences.length > 0) {
+            // Take first 2-3 sentences
+            previewText = sentences.slice(0, 3).join('. ');
+            if (!previewText.endsWith('.')) {
+                previewText += '.';
+            }
+            
+            // If still too long, truncate at 250 chars
+            if (previewText.length > 250) {
+                previewText = previewText.substring(0, 247) + '...';
+            }
+            }
+        
+            productCard.innerHTML = `
+            <div class="product-image" style="background-image: url('${product.image}');"></div>
+            <div class="product-info">
+                <h3>${productName}</h3>
+                <p class="product-description">${previewText}</p>
+                <button class="product-btn" data-translate="learn_more" data-product-id="${product.id}">${translations[currentLanguage].learn_more}</button>
+            </div>
+            `;
+            container.appendChild(productCard);
             });
 
+            // Re-attach event listeners to the new buttons
             document.querySelectorAll('.product-btn').forEach(btn => {
-                btn.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const productId = this.getAttribute('data-product-id');
-                    openProductModal(productId);
-                });
+            btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            const productId = this.getAttribute('data-product-id');
+            openProductModal(productId);
+            });
             });
         }
 
