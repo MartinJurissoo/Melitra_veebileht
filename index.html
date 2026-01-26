@@ -430,13 +430,13 @@
             line = line.trim();
             if (line === '') {
             // Empty line = paragraph break
-            formattedHTML += '<br><br>';
+            formattedHTML += '<br>';
             } else if (line.startsWith('•')) {
-            // Bullet point
-            formattedHTML += `<div style="margin-left: 20px; margin-bottom: 8px;">• ${line.substring(1).trim()}</div>`;
+            // Bullet point with better styling
+            formattedHTML += `<div style="margin-left: 0; margin-bottom: 10px; text-align: left;">• ${line.substring(1).trim()}</div>`;
             } else {
-            // Regular paragraph
-            formattedHTML += `<p style="margin-bottom: 12px;">${line}</p>`;
+            // Regular paragraph with text alignment
+            formattedHTML += `<p style="margin-bottom: 15px; text-align: left; line-height: 1.6;">${line}</p>`;
             }
             });
 
