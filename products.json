@@ -64,7 +64,7 @@
             "en": "",
             "et": ""
           },
-          "specImage":"img/specs/models/t60-tx03shl-specs.jpg"
+          "specImage":"img/specs/t60-tx03shl-specs.jpg"
         },
         {
           "name": "T60 transmitter, 6x1-step buttons",
@@ -73,7 +73,7 @@
             "en": "",
             "et": ""
           },
-           "specImage":"img/specs/models/t60-tx06shl-specs.jpg"
+           "specImage":"img/specs/t60-tx06shl-specs.jpg"
         },
         {
           "name": "T60 transmitter, 8x1-step buttons",
@@ -82,7 +82,7 @@
             "en": "",
             "et": ""
           },
-           "specImage":"img/specs/models/T60transmitter8x1-step buttons-specs.jpg"
+           "specImage":"img/specs/T60transmitter8x1-step buttons-specs.jpg"
         },
         {
           "name": "T60 transmitter, 1x1-step buttons",
@@ -91,16 +91,16 @@
             "en": "",
             "et": ""
           },
-          "specImage":"img/specs/models/t60-tx01stl-specs.jpg"
+          "specImage":"img/specs/t60-tx01stl-specs.jpg"
         },
         {
           "name": "T60 transmitter, 2x1-step buttons",
-          "image": "img/products/models/t60-tx02stl.jpg",
+          "image": "img/products/models\t60-tx02stl.jpg",
           "description": {
             "en": "",
             "et": ""
           },
-           "specImage":"img/specs/models/t60-tx02stl-specs.jpg"
+           "specImage":"img/specs/t60-tx02stl-specs.jpg"
         },
         {
           "name": "T60 transmitter, 3x1-step buttons",
@@ -109,7 +109,7 @@
             "en": "",
             "et": ""
           },
-           "specImage":"img/specs/models/t60-tx03stl-specs.jpg"
+           "specImage":"img/specs/t60-tx03stl-specs.jpg"
         },
         {
           "name": "T60 transmitter, 4x1-step buttons",
@@ -118,7 +118,7 @@
             "en": "",
             "et": ""
           },
-           "specImage":"img/specs/models/t60-tx04stl-specs.jpg"
+           "specImage":"img/specs/t60-tx04stl-specs.jpg"
         },
         {
           "name": "T60 transmitter, 6x1-step buttons",
@@ -127,7 +127,7 @@
             "en": "",
             "et": ""
           },
-           "specImage":"img/specs/models/t60-tx06stl-specs.jpg"
+           "specImage":"img/specs/t60-tx06stl-specs.jpg"
         },
         {
           "name": "T60 transmitter, 8x1-step buttons",
@@ -136,7 +136,7 @@
             "en": "",
             "et": ""
           },
-           "specImage":"img/specs/models/t60-tx08stl-specs.jpg"
+           "specImage":"img/specs/t60-tx08stl-specs.jpg"
         },
         {
           "name": "T60 transmitter, 15x1-step buttons",
@@ -145,7 +145,7 @@
             "en": "",
             "et": ""
           },
-           "specImage":"img/specs/models/t60-tx15sml-specs.jpg"
+           "specImage":"img/specs/t60-tx15sml-specs.jpg"
         },
         {
           "name": "T60 transmitter, 15x1-step buttons, display",
@@ -154,7 +154,7 @@
             "en": "",
             "et": ""
           },
-           "specImage":"img/specs/models/t60-tx15dml-specs.jpg"
+           "specImage":"img/specs/t60-tx15dml-specs.jpg"
         },
         {
           "name": "T20 receiver, 2 function relays",
@@ -163,7 +163,7 @@
             "en": "",
             "et": ""
           },
-           "specImage":"img/specs/models/t20-rx2-specs.jpg"
+           "specImage":"img/specs/t20-rx2-specs.jpg"
         },
         {
           "name": "T20 receiver, 3 function relays",
@@ -172,7 +172,7 @@
             "en": "",
             "et": ""
           },
-           "specImage":"img/specs/models/t20-rx3-specs.jpg"
+           "specImage":"img/specs/t20-rx3-specs.jpg"
         },
         {
           "name": "T60 receiver, 3 function relays",
@@ -181,7 +181,7 @@
             "en": "",
             "et": ""
           },
-           "specImage":"img/specs/models/t60-rx03adl-specs.jpg"
+           "specImage":"img/specs/t60-rx03adl-specs.jpg"
         },
         {
           "name": "T60, receiver, 5 function relays (without external antenna)",
@@ -190,7 +190,7 @@
             "en": "",
             "et": ""
           },
-           "specImage":"img/specs/models/t60-5rw-specs.jpg"
+           "specImage":"img/specs/t60-5rw-specs.jpg"
         },
         {
           "name": "T60 receiver, 5 function relays",
@@ -199,7 +199,7 @@
             "en": "",
             "et": ""
           },
-           "specImage":"img/specs/models/t60-5r-specs.jpg"
+           "specImage":"img/specs/t60-5r-specs.jpg"
         },
         {
           "name": "T60 receiver, 8 function relays",
@@ -208,7 +208,7 @@
             "en": "",
             "et": ""
           },
-           "specImage":"img/specs/models/t60-rx08xsl.jpg"
+           "specImage":"img/specs/t60-rx08xsl.jpg"
         }
       ]
     
