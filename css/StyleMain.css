@@ -867,7 +867,48 @@ html {
     opacity: 0.6;
     cursor: not-allowed;
 }
+/* Container for spec sheet images */
+.model-spec-image-container {
+    width: 100%;
+    background: white;
+    border-top: 2px solid #FFD700;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+/* The spec sheet image itself */
+.model-spec-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Make sure it looks good on mobile */
+@media (max-width: 768px) {
+    .model-spec-image-container {
+        padding: 15px;
+    }
+    
+    .model-spec-image {
+        max-width: 100%;
+    }
+}
+
+/* Optional: Add a subtle border to spec images */
+.model-spec-image {
+    border: 1px solid #e0e0e0;
+}
+
+/* Optional: Hover effect to enlarge spec images */
+.model-spec-image:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
 
 
 

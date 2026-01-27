@@ -21,25 +21,15 @@
         "et": "Vastuvõtjad on saadaval mitmes erinevas suuruses ning kahe, kolme, viie ja kaheksa releega releekonfiguratsioonidega. Meie vastuvõtjad on vastupidavad ja töökindlad, et taluda välistingimustes kasutamist erinevates keskkondades. Pakume ka DIN-rööpale paigaldatavat vastuvõtjat."
       },
       "models": [
-        {
+          {
           "name": "T20 transmitter, 1x1-step buttons",
           "image": "img/products/models/t20-tx1.jpg",
           "description": {
             "en": "",
             "et": ""
           },
-          "specifications": {
-            "article": "T20TX-01NKL",
-            "frequency": "433 MHz",
-            "range": "50m",
-            "battery": "CR2032 X 1",
-            "protection": "IP65",
-            "certifications": "IC, FCC, CE",
-            "weight": "50 gr",
-            "dimensions": "39 x 71 x 13 mm",
-            "temperature": "-20 to +55 C"
-          }
-        },
+          "specImage": "img/specs/t20-tx1-specs.jpg"
+          },
         {
           "name": "T20 transmitter, 2x1-step buttons",
           "image": "img/products/models/t20-tx2.jpg",
@@ -47,17 +37,7 @@
             "en": "",
             "et": ""
           },
-          "specifications": {
-            "article": "T20TX-02NKL",
-            "frequency": "433 MHz",
-            "range": "50m",
-            "battery": "CR2032 X 1",
-            "protection": "IP65",
-            "certifications": "CE, FCC, IC",
-            "weight": "50 gr",
-            "dimensions": "39 x 71 x 13 mm",
-            "temperature": "-20 to +55 C"
-          }
+          "specImage": "img/specs/t20-tx2-specs.jpg"
         },
         {
           "name": "T20 transmitter, 3x1-step buttons",
@@ -66,17 +46,7 @@
             "en": "",
             "et": ""
           },
-          "specifications": {
-            "article": "T20TX-03NKL",
-            "frequency": "433 MHz",
-            "range": "100m",
-            "battery": "CR2032 X 1",
-            "protection": "IP65",
-            "certifications": "FCC, CE, IC",
-            "weight": "50 gr",
-            "dimensions": "39 x 71 x 13 mm",
-            "temperature": "-20 to +55 C"
-          }
+           "specImage": "img/specs/t20-tx3-specs.jpg"
         },
         {
           "name": "T60 transmitter, 1x1-step buttons",
@@ -85,17 +55,7 @@
             "en": "",
             "et": ""
           },
-          "specifications": {
-            "article": "T60-T8-53 ",
-            "frequency": "433 MHz",
-            "range": "100m",
-            "battery": "1.5V AAA X 2",
-            "protection": "IP67",
-            "certifications": "CE, FCC, IC",
-            "weight": "80 gr",
-            "dimensions": "52 x 83 x 17 mm",
-            "temperature": "-20 to +55 C "
-          }
+           "specImage": "img/specs/t60-tx01shl-specs.jpg"
         },
         {
           "name": "T60 transmitter, 3x1-step buttons",
@@ -104,17 +64,7 @@
             "en": "",
             "et": ""
           },
-          "specifications": {
-            "article": "T60-T8-52",
-            "frequency": "433 MHz",
-            "range": "100m",
-            "battery": "1.5V AAA X 2",
-            "protection": "IP67",
-            "certifications": "CE, FCC, IC",
-            "weight": "80 g",
-            "dimensions": "52 x 83 x 17 mm",
-            "temperature": "-20 to +55 C"
-          }
+          "specImage":"img/specs/models/t60-tx03shl-specs.jpg"
         },
         {
           "name": "T60 transmitter, 6x1-step buttons",
@@ -123,17 +73,7 @@
             "en": "",
             "et": ""
           },
-          "specifications": {
-            "article": "T60-T8-51",
-            "frequency": "433 MHz",
-            "range": "100m",
-            "battery": "1.5V AAA X 2",
-            "protection": "IP67",
-            "certifications": "CE, FCC, IC",
-            "weight": "80 gr",
-            "dimensions": "52 x 83 x 17 mm",
-            "temperature": "-20 to +55 C"
-          }
+           "specImage":"img/specs/models/t60-tx06shl-specs.jpg"
         },
         {
           "name": "T60 transmitter, 8x1-step buttons",
@@ -142,17 +82,7 @@
             "en": "",
             "et": ""
           },
-          "specifications": {
-            "article": "T60-T8-50",
-            "frequency": "433 MHz",
-            "range": "100m",
-            "battery": "1.5V AAA X 2",
-            "protection": "IP67",
-            "certifications": "CE, FCC, IC",
-            "weight": "80 gr",
-            "dimensions": "52 x 83 x 17 mm",
-            "temperature": "-20 to +55 C"
-          }
+           "specImage":"img/specs/models/T60transmitter8x1-step buttons-specs.jpg"
         },
         {
           "name": "T60 transmitter, 1x1-step buttons",
@@ -161,17 +91,7 @@
             "en": "",
             "et": ""
           },
-          "specifications": {
-            "article": "T60TX-01STL",
-            "frequency": "433 MHz",
-            "range": "150m",
-            "battery": "1.5V AAA X 2",
-            "protection": "IP67",
-            "certifications": "CE, FCC, IC",
-            "weight": "80 gr",
-            "dimensions": "52 x 83 x 17 mm",
-            "temperature": "-20 to +55 C"
-          }
+          "specImage":"img/specs/models/t60-tx01stl-specs.jpg"
         },
         {
           "name": "T60 transmitter, 2x1-step buttons",
@@ -180,17 +100,7 @@
             "en": "",
             "et": ""
           },
-          "specifications": {
-            "article": "T60TX-02STL",
-            "frequency": "433 MHz",
-            "range": "150m",
-            "battery": "1.5V AAA X 3",
-            "protection": "IP65",
-            "certifications": "CE, FCC, IC",
-            "weight": "120 gr",
-            "dimensions": "66 x 113 x 35 mm",
-            "temperature": "-20 to +55 C"
-          }
+           "specImage":"img/specs/models/t60-tx02stl-specs.jpg"
         },
         {
           "name": "T60 transmitter, 3x1-step buttons",
@@ -199,17 +109,7 @@
             "en": "",
             "et": ""
           },
-          "specifications": {
-            "article": "T60TX-03STL",
-            "frequency": "433 MHz",
-            "range": "150m",
-            "battery": "1.5V AAA X 3",
-            "protection": "IP65",
-            "certifications": "CE, FCC, IC",
-            "weight": "120 gr",
-            "dimensions": "66 x 113 x 35 mm",
-            "temperature": "-20 to +55 C"
-          }
+           "specImage":"img/specs/models/t60-tx03stl-specs.jpg"
         },
         {
           "name": "T60 transmitter, 4x1-step buttons",
@@ -218,17 +118,7 @@
             "en": "",
             "et": ""
           },
-          "specifications": {
-            "article": "T60TX-04STL",
-            "frequency": "433 MHz",
-            "range": "150m",
-            "battery": "1.5V AAA X 3",
-            "protection": "IP65",
-            "certifications": "CE, FCC, IC",
-            "weight": "120 gr",
-            "dimensions": "66 x 113 x 35 mm ",
-            "temperature": "-20 to +55 C"
-          }
+           "specImage":"img/specs/models/t60-tx04stl-specs.jpg"
         },
         {
           "name": "T60 transmitter, 6x1-step buttons",
@@ -237,17 +127,7 @@
             "en": "",
             "et": ""
           },
-          "specifications": {
-            "article": "T60TX-06STL",
-            "frequency": "433 MHz",
-            "range": "150m",
-            "battery": "1.5V AAA X 3",
-            "protection": "IP65",
-            "certifications": "CE, FCC, IC",
-            "weight": "120 gr",
-            "dimensions": "66 x 113 x 35 mm",
-            "temperature": "-20 to +55 C"
-          }
+           "specImage":"img/specs/models/t60-tx06stl-specs.jpg"
         },
         {
           "name": "T60 transmitter, 8x1-step buttons",
@@ -256,17 +136,7 @@
             "en": "",
             "et": ""
           },
-          "specifications": {
-            "article": "T60TX-08STL",
-            "frequency": "433 MHz",
-            "range": "150m",
-            "battery": "1.5V AAA X 3",
-            "protection": "IP65",
-            "certifications": "CE, FCC, IC",
-            "weight": "120 gr",
-            "dimensions": "66 x 113 x 35 mm",
-            "temperature": "-20 to +55 C"
-          }
+           "specImage":"img/specs/models/t60-tx08stl-specs.jpg"
         },
         {
           "name": "T60 transmitter, 15x1-step buttons",
@@ -275,17 +145,7 @@
             "en": "",
             "et": ""
           },
-          "specifications": {
-            "article": "T60TX-15SML",
-            "frequency": "433 MHz",
-            "range": "200m",
-            "battery": "9V (6LF22) X 1",
-            "protection": "IP65",
-            "certifications": "CE, FCC, IC",
-            "weight": "155 gr",
-            "dimensions": "62 x 143 x 28 mm",
-            "temperature": "-20 to +55 C"
-          }
+           "specImage":"img/specs/models/t60-tx15sml-specs.jpg"
         },
         {
           "name": "T60 transmitter, 15x1-step buttons, display",
@@ -294,17 +154,7 @@
             "en": "",
             "et": ""
           },
-          "specifications": {
-            "article": "T60TX-15DML",
-            "frequency": "433 MHz",
-            "range": "200m",
-            "battery": "9V (6LF22) X 1",
-            "protection": "IP65",
-            "certifications": "CE, FCC, IC",
-            "weight": "155 gr",
-            "dimensions": "62 x 143 x 28 mm",
-            "temperature": "-20 to +55 C"
-          }
+           "specImage":"img/specs/models/t60-tx15dml-specs.jpg"
         },
         {
           "name": "T20 receiver, 2 function relays",
@@ -313,16 +163,7 @@
             "en": "",
             "et": ""
           },
-          "specifications": {
-            "article": "T20RX-02AKL",
-            "frequency": "433 MHz",
-            "relays": "2 relays",
-            "power": "12-24V AC/DC",
-            "protection": "IP65",
-            "certifications": "CE",
-            "dimensions": "54 x 96 x 37 mm",
-            "temperature": "-20 to +55 C"
-          }
+           "specImage":"img/specs/models/t20-rx2-specs.jpg"
         },
         {
           "name": "T20 receiver, 3 function relays",
@@ -331,16 +172,7 @@
             "en": "",
             "et": ""
           },
-          "specifications": {
-            "article": "T20RX-03ASL",
-            "frequency": "433 MHz",
-            "relays": "3 relays",
-            "power": "12-24V AC/DC",
-            "protection": "IP65",
-            "certifications": "CE",
-            "dimensions": "133 x 120 x 45 mm",
-            "temperature": "-20 to +55 C"
-          }
+           "specImage":"img/specs/models/t20-rx3-specs.jpg"
         },
         {
           "name": "T60 receiver, 3 function relays",
@@ -349,16 +181,16 @@
             "en": "",
             "et": ""
           },
-          "specifications": {
-            "article": "T20/T60RX-03ADL",
-            "frequency": "433 MHz",
-            "relays": "3 relays",
-            "power": "12-24V AC/DC",
-            "protection": "IP20",
-            "certifications": "CE",
-            "dimensions": "62 x 82 x 30 mm",
-            "temperature": "-20 to +55 C"
-          }
+           "specImage":"img/specs/models/t60-rx03adl-specs.jpg"
+        },
+        {
+          "name": "T60, receiver, 5 function relays (without external antenna)",
+          "image": "img/products/models/t60-rx04xsl.jpg",
+          "description": {
+            "en": "",
+            "et": ""
+          },
+           "specImage":"img/specs/models/t60-5rw-specs.jpg"
         },
         {
           "name": "T60 receiver, 5 function relays",
@@ -367,16 +199,7 @@
             "en": "",
             "et": ""
           },
-          "specifications": {
-            "article": "T60RX-05ASL",
-            "frequency": "433 MHz",
-            "relays": "5 relays",
-            "power": "12-24V DC",
-            "protection": "IP66",
-            "certifications": "CE, FCC, IC",
-            "dimensions": "120 x 116 x 50 mm",
-            "temperature": "-20 to +55 C"
-          }
+           "specImage":"img/specs/models/t60-5r-specs.jpg"
         },
         {
           "name": "T60 receiver, 8 function relays",
@@ -385,16 +208,7 @@
             "en": "",
             "et": ""
           },
-          "specifications": {
-            "article": "T60RX-08ASL",
-            "frequency": "433 MHz",
-            "relays": "8 relays",
-            "power": "12-24V AC/DC",
-            "protection": "IP65",
-            "certifications": "CE",
-            "dimensions": "175 x 160 x 52 mm",
-            "temperature": "-20 to +55 C"
-          }
+           "specImage":"img/specs/models/t60-rx08xsl.jpg"
         }
       ]
     
@@ -421,282 +235,320 @@
       },
       "models": [
         {
-          "name": "Panther Mini Transmitter, 3x1-step buttons (PN-T7-16)",
+          "name": "Panther, transmitter, 3x1-step buttons",
           "image": "img/products/models/panther-t7-16.jpg",
           "description": {
-            "en": "Ultra-compact mini pocket transmitter with 3 single-step buttons",
-            "et": "Ültra-kompaktne mini taskusaatja 3 üheastmelise nupuga"
+            "en": "",
+            "et": ""
           },
           "specifications": {
-            "article": "PN-TX-MN3 / PN-T7-16",
-            "frequency": "2.4 GHz worldwide",
-            "range": "200m open field",
-            "battery": "Li-ion rechargeable",
-            "protection": "IP65",
-            "certifications": "CE, FCC",
-            "weight": "180 gr",
-            "dimensions": "65 x 115 x 35 mm",
-            "temperature": "-20 to +60 C"
+            "article": "PN-T7-16",
+            "frequency": "2.4 GHz",
+            "range": "200m",
+            "battery": "LR03 1.5V AAA X 2",
+            "protection": "IP67",
+            "certifications": "CE, FCC, IC",
+            "weight": "70 gr",
+            "dimensions": "52 x 83 x 17 mm ",
+            "temperature": "-20 to +55 C"
           }
         },
         {
-          "name": "Panther Mini Transmitter, 6x1-step buttons (PN-T7-15)",
+          "name": "Panther, transmitter, 6x1-step buttons",
           "image": "img/products/models/panther-t7-15.jpg",
           "description": {
-            "en": "Compact mini transmitter with 6 programmable single-step buttons",
-            "et": "Kompaktne mini saatja 6 programmeeritava üheastmelise nupuga"
+            "en": "",
+            "et": ""
           },
           "specifications": {
-            "article": "PN-TX-MN6 / PN-T7-15",
-            "frequency": "2.4 GHz worldwide",
-            "range": "200m open field",
-            "battery": "Li-ion rechargeable",
-            "protection": "IP65",
-            "certifications": "CE, FCC",
-            "weight": "195 gr",
-            "dimensions": "65 x 130 x 35 mm",
-            "temperature": "-20 to +60 C"
+            "article": "PN-T7-15",
+            "frequency": "2.4 GHz",
+            "range": "200m",
+            "battery": "LR03 1.5V AAA X 2",
+            "protection": "IP67",
+            "certifications": "CE, FCC, IC",
+            "weight": "70 gr",
+            "dimensions": "52 x 83 x 17 mm",
+            "temperature": "-20 to +55 C"
           }
         },
         {
-          "name": "Panther Mini Transmitter, 8x1-step buttons (PN-T7-14)",
+          "name": "Panther, transmitter, 8x1-step buttons",
           "image": "img/products/models/panther-t7-14.jpg",
           "description": {
-            "en": "Mini transmitter with 8 single-step buttons for compact applications",
-            "et": "Mini saatja 8 üheastmelise nupuga kompaktsete rakenduste jaoks"
+            "en": "",
+            "et": ""
           },
           "specifications": {
-            "article": "PN-TX-MN8 / PN-T7-14",
-            "frequency": "2.4 GHz worldwide",
-            "range": "200m open field",
-            "battery": "Li-ion rechargeable",
-            "protection": "IP65",
-            "certifications": "CE, FCC",
-            "weight": "210 gr",
-            "dimensions": "65 x 145 x 35 mm",
-            "temperature": "-20 to +60 C"
+            "article": "PN-T7-14",
+            "frequency": "2.4 GHz",
+            "range": "200m",
+            "battery": "LR03 1.5V AAA X 2",
+            "protection": "IP67",
+            "certifications": "CE, FCC, IC",
+            "weight": "70 gr",
+            "dimensions": "52 x 83 x 17 mm",
+            "temperature": "-20 to +55 C"
           }
         },
         {
-          "name": "Panther Transmitter, 3x1-step buttons, High Power (PN-T21-3)",
+          "name": "Panther, transmitter, 3x1-step buttons",
           "image": "img/products/models/panther-t21-3.jpg",
           "description": {
-            "en": "High power midi transmitter with 3 buttons and extended range",
-            "et": "Kõrge võimsusega midi saatja 3 nupuga ja laiendatud ulatusega"
+            "en": "",
+            "et": ""
           },
           "specifications": {
-            "article": "PN-TX-MD3 / PN-T21-3",
-            "frequency": "2.4 GHz worldwide",
-            "range": "400m open field",
-            "battery": "Li-ion rechargeable",
-            "protection": "IP65",
-            "certifications": "CE, FCC",
-            "weight": "240 gr",
-            "dimensions": "76 x 140 x 40 mm",
-            "temperature": "-20 to +60 C"
+            "article": "PN-T21-3",
+            "frequency": "2.4 GHz",
+            "range": "400m",
+            "battery": "LR03 1.5V AAA X 3",
+            "protection": "IP67",
+            "certifications": "CE, FCC, IC",
+            "weight": "140 gr",
+            "dimensions": "65 x 112 x 35 mm",
+            "temperature": "-20 to +55 C"
           }
         },
         {
-          "name": "Panther Transmitter, 6x1-step buttons, High Power (PN-T21-6)",
+          "name": "Panther, transmitter, 4x1-step buttons",
+          "image": "img/products/models/panther-t21-4.jpg",
+          "description": {
+            "en": "",
+            "et": ""
+          },
+          "specifications": {
+            "article": "PN-T21-4",
+            "frequency": "2.4 GHz",
+            "range": "400m",
+            "battery": "LR03 1.5V AAA X 3",
+            "protection": "IP67",
+            "certifications": "CE, FCC, IC",
+            "weight": "140 gr",
+            "dimensions": "65 x 112 x 35 mm",
+            "temperature": "-20 to +55 C"
+          }
+        },
+        {
+          "name": "Panther, transmitter, 6x1-step buttons",
           "image": "img/products/models/panther-t21-6.jpg",
           "description": {
-            "en": "High power transmitter with 6 buttons for longer range applications",
-            "et": "Kõrge võimsusega saatja 6 nupuga pikema ulatusega rakendusteks"
+            "en": "",
+            "et": ""
           },
           "specifications": {
-            "article": "PN-TX-MD6 / PN-T21-6",
-            "frequency": "2.4 GHz worldwide",
-            "range": "400m open field",
-            "battery": "Li-ion rechargeable",
-            "protection": "IP65",
-            "certifications": "CE, FCC",
-            "weight": "255 gr",
-            "dimensions": "76 x 155 x 40 mm",
-            "temperature": "-20 to +60 C"
+            "article": "PN-T21-6",
+            "frequency": "2.4 GHz",
+            "range": "400m",
+            "battery": "LR03 1.5V AAA X 3",
+            "protection": "IP67",
+            "certifications": "CE, FCC, IC",
+            "weight": "140 gr",
+            "dimensions": "65 x 112 x 35 mm",
+            "temperature": "-20 to +55 C"
           }
         },
         {
-          "name": "Panther Transmitter, 8x1-step buttons, High Power (PN-T21-8)",
+          "name": "Panther, transmitter, 8x1-step buttons",
           "image": "img/products/models/panther-t21-8.jpg",
           "description": {
-            "en": "High power 8-button transmitter for industrial long-range control",
-            "et": "Kõrge võimsusega 8-nupuline saatja tööstuslike pikamaa juhtimiseks"
+            "en": "",
+            "et": ""
           },
           "specifications": {
-            "article": "PN-TX-MD8 / PN-T21-8",
-            "frequency": "2.4 GHz worldwide",
-            "range": "400m open field",
-            "battery": "Li-ion rechargeable",
-            "protection": "IP65",
-            "certifications": "CE, FCC",
-            "weight": "270 gr",
-            "dimensions": "76 x 170 x 40 mm",
-            "temperature": "-20 to +60 C"
+            "article": "PN-T21-8",
+            "frequency": "2.4 GHz",
+            "range": "400m",
+            "battery": "LR03 1.5V AAA X 3",
+            "protection": "IP67",
+            "certifications": "CE, FCC, IC",
+            "weight": "140 gr",
+            "dimensions": "65 x 112 x 35 mm",
+            "temperature": "-20 to +55 C"
           }
         },
         {
-          "name": "Panther Transmitter, 10x1-step buttons, High Power (PN-T21-10)",
+          "name": "Panther, transmitter, 10x1-step buttons",
           "image": "img/products/models/panther-t21-10.jpg",
           "description": {
-            "en": "Maximum capacity high power transmitter with 10 buttons",
-            "et": "Maksimaalse võimsusega kõrge võimsusega saatja 10 nupuga"
+            "en": "",
+            "et": ""
           },
           "specifications": {
-            "article": "PN-TX-MD10 / PN-T21-10",
-            "frequency": "2.4 GHz worldwide",
-            "range": "400m open field",
-            "battery": "Li-ion rechargeable",
-            "protection": "IP65",
-            "certifications": "CE, FCC",
-            "weight": "285 gr",
-            "dimensions": "76 x 185 x 40 mm",
-            "temperature": "-20 to +60 C"
+            "article": "PN-T21-10",
+            "frequency": "2.4 GHz",
+            "range": "400m",
+            "battery": "LR03 1.5V AAA X 3",
+            "protection": "IP67",
+            "certifications": "CE, FCC, IC",
+            "weight": "140 gr",
+            "dimensions": "65 x 112 x 35 mm",
+            "temperature": "-20 to +55 C"
           }
         },
         {
-          "name": "Panther PLd Transmitter, 8x2-step buttons (PN-T19-2)",
+          "name": "Panther, transmitter, 4x1-step buttons winch",
+          "image": "img/products/models/panther-t21-4b.jpg",
+          "description": {
+            "en": "",
+            "et": ""
+          },
+          "specifications": {
+            "article": "PNS-T2165",
+            "frequency": "2.4 GHz",
+            "range": "400m",
+            "battery": "LR03 1.5V AAA X 3",
+            "protection": "IP67",
+            "certifications": "CE",
+            "weight": "140 gr",
+            "dimensions": "65 x 112 x 35 mm",
+            "temperature": "-20 to +55 C"
+          }
+        },
+        {
+          "name": "Panther, transmitter, 8x2-step buttons",
           "image": "img/products/models/panther-t19-2.jpg",
           "description": {
-            "en": "Professional PLd Cat3 certified transmitter with 8 two-step buttons",
-            "et": "Professionaalne PLd Cat3 sertifitseeritud saatja 8 kaheastmelise nupuga"
+            "en": "",
+            "et": ""
           },
           "specifications": {
             "article": "PN-T19-2",
-            "frequency": "2.4 GHz worldwide",
-            "range": "500m open field",
-            "battery": "Li-ion rechargeable",
+            "frequency": "2.4 GHz",
+            "range": "500m",
+            "battery": "LR03 1.5V AAA X 3",
             "protection": "IP65",
-            "certifications": "CE, PLd Cat3, FCC",
-            "weight": "285 gr",
-            "dimensions": "82 x 165 x 42 mm",
-            "temperature": "-20 to +60 C"
+            "certifications": "CE, FCC, IC",
+            "weight": "331 gr",
+            "dimensions": "85 x 193 x 43 mm",
+            "temperature": "-20 to +55 C"
           }
         },
         {
-          "name": "Panther PLd Transmitter, 12x2-step buttons (PN-T29-12)",
+          "name": "Panther, transmitter, 12x2-step buttons",
           "image": "img/products/models/panther-t29-12.jpg",
           "description": {
-            "en": "Advanced PLd certified transmitter with 12 two-step buttons and layer selection",
-            "et": "Täiustatud PLd sertifitseeritud saatja 12 kaheastmelise nupuga ja kihivalikuga"
+            "en": "",
+            "et": ""
           },
           "specifications": {
             "article": "PN-T29-12",
-            "frequency": "2.4 GHz worldwide",
-            "range": "500m open field",
+            "frequency": "2.4",
+            "range": "500md",
             "battery": "Li-ion rechargeable",
             "protection": "IP65",
-            "certifications": "CE, PLd Cat3, FCC",
-            "weight": "320 gr",
-            "dimensions": "82 x 195 x 42 mm",
-            "temperature": "-20 to +60 C"
+            "certifications": "CE, FCC, IC",
+            "weight": "400 gr",
+            "dimensions": "210 x 76 x 37 mm",
+            "temperature": "-20 to +55 C"
           }
         },
         {
-          "name": "Panther Receiver, 5 function relays (PN-R8-1)",
+          "name": "Panther, receiver, 1 function relays",
+          "image": "img/products/models/panther-r8-20.jpg",
+          "description": {
+            "en": "",
+            "et": ""
+          },
+          "specifications": {
+            "article": "PN-R8-20",
+            "frequency": "2.4 GHz",
+            "relays": "1 relays",
+            "power": "12-24V DC",
+            "protection": "IP66",
+            "certifications": "CE",
+            "dimensions": "121 x 117 x 51 mm",
+            "temperature": "-20 to +55 C"
+          }
+        },
+        {
+          "name": "Panther, receiver, 4 function relays",
+          "image": "img/products/models/panther-r15-1.jpg",
+          "description": {
+            "en": "",
+            "et": ""
+          },
+          "specifications": {
+            "article": "PN-R8-1",
+            "frequency": "2.4 GHz",
+            "relays": "5 relays",
+            "power": "12-24V DC",
+            "protection": "IP66",
+            "certifications": "CE, EMARK",
+            "dimensions": "120 x 116 x 50 mm",
+            "temperature": "-20 to +55 C"
+          }
+        },
+        {
+          "name": "Panther, receiver, 4 function relays",
           "image": "img/products/models/panther-r8-1.jpg",
           "description": {
-            "en": "Compact base board receiver with 5 programmable relays, internal antenna",
-            "et": "Kompaktne alusplaadi vastuvõtja 5 programmeeritava releega, sisemine antenn"
+            "en": "",
+            "et": ""
           },
           "specifications": {
-            "article": "PN-RX-MN5 / PN-R8-1",
-            "frequency": "2.4 GHz worldwide",
-            "relays": "5 programmable relays",
+            "article": "PN-R8-1",
+            "frequency": "2.4 GHz",
+            "relays": "5 relays",
             "power": "12-24V DC",
             "protection": "IP66",
-            "certifications": "CE, FCC",
-            "dimensions": "120 x 117 x 51 mm",
+            "certifications": "CE, EMARK",
+            "dimensions": "120 x 116 x 50 mm",
             "temperature": "-20 to +55 C"
           }
         },
         {
-          "name": "Panther Receiver, 5 function relays, External Antenna (PN-R8-10)",
+          "name": "Panther, receiver, 5 function relays",
+          "image": "img/products/models/panther-r8-1.jpg",
+          "description": {
+            "en": "",
+            "et": ""
+          },
+          "specifications": {
+            "article": "PN-R8-1",
+            "frequency": "2.4 GHz",
+            "relays": "5 relays",
+            "power": "12-24V DC",
+            "protection": "IP66",
+            "certifications": "CE, EMARK",
+            "dimensions": "120 x 116 x 50 mm",
+            "temperature": "-20 to +55 C"
+          }
+        },
+        {
+          "name": "Panther, receiver, 5 function relays, External Antenna",
           "image": "img/products/models/panther-r8-10.jpg",
           "description": {
-            "en": "Base board receiver with 5 relays and external antenna for better range",
-            "et": "Alusplaadi vastuvõtja 5 releega ja välise antenniga parema ulatuse jaoks"
+            "en": "",
+            "et": ""
           },
           "specifications": {
-            "article": "PN-RX-MN5E / PN-R8-10",
-            "frequency": "2.4 GHz worldwide",
-            "relays": "5 programmable relays",
+            "article": "PN-R8-10",
+            "frequency": "2.4 GHz",
+            "relays": "5 relays",
             "power": "12-24V DC",
             "protection": "IP66",
-            "certifications": "CE, FCC",
+            "certifications": "CE, EMARK",
             "dimensions": "120 x 117 x 51 mm",
             "temperature": "-20 to +55 C"
           }
         },
         {
-          "name": "Panther Receiver, 11 function relays (PN-R8-6)",
-          "image": "img/products/models/panther-r8-6.jpg",
-          "description": {
-            "en": "Extended receiver with 11 relays (base board + expansion), internal antenna",
-            "et": "Laiendatud vastuvõtja 11 releega (alusplaat + laiendus), sisemine antenn"
-          },
-          "specifications": {
-            "article": "PN-RX-MD11 / PN-R8-6",
-            "frequency": "2.4 GHz worldwide",
-            "relays": "11 programmable relays",
-            "power": "12-24V DC",
-            "protection": "IP66",
-            "certifications": "CE, FCC",
-            "dimensions": "140 x 130 x 60 mm",
-            "temperature": "-20 to +55 C"
-          }
-        },
-        {
-          "name": "Panther Receiver, 11 function relays, External Antenna (PN-R8-11)",
-          "image": "img/products/models/panther-r8-11.jpg",
-          "description": {
-            "en": "Extended receiver with 11 relays and external antenna for optimal range",
-            "et": "Laiendatud vastuvõtja 11 releega ja välise antenniga optimaalse ulatuse jaoks"
-          },
-          "specifications": {
-            "article": "PN-RX-MD11E / PN-R8-11",
-            "frequency": "2.4 GHz worldwide",
-            "relays": "11 programmable relays",
-            "power": "12-24V DC",
-            "protection": "IP66",
-            "certifications": "CE, FCC",
-            "dimensions": "140 x 130 x 60 mm",
-            "temperature": "-20 to +55 C"
-          }
-        },
-        {
-          "name": "Panther Receiver, 9 function relays (PN-R8-3)",
+          "name": "Panther, receiver, 9 function relays",
           "image": "img/products/models/panther-r8-3.jpg",
           "description": {
-            "en": "Modular receiver with 9 programmable relays for standard applications",
-            "et": "Moodulivastuvõtja 9 programmeeritava releega standardrakendusteks"
+            "en": "",
+            "et": ""
           },
           "specifications": {
-            "article": "PN-RX-MX9 / PN-R8-3",
-            "frequency": "2.4 GHz worldwide",
-            "relays": "9 programmable relays",
-            "power": "12-24V AC/DC",
-            "protection": "IP65",
-            "certifications": "CE, FCC",
-            "dimensions": "120 x 95 x 55 mm",
-            "temperature": "-20 to +60 C"
-          }
-        },
-        {
-          "name": "Panther Receiver, 19 function relays (PN-R8-7)",
-          "image": "img/products/models/panther-r8-7.jpg",
-          "description": {
-            "en": "Maximum capacity modular receiver with 19 programmable relays",
-            "et": "Maksimaalse võimsusega moodulivastuvõtja 19 programmeeritava releega"
-          },
-          "specifications": {
-            "article": "PN-RX-MXX19 / PN-R8-7",
-            "frequency": "2.4 GHz worldwide",
-            "relays": "19 programmable relays",
-            "power": "12-24V AC/DC",
-            "protection": "IP65",
-            "certifications": "CE, FCC",
-            "dimensions": "170 x 125 x 70 mm",
-            "temperature": "-20 to +60 C"
+            "article": "PN-R8-3",
+            "frequency": "2.4 GHz",
+            "relays": "9 relays",
+            "power": "230V AC & 12-24V AC/DC & 48V AC & 115V AC & 24V AC",
+            "protection": "IP66",
+            "certifications": "CE",
+            "dimensions": "176 x 126 x 75 mm",
+            "temperature": "-20 to +55 C"
           }
         },
         {
@@ -754,20 +606,74 @@
           }
         },
         {
-          "name": "Panther PLd Receiver, 10 relays, 12-24V AC/DC (PN-R15-14)",
-          "image": "img/products/models/panther-r15-14.jpg",
+          "name": "Panther Receiver, 11 function relays (PN-R8-6)",
+          "image": "img/products/models/panther-r8-6.jpg",
           "description": {
-            "en": "PLd Cat3 certified receiver with 10 relays, flexible AC/DC power input",
-            "et": "PLd Cat3 sertifitseeritud vastuvõtja 10 releega, paindlik AC/DC toite sisend"
+            "en": "Extended receiver with 11 relays (base board + expansion), internal antenna",
+            "et": "Laiendatud vastuvõtja 11 releega (alusplaat + laiendus), sisemine antenn"
           },
           "specifications": {
-            "article": "PN-R15-14",
+            "article": "PN-RX-MD11 / PN-R8-6",
             "frequency": "2.4 GHz worldwide",
-            "relays": "10 programmable relays",
-            "power": "12-24V AC/DC",
+            "relays": "11 programmable relays",
+            "power": "12-24V DC",
             "protection": "IP66",
-            "certifications": "CE, PLd Cat3, FCC",
-            "dimensions": "165 x 135 x 75 mm",
+            "certifications": "CE, FCC",
+            "dimensions": "140 x 130 x 60 mm",
+            "temperature": "-20 to +55 C"
+          }
+        },
+        {
+          "name": "Panther Receiver, 11 function relays, External Antenna (PN-R8-11)",
+          "image": "img/products/models/panther-r8-11.jpg",
+          "description": {
+            "en": "Extended receiver with 11 relays and external antenna for optimal range",
+            "et": "Laiendatud vastuvõtja 11 releega ja välise antenniga optimaalse ulatuse jaoks"
+          },
+          "specifications": {
+            "article": "PN-RX-MD11E / PN-R8-11",
+            "frequency": "2.4 GHz worldwide",
+            "relays": "11 programmable relays",
+            "power": "12-24V DC",
+            "protection": "IP66",
+            "certifications": "CE, FCC",
+            "dimensions": "140 x 130 x 60 mm",
+            "temperature": "-20 to +55 C"
+          }
+        },
+        {
+          "name": "Panther, receiver, 15 function relays",
+          "image": "img/products/models/panther-r8-1.jpg",
+          "description": {
+            "en": "",
+            "et": ""
+          },
+          "specifications": {
+            "article": "PN-R8-1",
+            "frequency": "2.4 GHz",
+            "relays": "5 relays",
+            "power": "12-24V DC",
+            "protection": "IP66",
+            "certifications": "CE, EMARK",
+            "dimensions": "120 x 116 x 50 mm",
+            "temperature": "-20 to +55 C"
+          }
+        },
+        {
+          "name": "Panther Receiver, 19 function relays (PN-R8-7)",
+          "image": "img/products/models/panther-r8-7.jpg",
+          "description": {
+            "en": "Maximum capacity modular receiver with 19 programmable relays",
+            "et": "Maksimaalse võimsusega moodulivastuvõtja 19 programmeeritava releega"
+          },
+          "specifications": {
+            "article": "PN-RX-MXX19 / PN-R8-7",
+            "frequency": "2.4 GHz worldwide",
+            "relays": "19 programmable relays",
+            "power": "12-24V AC/DC",
+            "protection": "IP65",
+            "certifications": "CE, FCC",
+            "dimensions": "170 x 125 x 70 mm",
             "temperature": "-20 to +60 C"
           }
         },
