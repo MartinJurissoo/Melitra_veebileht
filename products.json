@@ -1211,7 +1211,85 @@
         "temperature": "-20 to +55 C",
         "certifications": "CE, G Lloyd, FCC, IC"
       }
+    },
+    {
+      "id": "teq-waist",
+      "name": "TEQ Waist Transmitters",
+      "image": "img/products/teq-waist.jpg",
+      "description": {
+        "en": "Tele Radio TEQ waist transmitters are available for the most complex control solutions. These transmitters are worn utilizing a neck, shoulder, or hip belt. Unlike our handheld transmitters, our industrial waist transmitters offer the possibility for a two-handed operation. The large, sturdy handles vouch for a relaxed working position.\n\nWe supply our TEQ waist transmitters in three different sizes. Either available as the standard edition or built exclusively for your application including push buttons, switches, joysticks, feedback information, etc. The choice is yours: either go for a compact and therefore handy transmitter or one of the bigger versions that include plenty of space for any additional controls and a display up to 4.3 inches for a feedback information from the controlled machine or vehicle.\n\nWith the Tele Radio TEQ waist transmitters, the possibilities in applications are almost endless.",
+        "et": "Tele Radio TEQ vöösaatjad on saadaval kõige keerukamate juhtimislahenduste jaoks. Neid saatjaid kantakse kaela-, õla- või puusavöö abil. Erinevalt meie käeshoitavatest saatjatest pakuvad meie tööstuslikud vöösaatjad võimalust kahe käega töötada. Suured ja vastupidavad käepidemed tagavad pingevaba tööasendi.\n\nPakume oma TEQ vöösaatjaid kolmes erinevas suuruses. Saadaval on kas standardversioonina või spetsiaalselt teie rakenduse jaoks ehitatud, mis sisaldab nuppe, lüliteid, juhtkangide, tagasisideinfot jne. Valik on teie: valige kas kompaktne ja seetõttu käepärane saatja või üks suurematest versioonidest, millel on palju ruumi lisajuhtimisseadmetele ja kuni 4,3-tolline ekraan juhitava masina või sõiduki tagasisideinfo kuvamiseks.\n\nTele Radio TEQ vöösaatjatega on rakenduste võimalused peaaegu lõputud."
+      },
+      "category": {
+        "en": "",
+        "et": ""
+      },
+      "transmittersText": {
+        "en": "Are you in need of a transmitter for a (more or less) standard application? Then we recommend that you opt for the PrimaTEQ, VersaTEQ or SupraTEQ Basic Line version. These transmitters have a fixed set of controls, are highly adjustable, have an independently certified stop button, and offer the best price/quality ratio.To meet the current industry standards, the Tele Radio waist transmitters are compatible with a wide range of BUS systems. ",
+        "et": "Kas vajate saatjat (enam-vähem) standardseks rakenduseks? Sellisel juhul soovitame teil valida PrimaTEQ, VersaTEQ või SupraTEQ Basic Line versiooni. Nendel saatjatel on fikseeritud juhtnupud, need on hästi reguleeritavad, neil on eraldi sertifitseeritud stopp-nupp ja need pakuvad parimat hinna ja kvaliteedi suhet.Praeguste tööstusstandardite täitmiseks on Tele Radio vöösaatjad ühilduvad paljude siinisüsteemidega."
+      },
+      "receiversText": {
+        "en": "",
+        "et": ""
+      },
+      "models": [],
+      "features": {
+        "en": [
+          
+        ],
+        "et": [
+          
+        ]
+      },
+      "specifications": {
+        "frequency": "433 MHz / 915 MHz",
+        "range": "Up to 500m",
+        "protection": "IP65",
+        "battery": "Rechargeable Li-ion",
+        "weight": "Varies by model",
+        "dimensions": "Three sizes: compact, medium, large",
+        "temperature": "-20 to +60 C",
+        "certifications": "CE, FCC"
+      }
+    },
+    {
+      "id": "accessories",
+      "name": "Accessories",
+      "image": "img/products/accessories.jpg",
+      "description": {
+        "en": "In this category you will find a wide range of accessories.These products will help you use your Tele Radio products in an even more efficient way.",
+        "et": "Selles kategoorias leiate laia valiku lisatarvikuid. Need tooted aitavad teil oma Tele Radio tooteid veelgi tõhusamalt kasutada."
+      },
+      "category": {
+        "en": "",
+        "et": ""
+      },
+      "transmittersText": {
+        "en": "",
+        "et": ""
+      },
+      "receiversText": {
+        "en": "",
+        "et": ""
+      },
+      "models": [],
+      "features": {
+        "en": [
+          
+        ],
+        "et": [
+          
+        ]
+      },
+      "specifications": {
+        "compatibility": "Compatible with all Tele Radio systems",
+        "quality": "High-grade materials",
+        "warranty": "Standard manufacturer warranty",
+        "availability": "Available through authorized distributors"
+      }
     }
-    
   ]
 }
+    
+
+
