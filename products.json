@@ -22,7 +22,7 @@
       },
       "models": [
         {
-          "name": "T20, transmitter, 1x1-step buttons",
+          "name": "T20 transmitter, 1x1-step buttons",
           "image": "img/products/models/t20-tx1.jpg",
           "description": {
             "en": "",
@@ -41,7 +41,7 @@
           }
         },
         {
-          "name": "T20, transmitter, 2x1-step buttons",
+          "name": "T20 transmitter, 2x1-step buttons",
           "image": "img/products/models/t20-tx2.jpg",
           "description": {
             "en": "",
@@ -60,7 +60,7 @@
           }
         },
         {
-          "name": "T20, transmitter, 3x1-step buttons",
+          "name": "T20 transmitter, 3x1-step buttons",
           "image": "img/products/models/t20-tx3.jpg",
           "description": {
             "en": "",
@@ -79,7 +79,7 @@
           }
         },
         {
-          "name": "T60, transmitter, 1x1-step buttons",
+          "name": "T60 transmitter, 1x1-step buttons",
           "image": "img/products/models/t60-tx01shl.jpg",
           "description": {
             "en": "",
@@ -98,7 +98,7 @@
           }
         },
         {
-          "name": "T60, transmitter, 3x1-step buttons",
+          "name": "T60 transmitter, 3x1-step buttons",
           "image": "img/products/models/t60-tx03shl.jpg",
           "description": {
             "en": "",
@@ -117,7 +117,7 @@
           }
         },
         {
-          "name": "T60, transmitter, 6x1-step buttons",
+          "name": "T60 transmitter, 6x1-step buttons",
           "image": "img/products/models/t60-tx06shl.jpg",
           "description": {
             "en": "",
@@ -136,7 +136,7 @@
           }
         },
         {
-          "name": "T60, transmitter, 8x1-step buttons",
+          "name": "T60 transmitter, 8x1-step buttons",
           "image": "img/products/models/T60transmitter8x1-step buttons.jpg",
           "description": {
             "en": "",
@@ -155,7 +155,7 @@
           }
         },
         {
-          "name": "T60, transmitter, 1x1-step buttons",
+          "name": "T60 transmitter, 1x1-step buttons",
           "image": "img/products/models/t60-tx01stl.jpg",
           "description": {
             "en": "",
@@ -174,7 +174,7 @@
           }
         },
         {
-          "name": "T60, transmitter, 2x1-step buttons",
+          "name": "T60 transmitter, 2x1-step buttons",
           "image": "img/products/models/t60-tx02stl.jpg",
           "description": {
             "en": "",
@@ -193,7 +193,7 @@
           }
         },
         {
-          "name": "T60, transmitter, 3x1-step buttons",
+          "name": "T60 transmitter, 3x1-step buttons",
           "image": "img/products/models/t60-tx03stl.jpg",
           "description": {
             "en": "",
@@ -212,7 +212,7 @@
           }
         },
         {
-          "name": "T60, transmitter, 4x1-step buttons",
+          "name": "T60 transmitter, 4x1-step buttons",
           "image": "img/products/models/t60-tx04stl.jpg",
           "description": {
             "en": "",
@@ -231,7 +231,7 @@
           }
         },
         {
-          "name": "T60, transmitter, 6x1-step buttons",
+          "name": "T60 transmitter, 6x1-step buttons",
           "image": "img/products/models/t60-tx06stl.jpg",
           "description": {
             "en": "",
@@ -250,7 +250,7 @@
           }
         },
         {
-          "name": "T60, transmitter, 8x1-step buttons",
+          "name": "T60 transmitter, 8x1-step buttons",
           "image": "img/products/models/t60-tx08stl.jpg",
           "description": {
             "en": "",
@@ -269,7 +269,7 @@
           }
         },
         {
-          "name": "T60, transmitter, 15x1-step buttons",
+          "name": "T60 transmitter, 15x1-step buttons",
           "image": "img/products/models/t60-tx15sml.jpg",
           "description": {
             "en": "",
@@ -288,7 +288,7 @@
           }
         },
         {
-          "name": "T60, transmitter, 15x1-step buttons, display",
+          "name": "T60 transmitter, 15x1-step buttons, display",
           "image": "img/products/models/t60-tx15dml.jpg",
           "description": {
             "en": "",
@@ -307,7 +307,7 @@
           }
         },
         {
-          "name": "T20, receiver, 2 function relays",
+          "name": "T20 receiver, 2 function relays",
           "image": "img/products/models/t20-rx2.jpg",
           "description": {
             "en": "",
@@ -325,7 +325,7 @@
           }
         },
         {
-          "name": "T20, receiver, 3 function relays",
+          "name": "T20 receiver, 3 function relays",
           "image": "img/products/models/t20-rx3.jpg",
           "description": {
             "en": "",
@@ -343,7 +343,7 @@
           }
         },
         {
-          "name": "T60, receiver, 3 function relays",
+          "name": "T60 receiver, 3 function relays",
           "image": "img/products/models/t60-rx03adl.jpg",
           "description": {
             "en": "",
@@ -361,7 +361,7 @@
           }
         },
         {
-          "name": "T60, receiver, 5 function relays",
+          "name": "T60 receiver, 5 function relays",
           "image": "img/products/models/t60-rx04xsl.jpg",
           "description": {
             "en": "",
@@ -379,7 +379,7 @@
           }
         },
         {
-          "name": "T60, receiver, 8 function relays",
+          "name": "T60 receiver, 8 function relays",
           "image": "img/products/models/t60-rx08xsl.jpg",
           "description": {
             "en": "",
@@ -397,7 +397,7 @@
           }
         }
       ]
-      
+    
     },
     {
       "id": "panther",
@@ -1174,35 +1174,8 @@
             "temperature": "-20 to +55 C"
           }
         }
-      ],
-      "features": {
-        "en": [
-          "IP65 dust and water protection",
-          "2.4 GHz frequency hopping technology",
-          "Up to 16 programmable functions",
-          "Emergency stop function",
-          "Long battery life up to 60 hours",
-          "Ergonomic design for comfortable use"
-        ],
-        "et": [
-          "IP65 tolmu- ja veekaitse",
-          "2,4 GHz sagedushüppe tehnoloogia",
-          "Kuni 16 programmeeritavat funktsiooni",
-          "Hädapeatamise funktsioon",
-          "Pikk akukestus kuni 60 tundi",
-          "Ergonoomne disain mugavaks kasutamiseks"
-        ]
-      },
-      "specifications": {
-        "frequency": "433 MHz (69 channels) / 915 MHz",
-        "range": "100m",
-        "protection": "IP65 / IP66",
-        "battery": "Li-ion rechargeable",
-        "weight": "295 gr",
-        "dimensions": "~76 x 160 x 37 mm",
-        "temperature": "-20 to +55 C",
-        "certifications": "CE, G Lloyd, FCC, IC"
-      }
+      ]
+      
     },
     {
       "id": "teq-waist",
@@ -1224,26 +1197,10 @@
         "en": "",
         "et": ""
       },
-      "models": [],
-      "features": {
-        "en": [
-          
-        ],
-        "et": [
-          
-        ]
+      "models": []
+      
       },
-      "specifications": {
-        "frequency": "433 MHz / 915 MHz",
-        "range": "Up to 500m",
-        "protection": "IP65",
-        "battery": "Rechargeable Li-ion",
-        "weight": "Varies by model",
-        "dimensions": "Three sizes: compact, medium, large",
-        "temperature": "-20 to +60 C",
-        "certifications": "CE, FCC"
-      }
-    },
+    
     {
       "id": "accessories",
       "name": "Accessories",
@@ -1265,20 +1222,7 @@
         "et": ""
       },
       "models": [],
-      "features": {
-        "en": [
-          
-        ],
-        "et": [
-          
-        ]
-      },
-      "specifications": {
-        "compatibility": "Compatible with all Tele Radio systems",
-        "quality": "High-grade materials",
-        "warranty": "Standard manufacturer warranty",
-        "availability": "Available through authorized distributors"
-      }
+      
     }
   ]
 }
