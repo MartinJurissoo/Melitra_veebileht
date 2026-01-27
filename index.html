@@ -199,7 +199,7 @@
       "@context": "https://schema.org",
       "@type": "Product",
       "name": "Tele Radio Tiger G2",
-      "description": "Available in different configurations, Tiger receivers provide standard relay and analogue in/outputs, digital inputs and communication via different fieldbus systems, whereas both the STOP function and two designated relays are approved according to SIL3 IEC 61508 standard and PLe, the highest safety rating available in radio control.Tiger is capable of providing feedback from your machine, displayed on the transmitter’s LCD screen or alternatively utilizing LED’s situated next to the transmitter’s function buttons.Systems are pre-programmed with operating modes accommodating hundreds of different user applications. Advanced settings or custom software are available upon request.Tiger G2’s pushbutton transmitters are the best in the market. Their stable performance and build will keep you running day-in and day-out. The push button transmitters are at a minimum of IP65 and most are IP66. You can get the handheld units with or without screen depending on your requirements. Transmitters with screens can show a variety of data feedback depending on your applications capabilities.Tiger G2 is a radio control for complex applications. One transmitter can control up to 15 receivers.Adjustable range up to 1000 meters.Tiger G2 has 69 different channels to choose from for uninterrupted control.The transmitter and receiver are protected against moist and dust to a minimum of IP65.Duplex communication, CANopen and Modbus.Rechargeable and replaceable battery or rechargeable internal battery depending on model.",
+      "description": "Available in different configurations, Tiger receivers provide standard relay and analogue in/outputs, digital inputs and communication via different fieldbus systems, whereas both the STOP function and two designated relays are approved according to SIL3 IEC 61508 standard and PLe, the highest safety rating available in radio control.Tiger is capable of providing feedback from your machine, displayed on the transmitter's LCD screen or alternatively utilizing LED's situated next to the transmitter's function buttons.Systems are pre-programmed with operating modes accommodating hundreds of different user applications. Advanced settings or custom software are available upon request.Tiger G2's pushbutton transmitters are the best in the market. Their stable performance and build will keep you running day-in and day-out. The push button transmitters are at a minimum of IP65 and most are IP66. You can get the handheld units with or without screen depending on your requirements. Transmitters with screens can show a variety of data feedback depending on your applications capabilities.Tiger G2 is a radio control for complex applications. One transmitter can control up to 15 receivers.Adjustable range up to 1000 meters.Tiger G2 has 69 different channels to choose from for uninterrupted control.The transmitter and receiver are protected against moist and dust to a minimum of IP65.Duplex communication, CANopen and Modbus.Rechargeable and replaceable battery or rechargeable internal battery depending on model.",
       "brand": {
         "@type": "Brand",
         "name": "Tele Radio"
@@ -405,259 +405,212 @@
         };
 
         function openProductModal(productId) {
-        const product = productsData.find(p => p.id === productId);
-        if (!product) return;
+            const product = productsData.find(p => p.id === productId);
+            if (!product) return;
 
-        const modal = document.getElementById('productModal');
-    
-        let productName = product.name;
-        if (product.id === 'tiger-g2') productName = translations[currentLanguage].product_tiger;
-        if (product.id === 'panther') productName = translations[currentLanguage].product_panther;
-        if (product.id === 't20-t60') productName = translations[currentLanguage].product_t20t60;
-        if (product.id === 'teq-waist') productName = translations[currentLanguage].product_teq_waist;
-        if (product.id === 'accessories') productName = translations[currentLanguage].product_accessories;
-    
-        document.getElementById('modalProductName').textContent = productName;
-        document.getElementById('modalCategory').textContent = product.category ? product.category[currentLanguage] : '';
-    
-        const modalImage = document.getElementById('modalImage');
-        modalImage.style.backgroundImage = `url('${product.image}')`;
-        modalImage.innerHTML = '';
-    
-        // Format the description with proper line breaks and bullet points
-        const description = product.description[currentLanguage];
-        const modalDescElem = document.getElementById('modalDescription');
+            const modal = document.getElementById('productModal');
+        
+            let productName = product.name;
+            if (product.id === 'tiger-g2') productName = translations[currentLanguage].product_tiger;
+            if (product.id === 'panther') productName = translations[currentLanguage].product_panther;
+            if (product.id === 't20-t60') productName = translations[currentLanguage].product_t20t60;
+            if (product.id === 'teq-waist') productName = translations[currentLanguage].product_teq_waist;
+            if (product.id === 'accessories') productName = translations[currentLanguage].product_accessories;
+        
+            document.getElementById('modalProductName').textContent = productName;
+            document.getElementById('modalCategory').textContent = product.category ? product.category[currentLanguage] : '';
+        
+            const modalImage = document.getElementById('modalImage');
+            modalImage.style.backgroundImage = `url('${product.image}')`;
+            modalImage.innerHTML = '';
+        
+            // Format the description with proper line breaks and bullet points
+            const description = product.description[currentLanguage];
+            const modalDescElem = document.getElementById('modalDescription');
 
-        const lines = description.split('\n');
-        let formattedHTML = '';
+            const lines = description.split('\n');
+            let formattedHTML = '';
 
-        lines.forEach(line => {
-        line = line.trim();
-        if (line === '') {
-            formattedHTML += '<br>';
-        } else if (line.startsWith('•')) {
-            formattedHTML += `<div style="margin-left: 0; margin-bottom: 10px; text-align: left;">• ${line.substring(1).trim()}</div>`;
-        } else {
-            formattedHTML += `<p style="margin-bottom: 15px; text-align: left; line-height: 1.6;">${line}</p>`;
+            lines.forEach(line => {
+                line = line.trim();
+                if (line === '') {
+                    formattedHTML += '<br>';
+                } else if (line.startsWith('•')) {
+                    formattedHTML += `<div style="margin-left: 0; margin-bottom: 10px; text-align: left;">• ${line.substring(1).trim()}</div>`;
+                } else {
+                    formattedHTML += `<p style="margin-bottom: 15px; text-align: left; line-height: 1.6;">${line}</p>`;
+                }
+            });
+
+            modalDescElem.innerHTML = formattedHTML;
+        
+            // Show models section with transmitters and receivers
+            if (product.models && product.models.length > 0) {
+                document.getElementById('modelsSection').style.display = 'block';
+                document.getElementById('modelsTitle').textContent = currentLanguage === 'en' ? 'Available Models' : 'Saadaolevad Mudelid';
+                
+                const modelsList = document.getElementById('modelsList');
+                modelsList.innerHTML = '';
+                
+                const transmitters = product.models.filter(m => 
+                    m.name.toLowerCase().includes('transmitter') || 
+                    m.name.toLowerCase().includes('saatja')
+                );
+                const receivers = product.models.filter(m => 
+                    m.name.toLowerCase().includes('receiver') || 
+                    m.name.toLowerCase().includes('vastuvõtja')
+                );
+                
+                // Add Transmitters section
+                if (transmitters.length > 0) {
+                    const transmittersHeader = document.createElement('h3');
+                    transmittersHeader.textContent = currentLanguage === 'en' ? 'Transmitters' : 'Saatjad';
+                    transmittersHeader.style.marginTop = '30px';
+                    transmittersHeader.style.marginBottom = '15px';
+                    transmittersHeader.style.fontSize = '1.5em';
+                    transmittersHeader.style.color = '#333';
+                    modelsList.appendChild(transmittersHeader);
+                    
+                    if (product.transmittersText && product.transmittersText[currentLanguage]) {
+                        const transmittersTextDiv = document.createElement('p');
+                        transmittersTextDiv.textContent = product.transmittersText[currentLanguage];
+                        transmittersTextDiv.style.marginBottom = '20px';
+                        transmittersTextDiv.style.lineHeight = '1.6';
+                        transmittersTextDiv.style.color = '#666';
+                        modelsList.appendChild(transmittersTextDiv);
+                    }
+                    
+                    transmitters.forEach(model => {
+                        modelsList.appendChild(createModelItem(model));
+                    });
+                }
+                
+                // Add Receivers section
+                if (receivers.length > 0) {
+                    const receiversHeader = document.createElement('h3');
+                    receiversHeader.textContent = currentLanguage === 'en' ? 'Receivers' : 'Vastuvõtjad';
+                    receiversHeader.style.marginTop = '40px';
+                    receiversHeader.style.marginBottom = '15px';
+                    receiversHeader.style.fontSize = '1.5em';
+                    receiversHeader.style.color = '#333';
+                    modelsList.appendChild(receiversHeader);
+                    
+                    if (product.receiversText && product.receiversText[currentLanguage]) {
+                        const receiversTextDiv = document.createElement('p');
+                        receiversTextDiv.textContent = product.receiversText[currentLanguage];
+                        receiversTextDiv.style.marginBottom = '20px';
+                        receiversTextDiv.style.lineHeight = '1.6';
+                        receiversTextDiv.style.color = '#666';
+                        modelsList.appendChild(receiversTextDiv);
+                    }
+                    
+                    receivers.forEach(model => {
+                        modelsList.appendChild(createModelItem(model));
+                    });
+                }
+            } else {
+                document.getElementById('modelsSection').style.display = 'none';
+            }
+        
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
         }
-        });
 
-        modalDescElem.innerHTML = formattedHTML;
-    
-        // Show models section with transmitters and receivers
-        if (product.models && product.models.length > 0) {
-        document.getElementById('modelsSection').style.display = 'block';
-        document.getElementById('modelsTitle').textContent = currentLanguage === 'en' ? 'Available Models' : 'Saadaolevad Mudelid';
-        
-        const modelsList = document.getElementById('modelsList');
-        modelsList.innerHTML = '';
-        
-        const transmitters = product.models.filter(m => 
-            m.name.toLowerCase().includes('transmitter') || 
-            m.name.toLowerCase().includes('saatja')
-        );
-        const receivers = product.models.filter(m => 
-            m.name.toLowerCase().includes('receiver') || 
-            m.name.toLowerCase().includes('vastuvõtja')
-        );
-        
-        // Add Transmitters section
-        if (transmitters.length > 0) {
-            const transmittersHeader = document.createElement('h3');
-            transmittersHeader.textContent = currentLanguage === 'en' ? 'Transmitters' : 'Saatjad';
-            transmittersHeader.style.marginTop = '30px';
-            transmittersHeader.style.marginBottom = '15px';
-            transmittersHeader.style.fontSize = '1.5em';
-            transmittersHeader.style.color = '#333';
-            modelsList.appendChild(transmittersHeader);
+        function createModelItem(model) {
+            const modelItem = document.createElement('div');
+            modelItem.className = 'model-item';
+            const description = model.description[currentLanguage] || model.description.en;
+            const hasImage = model.image ? true : false;
             
-            if (product.transmittersText && product.transmittersText[currentLanguage]) {
-                const transmittersTextDiv = document.createElement('p');
-                transmittersTextDiv.textContent = product.transmittersText[currentLanguage];
-                transmittersTextDiv.style.marginBottom = '20px';
-                transmittersTextDiv.style.lineHeight = '1.6';
-                transmittersTextDiv.style.color = '#666';
-                modelsList.appendChild(transmittersTextDiv);
+            let modelName = model.name;
+            if (currentLanguage === 'et') {
+                modelName = modelName.replace(/Transmitter/g, 'Saatja');
+                modelName = modelName.replace(/Receiver/g, 'Vastuvõtja');
+                modelName = modelName.replace(/buttons/g, 'nuppu');
+                modelName = modelName.replace(/button/g, 'nupp');
+                modelName = modelName.replace(/step/g, 'astmelist');
+                modelName = modelName.replace(/function relays/g, 'funktsiooni relee');
             }
             
-            transmitters.forEach(model => {
-                modelsList.appendChild(createModelItem(model));
-            });
-        }
-        
-        // Add Receivers section
-        if (receivers.length > 0) {
-            const receiversHeader = document.createElement('h3');
-            receiversHeader.textContent = currentLanguage === 'en' ? 'Receivers' : 'Vastuvõtjad';
-            receiversHeader.style.marginTop = '40px';
-            receiversHeader.style.marginBottom = '15px';
-            receiversHeader.style.fontSize = '1.5em';
-            receiversHeader.style.color = '#333';
-            modelsList.appendChild(receiversHeader);
+            let modelHTML = `
+                <div class="model-item-header">
+                    ${hasImage ? `<div class="model-item-image" style="background-image: url('${model.image}')"></div>` : ''}
+                    <div class="model-item-info">
+                        <h4>${modelName}</h4>
+                        <p>${description}</p>
+                    </div>
+                </div>
+            `;
             
-            if (product.receiversText && product.receiversText[currentLanguage]) {
-                const receiversTextDiv = document.createElement('p');
-                receiversTextDiv.textContent = product.receiversText[currentLanguage];
-                receiversTextDiv.style.marginBottom = '20px';
-                receiversTextDiv.style.lineHeight = '1.6';
-                receiversTextDiv.style.color = '#666';
-                modelsList.appendChild(receiversTextDiv);
+            // Check if model has specImage instead of specifications object
+            if (model.specImage) {
+                // Display spec image instead of table
+                modelHTML += `
+                    <div class="model-spec-image-container">
+                        <img src="${model.specImage}" alt="${modelName} specifications" class="model-spec-image">
+                    </div>
+                `;
+            } else if (model.specifications) {
+                // Original table-based specifications
+                const specLabels = {
+                    article_433: { en: 'Article number (433 MHz)', et: 'Artikli number (433 MHz)' },
+                    article_915: { en: 'Article number (915 MHz)', et: 'Artikli number (915 MHz)' },
+                    article: { en: 'Article number', et: 'Artikli number' },
+                    frequency_433: { en: 'Frequency (433 MHz)', et: 'Sagedus (433 MHz)' },
+                    frequency_915: { en: 'Frequency (915 MHz)', et: 'Sagedus (915 MHz)' },
+                    frequency: { en: 'Frequency', et: 'Sagedus' },
+                    battery: { en: 'Battery', et: 'Aku' },
+                    protection: { en: 'Protection', et: 'Kaitse' },
+                    certifications: { en: 'Certifications', et: 'Sertifikaadid' },
+                    weight: { en: 'Weight', et: 'Kaal' },
+                    dimensions: { en: 'Dimensions', et: 'Mõõtmed' },
+                    temperature: { en: 'Temperature', et: 'Temperatuur' },
+                    relays: { en: 'Relays', et: 'Relee' },
+                    power: { en: 'Power', et: 'Toide' },
+                    interface: { en: 'Interface', et: 'Liides' },
+                    range: { en: 'Range', et: 'Ulatus' },
+                    outputs: { en: 'Outputs', et: 'Väljundid' }
+                };
+                
+                function translateSpecValue(value) {
+                    if (currentLanguage === 'en') return value;
+                    
+                    let translated = value;
+                    translated = translated.replace(/channels/g, 'kanalit');
+                    translated = translated.replace(/channel/g, 'kanal');
+                    translated = translated.replace(/Re-chargeable/g, 'Taaslaetav');
+                    translated = translated.replace(/rechargeable/gi, 'taaslaetav');
+                    translated = translated.replace(/coin cell/g, 'mündaku');
+                    translated = translated.replace(/alkaline/gi, 'leeliseline');
+                    translated = translated.replace(/worldwide/gi, 'ülemaailmne');
+                    translated = translated.replace(/open field/gi, 'avatud väli');
+                    translated = translated.replace(/programmable/gi, 'programmeeritav');
+                    translated = translated.replace(/changeover/gi, 'ümberlülitus');
+                    translated = translated.replace(/function relays/gi, 'funktsiooni relee');
+                    translated = translated.replace(/protocol/gi, 'protokoll');
+                    translated = translated.replace(/certified/gi, 'sertifitseeritud');
+                    translated = translated.replace(/ to /g, ' kuni ');
+                    
+                    return translated;
+                }
+                
+                modelHTML += '<table class="model-specs-table"><tbody>';
+                Object.entries(model.specifications).forEach(([key, value]) => {
+                    const label = specLabels[key] ? specLabels[key][currentLanguage] : key;
+                    const translatedValue = typeof value === 'object' ? value[currentLanguage] : translateSpecValue(value);
+                    modelHTML += `
+                        <tr>
+                            <td class="model-spec-label">${label}</td>
+                            <td class="model-spec-value">${translatedValue}</td>
+                        </tr>
+                    `;
+                });
+                modelHTML += '</tbody></table>';
             }
             
-            receivers.forEach(model => {
-                modelsList.appendChild(createModelItem(model));
-            });
-        }
-    } else {
-        document.getElementById('modelsSection').style.display = 'none';
-    }
-    
-    modal.classList.add('active');
-    document.body.style.overflow = 'hidden';
-}
-
-// =========================================
-// UPDATED createModelItem FUNCTION
-// WITH SPEC IMAGE SUPPORT
-// =========================================
-
-function createModelItem(model) {
-    const modelItem = document.createElement('div');
-    modelItem.className = 'model-item';
-    const description = model.description[currentLanguage] || model.description.en;
-    const hasImage = model.image ? true : false;
-    
-    let modelName = model.name;
-    if (currentLanguage === 'et') {
-        modelName = modelName.replace(/Transmitter/g, 'Saatja');
-        modelName = modelName.replace(/Receiver/g, 'Vastuvõtja');
-        modelName = modelName.replace(/buttons/g, 'nuppu');
-        modelName = modelName.replace(/button/g, 'nupp');
-        modelName = modelName.replace(/step/g, 'astmelist');
-        modelName = modelName.replace(/function relays/g, 'funktsiooni relee');
-    }
-    
-    let modelHTML = `
-        <div class="model-item-header">
-            ${hasImage ? `<div class="model-item-image" style="background-image: url('${model.image}')"></div>` : ''}
-            <div class="model-item-info">
-                <h4>${modelName}</h4>
-                <p>${description}</p>
-            </div>
-        </div>
-    `;
-    
-    // ============================================
-    // NEW: Check if model has specImage instead of specifications object
-    // ============================================
-    if (model.specImage) {
-        // Display spec image instead of table
-        modelHTML += `
-            <div class="model-spec-image-container">
-                <img src="${model.specImage}" alt="${modelName} specifications" class="model-spec-image">
-            </div>
-        `;
-    } else if (model.specifications) {
-        // Original table-based specifications
-        const specLabels = {
-            article_433: { en: 'Article number (433 MHz)', et: 'Artikli number (433 MHz)' },
-            article_915: { en: 'Article number (915 MHz)', et: 'Artikli number (915 MHz)' },
-            article: { en: 'Article number', et: 'Artikli number' },
-            frequency_433: { en: 'Frequency (433 MHz)', et: 'Sagedus (433 MHz)' },
-            frequency_915: { en: 'Frequency (915 MHz)', et: 'Sagedus (915 MHz)' },
-            frequency: { en: 'Frequency', et: 'Sagedus' },
-            battery: { en: 'Battery', et: 'Aku' },
-            protection: { en: 'Protection', et: 'Kaitse' },
-            certifications: { en: 'Certifications', et: 'Sertifikaadid' },
-            weight: { en: 'Weight', et: 'Kaal' },
-            dimensions: { en: 'Dimensions', et: 'Mõõtmed' },
-            temperature: { en: 'Temperature', et: 'Temperatuur' },
-            relays: { en: 'Relays', et: 'Relee' },
-            power: { en: 'Power', et: 'Toide' },
-            interface: { en: 'Interface', et: 'Liides' },
-            range: { en: 'Range', et: 'Ulatus' },
-            outputs: { en: 'Outputs', et: 'Väljundid' }
-        };
-        
-        function translateSpecValue(value) {
-            if (currentLanguage === 'en') return value;
-            
-            let translated = value;
-            translated = translated.replace(/channels/g, 'kanalit');
-            translated = translated.replace(/channel/g, 'kanal');
-            translated = translated.replace(/Re-chargeable/g, 'Taaslaetav');
-            translated = translated.replace(/rechargeable/gi, 'taaslaetav');
-            translated = translated.replace(/coin cell/g, 'mündaku');
-            translated = translated.replace(/alkaline/gi, 'leeliseline');
-            translated = translated.replace(/worldwide/gi, 'ülemaailmne');
-            translated = translated.replace(/open field/gi, 'avatud väli');
-            translated = translated.replace(/programmable/gi, 'programmeeritav');
-            translated = translated.replace(/changeover/gi, 'ümberlülitus');
-            translated = translated.replace(/function relays/gi, 'funktsiooni relee');
-            translated = translated.replace(/protocol/gi, 'protokoll');
-            translated = translated.replace(/certified/gi, 'sertifitseeritud');
-            translated = translated.replace(/ to /g, ' kuni ');
-            
-            return translated;
-        }
-        
-        modelHTML += '<table class="model-specs-table"><tbody>';
-        Object.entries(model.specifications).forEach(([key, value]) => {
-            const label = specLabels[key] ? specLabels[key][currentLanguage] : key;
-            const translatedValue = typeof value === 'object' ? value[currentLanguage] : translateSpecValue(value);
-            modelHTML += `
-                <tr>
-                    <td class="model-spec-label">${label}</td>
-                    <td class="model-spec-value">${translatedValue}</td>
-                </tr>
-            `;
-        });
-        modelHTML += '</tbody></table>';
-    }
-    
-    modelItem.innerHTML = modelHTML;
-    return modelItem;
-};
-        
-        function translateSpecValue(value) {
-            if (currentLanguage === 'en') return value;
-            
-            let translated = value;
-            translated = translated.replace(/channels/g, 'kanalit');
-            translated = translated.replace(/channel/g, 'kanal');
-            translated = translated.replace(/Re-chargeable/g, 'Taaslaetav');
-            translated = translated.replace(/rechargeable/gi, 'taaslaetav');
-            translated = translated.replace(/coin cell/g, 'mündaku');
-            translated = translated.replace(/alkaline/gi, 'leeliseline');
-            translated = translated.replace(/worldwide/gi, 'ülemaailmne');
-            translated = translated.replace(/open field/gi, 'avatud väli');
-            translated = translated.replace(/programmable/gi, 'programmeeritav');
-            translated = translated.replace(/changeover/gi, 'ümberlülitus');
-            translated = translated.replace(/function relays/gi, 'funktsiooni relee');
-            translated = translated.replace(/protocol/gi, 'protokoll');
-            translated = translated.replace(/certified/gi, 'sertifitseeritud');
-            translated = translated.replace(/ to /g, ' kuni ');
-            
-            return translated;
-        }
-        
-        modelHTML += '<table class="model-specs-table"><tbody>';
-        Object.entries(model.specifications).forEach(([key, value]) => {
-            const label = specLabels[key] ? specLabels[key][currentLanguage] : key;
-            const translatedValue = typeof value === 'object' ? value[currentLanguage] : translateSpecValue(value);
-            modelHTML += `
-                <tr>
-                    <td class="model-spec-label">${label}</td>
-                    <td class="model-spec-value">${translatedValue}</td>
-                </tr>
-            `;
-        });
-            modelHTML += '</tbody></table>';
-           
-    
-        modelItem.innerHTML = modelHTML;
+            modelItem.innerHTML = modelHTML;
             return modelItem;
-        
+        }
 
         function closeModal() {
             const modal = document.getElementById('productModal');
@@ -680,7 +633,7 @@ function createModelItem(model) {
                         image: "img/products/tiger-g2.jpg",
                         category: { en: "Industrial & Machines", et: "Tööstus ja Masinad" },
                         description: {
-                            en: "Available in different configurations, Tiger receivers provide standard relay and analogue in/outputs, digital inputs and communication via different fieldbus systems, whereas both the STOP function and two designated relays are approved according to SIL3 IEC 61508 standard and PLe, the highest safety rating available in radio control.Tiger is capable of providing feedback from your machine, displayed on the transmitter’s LCD screen or alternatively utilizing LED’s situated next to the transmitter’s function buttons.Systems are pre-programmed with operating modes accommodating hundreds of different user applications. Advanced settings or custom software are available upon request.Tiger G2’s pushbutton transmitters are the best in the market. Their stable performance and build will keep you running day-in and day-out. The push button transmitters are at a minimum of IP65 and most are IP66. You can get the handheld units with or without screen depending on your requirements. Transmitters with screens can show a variety of data feedback depending on your applications capabilities.Tiger G2 is a radio control for complex applications. One transmitter can control up to 15 receivers.Adjustable range up to 1000 meters.Tiger G2 has 69 different channels to choose from for uninterrupted control.The transmitter and receiver are protected against moist and dust to a minimum of IP65.Duplex communication, CANopen and Modbus.Rechargeable and replaceable battery or rechargeable internal battery depending on model.",
+                            en: "Available in different configurations, Tiger receivers provide standard relay and analogue in/outputs, digital inputs and communication via different fieldbus systems, whereas both the STOP function and two designated relays are approved according to SIL3 IEC 61508 standard and PLe, the highest safety rating available in radio control.Tiger is capable of providing feedback from your machine, displayed on the transmitter's LCD screen or alternatively utilizing LED's situated next to the transmitter's function buttons.Systems are pre-programmed with operating modes accommodating hundreds of different user applications. Advanced settings or custom software are available upon request.Tiger G2's pushbutton transmitters are the best in the market. Their stable performance and build will keep you running day-in and day-out. The push button transmitters are at a minimum of IP65 and most are IP66. You can get the handheld units with or without screen depending on your requirements. Transmitters with screens can show a variety of data feedback depending on your applications capabilities.Tiger G2 is a radio control for complex applications. One transmitter can control up to 15 receivers.Adjustable range up to 1000 meters.Tiger G2 has 69 different channels to choose from for uninterrupted control.The transmitter and receiver are protected against moist and dust to a minimum of IP65.Duplex communication, CANopen and Modbus.Rechargeable and replaceable battery or rechargeable internal battery depending on model.",
                             et: "Erinevates konfiguratsioonides saadaval olevad Tigeri vastuvõtjad pakuvad standardseid relee- ja analoogsisendeid/väljundeid, digitaalsisendeid ja sidet erinevate väljasiinisüsteemide kaudu, kusjuures nii STOP-funktsioon kui ka kaks selleks otstarbeks määratud releed on sertifitseeritud vastavalt standardile SIL3 IEC 61508 ja PLe-le, mis on raadiojuhtimise valdkonnas kõrgeim ohutusreiting.Tiger suudab anda tagasisidet teie masinast, mis kuvatakse saatja LCD-ekraanil või alternatiivina saatja funktsiooninuppude kõrval asuvate LED-ide abil.Süsteemid on eelprogrammeeritud töörežiimidega, mis sobivad sadadele erinevatele kasutajarakendustele. Täiustatud sätted või kohandatud tarkvara on saadaval soovi korral.Tiger G2 nupuvajutusega saatjad on turu parimad. Nende stabiilne jõudlus ja konstruktsioon tagavad teile igapäevase töö. Nupuvajutusega saatjate minimaalne kaitseaste on IP65 ja enamiku puhul IP66. Käeshoitavaid seadmeid saab vastavalt teie vajadustele hankida ekraaniga või ilma. Ekraaniga saatjad saavad kuvada mitmesugust andmetagasisidet, olenevalt teie rakenduse võimalustest.Tiger G2 on raadio teel juhtimine keerukate rakenduste jaoks. Üks saatja saab juhtida kuni 15 vastuvõtjat.Reguleeritav ulatus kuni 1000 meetrit.Tiger G2-l on katkematu juhtimise tagamiseks 69 erinevat kanalit.Saatja ja vastuvõtja on kaitstud niiskuse ja tolmu eest vähemalt IP65 kaitseastmega.Duplekskommunikatsioon, CANopen ja Modbus.Laetav ja vahetatav aku või laetav sisemine aku, olenevalt mudelist."
                         },
                         models: []
@@ -717,56 +670,57 @@ function createModelItem(model) {
             container.innerHTML = '';
 
             productsData.forEach(product => {
-            const productCard = document.createElement('div');
-            productCard.className = 'product-card';
-        
-            let productName = product.name;
-            if (product.id === 'tiger-g2') productName = translations[currentLanguage].product_tiger;
-            if (product.id === 'panther') productName = translations[currentLanguage].product_panther;
-            if (product.id === 't20-t60') productName = translations[currentLanguage].product_t20t60;
-            if (product.id === 'teq-waist') productName = translations[currentLanguage].product_teq_waist;
-            if (product.id === 'accessories') productName = translations[currentLanguage].product_accessories;
-            // Format the description for preview (remove line breaks, limit length)
-            let descriptionText = product.description[currentLanguage];
-        
-            // Remove all \n characters and extra spaces
-            descriptionText = descriptionText.replace(/\n/g, ' ').replace(/\s+/g, ' ').trim();
-        
-            // Limit to first 2-3 sentences or ~250 characters
-            const sentences = descriptionText.split('. ');
-            let previewText = '';
-        
-            if (sentences.length > 0) {
-            // Take first 2-3 sentences
-            previewText = sentences.slice(0, 3).join('. ');
-            if (!previewText.endsWith('.')) {
-                previewText += '.';
-            }
+                const productCard = document.createElement('div');
+                productCard.className = 'product-card';
             
-            // If still too long, truncate at 250 chars
-            if (previewText.length > 250) {
-                previewText = previewText.substring(0, 247) + '...';
-            }
-            }
-        
-            productCard.innerHTML = `
-            <div class="product-image" style="background-image: url('${product.image}');"></div>
-            <div class="product-info">
-                <h3>${productName}</h3>
-                <p class="product-description">${previewText}</p>
-                <button class="product-btn" data-translate="learn_more" data-product-id="${product.id}">${translations[currentLanguage].learn_more}</button>
-            </div>
-            `;
-            container.appendChild(productCard);
+                let productName = product.name;
+                if (product.id === 'tiger-g2') productName = translations[currentLanguage].product_tiger;
+                if (product.id === 'panther') productName = translations[currentLanguage].product_panther;
+                if (product.id === 't20-t60') productName = translations[currentLanguage].product_t20t60;
+                if (product.id === 'teq-waist') productName = translations[currentLanguage].product_teq_waist;
+                if (product.id === 'accessories') productName = translations[currentLanguage].product_accessories;
+                
+                // Format the description for preview (remove line breaks, limit length)
+                let descriptionText = product.description[currentLanguage];
+            
+                // Remove all \n characters and extra spaces
+                descriptionText = descriptionText.replace(/\n/g, ' ').replace(/\s+/g, ' ').trim();
+            
+                // Limit to first 2-3 sentences or ~250 characters
+                const sentences = descriptionText.split('. ');
+                let previewText = '';
+            
+                if (sentences.length > 0) {
+                    // Take first 2-3 sentences
+                    previewText = sentences.slice(0, 3).join('. ');
+                    if (!previewText.endsWith('.')) {
+                        previewText += '.';
+                    }
+                    
+                    // If still too long, truncate at 250 chars
+                    if (previewText.length > 250) {
+                        previewText = previewText.substring(0, 247) + '...';
+                    }
+                }
+            
+                productCard.innerHTML = `
+                    <div class="product-image" style="background-image: url('${product.image}');"></div>
+                    <div class="product-info">
+                        <h3>${productName}</h3>
+                        <p class="product-description">${previewText}</p>
+                        <button class="product-btn" data-translate="learn_more" data-product-id="${product.id}">${translations[currentLanguage].learn_more}</button>
+                    </div>
+                `;
+                container.appendChild(productCard);
             });
 
             // Re-attach event listeners to the new buttons
             document.querySelectorAll('.product-btn').forEach(btn => {
-            btn.addEventListener('click', function(e) {
-            e.preventDefault();
-            const productId = this.getAttribute('data-product-id');
-            openProductModal(productId);
-            });
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const productId = this.getAttribute('data-product-id');
+                    openProductModal(productId);
+                });
             });
         }
 
@@ -795,8 +749,9 @@ function createModelItem(model) {
                     if (product.id === 'tiger-g2') productName = translations[lang].product_tiger;
                     if (product.id === 'panther') productName = translations[lang].product_panther;
                     if (product.id === 't20-t60') productName = translations[lang].product_t20t60;
-                    if (product.id === 'teq-waist') productName = translations[currentLanguage].product_teq_waist;
-                    if (product.id === 'accessories') productName = translations[currentLanguage].product_accessories;
+                    if (product.id === 'teq-waist') productName = translations[lang].product_teq_waist;
+                    if (product.id === 'accessories') productName = translations[lang].product_accessories;
+                    
                     const h3 = card.querySelector('h3');
                     if (h3) h3.textContent = productName;
                 }
