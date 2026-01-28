@@ -208,7 +208,7 @@
             "en": "",
             "et": ""
           },
-           "specImage":"img/specs/t60-rx08xsl.jpg"
+           "specImage":"img/specs/t60-rx08xsl-specs.jpg"
         }
       ]
     
@@ -241,17 +241,7 @@
             "en": "",
             "et": ""
           },
-          "specifications": {
-            "article": "PN-T7-16",
-            "frequency": "2.4 GHz",
-            "range": "200m",
-            "battery": "LR03 1.5V AAA X 2",
-            "protection": "IP67",
-            "certifications": "CE, FCC, IC",
-            "weight": "70 gr",
-            "dimensions": "52 x 83 x 17 mm ",
-            "temperature": "-20 to +55 C"
-          }
+          "specImage":"img/specs/panther-t7-16-specs.jpg"
         },
         {
           "name": "Panther, transmitter, 6x1-step buttons",
@@ -260,17 +250,7 @@
             "en": "",
             "et": ""
           },
-          "specifications": {
-            "article": "PN-T7-15",
-            "frequency": "2.4 GHz",
-            "range": "200m",
-            "battery": "LR03 1.5V AAA X 2",
-            "protection": "IP67",
-            "certifications": "CE, FCC, IC",
-            "weight": "70 gr",
-            "dimensions": "52 x 83 x 17 mm",
-            "temperature": "-20 to +55 C"
-          }
+          "specImage":"img/specs/panther-t7-15-specs.jpg"
         },
         {
           "name": "Panther, transmitter, 8x1-step buttons",
@@ -279,17 +259,7 @@
             "en": "",
             "et": ""
           },
-          "specifications": {
-            "article": "PN-T7-14",
-            "frequency": "2.4 GHz",
-            "range": "200m",
-            "battery": "LR03 1.5V AAA X 2",
-            "protection": "IP67",
-            "certifications": "CE, FCC, IC",
-            "weight": "70 gr",
-            "dimensions": "52 x 83 x 17 mm",
-            "temperature": "-20 to +55 C"
-          }
+          "specImage":"img/specs/panther-t7-14-specs.jpg"
         },
         {
           "name": "Panther, transmitter, 3x1-step buttons",
@@ -298,17 +268,7 @@
             "en": "",
             "et": ""
           },
-          "specifications": {
-            "article": "PN-T21-3",
-            "frequency": "2.4 GHz",
-            "range": "400m",
-            "battery": "LR03 1.5V AAA X 3",
-            "protection": "IP67",
-            "certifications": "CE, FCC, IC",
-            "weight": "140 gr",
-            "dimensions": "65 x 112 x 35 mm",
-            "temperature": "-20 to +55 C"
-          }
+          "specImage":"img/specs/panther-t21-3-specs.jpg"
         },
         {
           "name": "Panther, transmitter, 4x1-step buttons",
@@ -317,17 +277,7 @@
             "en": "",
             "et": ""
           },
-          "specifications": {
-            "article": "PN-T21-4",
-            "frequency": "2.4 GHz",
-            "range": "400m",
-            "battery": "LR03 1.5V AAA X 3",
-            "protection": "IP67",
-            "certifications": "CE, FCC, IC",
-            "weight": "140 gr",
-            "dimensions": "65 x 112 x 35 mm",
-            "temperature": "-20 to +55 C"
-          }
+          "specImage":"img/specs/panther-t21-4-specs.jpg"
         },
         {
           "name": "Panther, transmitter, 6x1-step buttons",
@@ -336,17 +286,7 @@
             "en": "",
             "et": ""
           },
-          "specifications": {
-            "article": "PN-T21-6",
-            "frequency": "2.4 GHz",
-            "range": "400m",
-            "battery": "LR03 1.5V AAA X 3",
-            "protection": "IP67",
-            "certifications": "CE, FCC, IC",
-            "weight": "140 gr",
-            "dimensions": "65 x 112 x 35 mm",
-            "temperature": "-20 to +55 C"
-          }
+          "specImage":"img/specs/panther-t21-6-specs.jpg"
         },
         {
           "name": "Panther, transmitter, 8x1-step buttons",
@@ -355,17 +295,7 @@
             "en": "",
             "et": ""
           },
-          "specifications": {
-            "article": "PN-T21-8",
-            "frequency": "2.4 GHz",
-            "range": "400m",
-            "battery": "LR03 1.5V AAA X 3",
-            "protection": "IP67",
-            "certifications": "CE, FCC, IC",
-            "weight": "140 gr",
-            "dimensions": "65 x 112 x 35 mm",
-            "temperature": "-20 to +55 C"
-          }
+         "specImage":"img/specs/panther-t21-8-specs.jpg"
         },
         {
           "name": "Panther, transmitter, 10x1-step buttons",
@@ -374,17 +304,7 @@
             "en": "",
             "et": ""
           },
-          "specifications": {
-            "article": "PN-T21-10",
-            "frequency": "2.4 GHz",
-            "range": "400m",
-            "battery": "LR03 1.5V AAA X 3",
-            "protection": "IP67",
-            "certifications": "CE, FCC, IC",
-            "weight": "140 gr",
-            "dimensions": "65 x 112 x 35 mm",
-            "temperature": "-20 to +55 C"
-          }
+          "specImage":"img/specs/panther-t21-10-specs.jpg"
         },
         {
           "name": "Panther, transmitter, 4x1-step buttons winch",
@@ -393,55 +313,25 @@
             "en": "",
             "et": ""
           },
-          "specifications": {
-            "article": "PNS-T2165",
-            "frequency": "2.4 GHz",
-            "range": "400m",
-            "battery": "LR03 1.5V AAA X 3",
-            "protection": "IP67",
-            "certifications": "CE",
-            "weight": "140 gr",
-            "dimensions": "65 x 112 x 35 mm",
-            "temperature": "-20 to +55 C"
-          }
+         "specImage":"img/specs/panther-t21-4b-specs.jpg"
         },
         {
-          "name": "Panther, transmitter, 8x2-step buttons",
+          "name": "Panther, transmitter, 8x2-step buttons, PLd, CAT3",
           "image": "img/products/models/panther-t19-2.jpg",
           "description": {
             "en": "",
             "et": ""
           },
-          "specifications": {
-            "article": "PN-T19-2",
-            "frequency": "2.4 GHz",
-            "range": "500m",
-            "battery": "LR03 1.5V AAA X 3",
-            "protection": "IP65",
-            "certifications": "CE, FCC, IC",
-            "weight": "331 gr",
-            "dimensions": "85 x 193 x 43 mm",
-            "temperature": "-20 to +55 C"
-          }
+          "specImage":"img/specs/panther-t19-2-specs.jpg"
         },
         {
-          "name": "Panther, transmitter, 12x2-step buttons",
+          "name": "Panther, transmitter, 12x2-step buttons, PLd, CAT3",
           "image": "img/products/models/panther-t29-12.jpg",
           "description": {
             "en": "",
             "et": ""
           },
-          "specifications": {
-            "article": "PN-T29-12",
-            "frequency": "2.4",
-            "range": "500md",
-            "battery": "Li-ion rechargeable",
-            "protection": "IP65",
-            "certifications": "CE, FCC, IC",
-            "weight": "400 gr",
-            "dimensions": "210 x 76 x 37 mm",
-            "temperature": "-20 to +55 C"
-          }
+          "specImage":"img/specs/panther-t29-12-specs.jpg"
         },
         {
           "name": "Panther, receiver, 1 function relays",
@@ -450,16 +340,7 @@
             "en": "",
             "et": ""
           },
-          "specifications": {
-            "article": "PN-R8-20",
-            "frequency": "2.4 GHz",
-            "relays": "1 relays",
-            "power": "12-24V DC",
-            "protection": "IP66",
-            "certifications": "CE",
-            "dimensions": "121 x 117 x 51 mm",
-            "temperature": "-20 to +55 C"
-          }
+          "specImage":"img/specs/panther-r8-20-specs.jpg"
         },
         {
           "name": "Panther, receiver, 4 function relays",
@@ -468,16 +349,7 @@
             "en": "",
             "et": ""
           },
-          "specifications": {
-            "article": "PN-R8-1",
-            "frequency": "2.4 GHz",
-            "relays": "5 relays",
-            "power": "12-24V DC",
-            "protection": "IP66",
-            "certifications": "CE, EMARK",
-            "dimensions": "120 x 116 x 50 mm",
-            "temperature": "-20 to +55 C"
-          }
+          "specImage":"img/specs/panther-r15-1-specs.jpg"
         },
         {
           "name": "Panther, receiver, 4 function relays",
@@ -486,16 +358,7 @@
             "en": "",
             "et": ""
           },
-          "specifications": {
-            "article": "PN-R8-1",
-            "frequency": "2.4 GHz",
-            "relays": "5 relays",
-            "power": "12-24V DC",
-            "protection": "IP66",
-            "certifications": "CE, EMARK",
-            "dimensions": "120 x 116 x 50 mm",
-            "temperature": "-20 to +55 C"
-          }
+          "specImage":"img/specs/panther-r8-1-specs.jpg"
         },
         {
           "name": "Panther, receiver, 5 function relays",
@@ -504,34 +367,16 @@
             "en": "",
             "et": ""
           },
-          "specifications": {
-            "article": "PN-R8-1",
-            "frequency": "2.4 GHz",
-            "relays": "5 relays",
-            "power": "12-24V DC",
-            "protection": "IP66",
-            "certifications": "CE, EMARK",
-            "dimensions": "120 x 116 x 50 mm",
-            "temperature": "-20 to +55 C"
-          }
+          "specImage":"img/specs/panther-r8-11-specs.jpg"
         },
         {
-          "name": "Panther, receiver, 5 function relays, External Antenna",
+          "name": "Panther, receiver, 5 function relays",
           "image": "img/products/models/panther-r8-10.jpg",
           "description": {
             "en": "",
             "et": ""
           },
-          "specifications": {
-            "article": "PN-R8-10",
-            "frequency": "2.4 GHz",
-            "relays": "5 relays",
-            "power": "12-24V DC",
-            "protection": "IP66",
-            "certifications": "CE, EMARK",
-            "dimensions": "120 x 117 x 51 mm",
-            "temperature": "-20 to +55 C"
-          }
+          "specImage":"img/specs/panther-r8-10-specs.jpg"
         },
         {
           "name": "Panther, receiver, 9 function relays",
@@ -540,106 +385,52 @@
             "en": "",
             "et": ""
           },
-          "specifications": {
-            "article": "PN-R8-3",
-            "frequency": "2.4 GHz",
-            "relays": "9 relays",
-            "power": "230V AC & 12-24V AC/DC & 48V AC & 115V AC & 24V AC",
-            "protection": "IP66",
-            "certifications": "CE",
-            "dimensions": "176 x 126 x 75 mm",
-            "temperature": "-20 to +55 C"
-          }
+          "specImage":"img/specs/panther-r8-3-specs.jpg"
         },
         {
-          "name": "Panther PLd Receiver, 10 relays, 48-230V AC (PN-R15-1)",
+          "name": "Panther, receiver, 10 function relays",
           "image": "img/products/models/panther-r15-1.jpg",
           "description": {
-            "en": "PLd Cat3 certified receiver with 10 relays powered by 48-230V AC",
-            "et": "PLd Cat3 sertifitseeritud vastuvõtja 10 releega, toiteallikas 48-230V AC"
+            "en": "",
+            "et": ""
           },
-          "specifications": {
-            "article": "PN-R15-1",
-            "frequency": "2.4 GHz worldwide",
-            "relays": "10 programmable relays",
-            "power": "48-230V AC",
-            "protection": "IP66",
-            "certifications": "CE, PLd Cat3, FCC",
-            "dimensions": "165 x 135 x 75 mm",
-            "temperature": "-20 to +60 C"
-          }
+          "specImage":"img/specs/panther-r15-3-specs.jpg"
         },
         {
-          "name": "Panther PLd Receiver, 10 relays, 48-230V AC (PN-R15-2)",
+          "name": "Panther, receiver, 10 function relays",
           "image": "img/products/models/panther-r15-2.jpg",
           "description": {
-            "en": "PLd Cat3 certified receiver with 10 relays, alternate configuration for AC power",
-            "et": "PLd Cat3 sertifitseeritud vastuvõtja 10 releega, alternatiivne konfiguratsioon AC toitele"
+            "en": "",
+            "et": ""
           },
-          "specifications": {
-            "article": "PN-R15-2",
-            "frequency": "2.4 GHz worldwide",
-            "relays": "10 programmable relays",
-            "power": "48-230V AC",
-            "protection": "IP66",
-            "certifications": "CE, PLd Cat3, FCC",
-            "dimensions": "165 x 135 x 75 mm",
-            "temperature": "-20 to +60 C"
-          }
+          "specImage":"img/specs/panther-r15-2-specs.jpg"
         },
         {
-          "name": "Panther PLd Receiver, 10 relays, 12-24V DC (PN-R15-13)",
+          "name": "Panther, receiver, 10 function relays",
           "image": "img/products/models/panther-r15-13.jpg",
           "description": {
-            "en": "PLd Cat3 certified receiver with 10 relays powered by 12-24V DC",
-            "et": "PLd Cat3 sertifitseeritud vastuvõtja 10 releega, toiteallikas 12-24V DC"
+            "en": "",
+            "et": ""
           },
-          "specifications": {
-            "article": "PN-R15-13",
-            "frequency": "2.4 GHz worldwide",
-            "relays": "10 programmable relays",
-            "power": "12-24V DC",
-            "protection": "IP66",
-            "certifications": "CE, PLd Cat3, FCC",
-            "dimensions": "165 x 135 x 75 mm",
-            "temperature": "-20 to +60 C"
-          }
+          "specImage":"img/specs/panther-r15-13-specs.jpg"
         },
         {
-          "name": "Panther Receiver, 11 function relays (PN-R8-6)",
+          "name": "Panther, receiver, 11 function relays",
           "image": "img/products/models/panther-r8-6.jpg",
           "description": {
-            "en": "Extended receiver with 11 relays (base board + expansion), internal antenna",
-            "et": "Laiendatud vastuvõtja 11 releega (alusplaat + laiendus), sisemine antenn"
+            "en": "",
+            "et": ""
           },
-          "specifications": {
-            "article": "PN-RX-MD11 / PN-R8-6",
-            "frequency": "2.4 GHz worldwide",
-            "relays": "11 programmable relays",
-            "power": "12-24V DC",
-            "protection": "IP66",
-            "certifications": "CE, FCC",
-            "dimensions": "140 x 130 x 60 mm",
-            "temperature": "-20 to +55 C"
-          }
+          "specImage":"img/specs/panther-r8-6-specs.jpg"
         },
         {
-          "name": "Panther Receiver, 11 function relays, External Antenna (PN-R8-11)",
+          "name": "Panther, receiver, 11 function relays",
           "image": "img/products/models/panther-r8-11.jpg",
           "description": {
-            "en": "Extended receiver with 11 relays and external antenna for optimal range",
-            "et": "Laiendatud vastuvõtja 11 releega ja välise antenniga optimaalse ulatuse jaoks"
+            "en": "",
+            "et": ""
           },
-          "specifications": {
-            "article": "PN-RX-MD11E / PN-R8-11",
-            "frequency": "2.4 GHz worldwide",
-            "relays": "11 programmable relays",
-            "power": "12-24V DC",
-            "protection": "IP66",
-            "certifications": "CE, FCC",
-            "dimensions": "140 x 130 x 60 mm",
-            "temperature": "-20 to +55 C"
-          }
+          "specImage":"img/specs/panther-r8-111-specs.jpg"
         },
         {
           "name": "Panther, receiver, 15 function relays",
@@ -648,100 +439,37 @@
             "en": "",
             "et": ""
           },
-          "specifications": {
-            "article": "PN-R8-1",
-            "frequency": "2.4 GHz",
-            "relays": "5 relays",
-            "power": "12-24V DC",
-            "protection": "IP66",
-            "certifications": "CE, EMARK",
-            "dimensions": "120 x 116 x 50 mm",
-            "temperature": "-20 to +55 C"
-          }
+          "specImage":"img/specs/panther-r8-19-specs.jpg"
         },
         {
-          "name": "Panther Receiver, 19 function relays (PN-R8-7)",
+          "name": "Panther, receiver, 19 function relays",
           "image": "img/products/models/panther-r8-7.jpg",
           "description": {
-            "en": "Maximum capacity modular receiver with 19 programmable relays",
-            "et": "Maksimaalse võimsusega moodulivastuvõtja 19 programmeeritava releega"
+            "en": "",
+            "et": ""
           },
-          "specifications": {
-            "article": "PN-RX-MXX19 / PN-R8-7",
-            "frequency": "2.4 GHz worldwide",
-            "relays": "19 programmable relays",
-            "power": "12-24V AC/DC",
-            "protection": "IP65",
-            "certifications": "CE, FCC",
-            "dimensions": "170 x 125 x 70 mm",
-            "temperature": "-20 to +60 C"
-          }
+        "specImage":"img/specs/panther-r8-7-specs.jpg"
         },
         {
-          "name": "Panther Receiver, CANopen",
+          "name": "Panther, receiver, CANopen",
           "image": "img/products/models/panther-rxcan.jpg",
           "description": {
-            "en": "CANopen bus system receiver for integration into industrial networks",
-            "et": "CANopen siinisüsteemi vastuvõtja integreerimiseks tööstuslikesse võrkudesse"
+            "en": "",
+            "et": ""
           },
-          "specifications": {
-            "article": "PN-RX-CAN",
-            "frequency": "2.4 GHz worldwide",
-            "interface": "CANopen protocol",
-            "power": "12-24V DC",
-            "protection": "IP65",
-            "certifications": "CE, CANopen, FCC",
-            "dimensions": "130 x 100 x 58 mm",
-            "temperature": "-20 to +60 C"
-          }
+         "specImage":"img/specs/panther-rxcan-specs.jpg"
         },
         {
-          "name": "Panther Receiver, 4 Transistor Outputs (PN-RX-4T)",
+          "name": "Panther, receiver, 4 transistor outputs",
           "image": "img/products/models/panther-rx4t.jpg",
           "description": {
-            "en": "Special receiver with 4 transistor outputs for direct PLC integration",
-            "et": "Erivastuvõtja 4 transistorväljundiga otsese PLC integreerimiseks"
+            "en": "",
+            "et": ""
           },
-          "specifications": {
-            "article": "PN-RX-4T",
-            "frequency": "2.4 GHz worldwide",
-            "outputs": "4 transistor outputs",
-            "power": "12-24V DC",
-            "protection": "IP54",
-            "certifications": "CE, FCC",
-            "dimensions": "95 x 75 x 35 mm",
-            "temperature": "-20 to +55 C"
-          }
+          "specImage":"img/specs/panther-rx4t-specs.jpg"
         }
-      ],
-      "features": {
-        "en": [
-          "2.4 GHz worldwide frequency (802.15.4 DSSS)",
-          "Range from 200m to 500m depending on model",
-          "Robust construction IP65/IP66/IP67",
-          "PLd Cat3 safety rating on select models",
-          "Programmable relay functions and operating modes",
-          "Multiple power options available"
-        ],
-        "et": [
-          "2,4 GHz ülemaailmne sagedus (802.15.4 DSSS)",
-          "Ulatus 200m kuni 500m sõltuvalt mudelist",
-          "Tugev konstruktsioon IP65/IP66/IP67",
-          "PLd Cat3 ohutuse reiting valitud mudelitel",
-          "Programmeeritavad releefunktsioonid ja töörežiimid",
-          "Mitu toitevalikut saadaval"
-        ]
-      },
-      "specifications": {
-        "frequency": "2.4 GHz worldwide (802.15.4 DSSS)",
-        "range": "200m to 500m (depending on model)",
-        "protection": "IP54 / IP65 / IP66",
-        "battery": "Li-ion rechargeable",
-        "weight": "Varies by model (180-320 gr)",
-        "dimensions": "Compact to professional sizes",
-        "temperature": "-20 to +60 C",
-        "certifications": "CE, PLd Cat3 (select models), FCC"
-      }
+      ]
+      
     },
     {
       "id": "tiger-g2",
@@ -765,321 +493,150 @@
       },
       "models": [
         {
-          "name": "Tiger G2 Transmitter, 8x2-step buttons, PLe",
-          "image": "img/products/models/tiger-8x2.jpg",
-          "description": {
-            "en": "Compact transmitter with 8 two-step buttons and Performance Level e safety rating",
-            "et": "Kompaktne saatja 8 kaheastmelise nupuga ja Performance Level e ohutuse reitinguga"
-          },
-          "specifications": {
-            "article_433": "TG-T9-1 / 100-001-595-96",
-            "article_915": "TG-T9-1I / 100-001-596-09",
-            "frequency_433": "433 MHz (69 channels)",
-            "frequency_915": "915 MHz",
-            "battery": "Re-chargeable",
-            "protection": "IP66",
-            "certifications": "CE, G Lloyd, FCC, IC",
-            "weight": "295 gr",
-            "dimensions": "~76 x 160 x 37 mm",
-            "temperature": "-20 to +55 C"
-          }
-        },
-        {
-          "name": "Tiger G2 Transmitter, 6x2-step buttons",
+          "name": "Tiger G2, transmitter, 6x2-step buttons, display, PLe, SIL3",
           "image": "img/products/models/tiger-6x2.jpg",
           "description": {
-            "en": "Mid-size transmitter with 6 two-step programmable buttons",
-            "et": "Keskmise suurusega saatja 6 kaheastmelise programmeeritava nupuga"
+            "en": "",
+            "et": ""
           },
-          "specifications": {
-            "article_433": "TG-T9-2 / 100-001-598-35",
-            "article_915": "TG-T9-12 / 100-001-597-22",
-            "frequency_433": "433 MHz (69 channels)",
-            "frequency_915": "915 MHz",
-            "battery": "Re-chargeable",
-            "protection": "IP66",
-            "certifications": "CE, G Lloyd, FCC, IC",
-            "weight": "295 gr",
-            "dimensions": "~76 x 160 x 37 mm",
-            "temperature": "-20 to +55 C"
-          }
+          "specImage":"img/specs/tiger-6x2-specs.jpg"
         },
         {
-          "name": "Tiger G2 Transmitter, 10x2-step buttons",
+          "name": "Tiger G2, transmitter, 8x2-step buttons, PLe, SIL3",
+          "image": "img/products/models/tiger-8x2.jpg",
+          "description": {
+            "en": "",
+            "et": ""
+          },
+          "specImage":"img/specs/tiger-8x2-specs.jpg"
+        },
+        {
+          "name": "Tiger G2, transmitter, 10x2-step buttons, display, SIL3, PLe",
           "image": "img/products/models/tiger-10x2.jpg",
           "description": {
-            "en": "Large capacity transmitter with 10 two-step buttons for complex operations",
-            "et": "Suure võimsusega saatja 10 kaheastmelise nupuga keerukateks operatsioonideks"
+            "en": "",
+            "et": ""
           },
-          "specifications": {
-            "article_433": "TG-TH-4 / 100-001-567-23",
-            "article_915": "TG-TH-4 / 100-001-564-74",
-            "frequency_433": "433 MHz (69 channels)",
-            "frequency_915": "915 MHz",
-            "battery": "Re-chargeable",
-            "protection": "IP66",
-            "certifications": "CE, G Lloyd",
-            "weight": "320 gr",
-            "dimensions": "~76 x 185 x 37 mm",
-            "temperature": "-20 to +55 C"
-          }
+          "specImage":"img/specs/tiger-10x2-specs.jpg"
         },
         {
-          "name": "Tiger G2 Transmitter, 12x2-step buttons, SIL3",
+          "name": "Tiger G2, transmitter, 12x2-step buttons, SIL3, PLe",
           "image": "img/products/models/tiger-12x2.jpg",
           "description": {
-            "en": "Maximum capacity transmitter with SIL3 safety certification",
-            "et": "Maksimaalse võimsusega saatja SIL3 ohutuse sertifikaadiga"
+            "en": "",
+            "et": ""
           },
-          "specifications": {
-            "article_433": "TG-TH-5 / 100-001-568-06",
-            "article_915": "TG-TH-5 / 100-001-565-81",
-            "frequency_433": "433 MHz (69 channels)",
-            "frequency_915": "915 MHz",
-            "battery": "Re-chargeable",
-            "protection": "IP66",
-            "certifications": "CE, G Lloyd, SIL3",
-            "weight": "350 gr",
-            "dimensions": "~76 x 210 x 37 mm",
-            "temperature": "-20 to +55 C"
-          }
+          "specImage":"img/specs/tiger-12x2-specs.jpg"
         },
         {
-          "name": "Tiger G2 Transmitter, 4x2-step buttons",
+          "name": "Tiger G2, transmitter, 4x2-step buttons, display, SIL3, PLe",
           "image": "img/products/models/tiger-4x2-a.jpg",
           "description": {
-            "en": "Compact 4-button transmitter for simple control applications",
-            "et": "Kompaktne 4-nupuline saatja lihtsateks juhtimisrakendusteks"
+            "en": "",
+            "et": ""
           },
-          "specifications": {
-            "article_433": "TG-T14-7 / 100-001-584-91",
-            "article_915": "TG-T14-7 / 100-001-593-06",
-            "frequency_433": "433 MHz (69 channels)",
-            "frequency_915": "915 MHz",
-            "battery": "Re-chargeable",
-            "protection": "IP66",
-            "certifications": "CE, G Lloyd",
-            "weight": "250 gr",
-            "dimensions": "~76 x 135 x 37 mm",
-            "temperature": "-20 to +55 C"
-          }
+          "specImage":"img/specs/tiger-4x2-a-specs.jpg"
         },
         {
-          "name": "Tiger G2 Transmitter, 4x2-step buttons",
+          "name": "Tiger G2, transmitter, 4x2-step buttons, display, SIL3, PLe",
           "image": "img/products/models/tiger-4x2-b.jpg",
           "description": {
-            "en": "Alternative 4-button transmitter model with different configuration",
-            "et": "Alternatiivne 4-nupuline saatja mudel erineva konfiguratsiooniga"
+            "en": "",
+            "et": ""
           },
-          "specifications": {
-            "article_433": "TG-T15-7 / 100-001-591-44",
-            "article_915": "TG-T15-7 / 100-001-592-37",
-            "frequency_433": "433 MHz (69 channels)",
-            "frequency_915": "915 MHz",
-            "battery": "Re-chargeable",
-            "protection": "IP66",
-            "certifications": "CE, G Lloyd",
-            "weight": "255 gr",
-            "dimensions": "~76 x 135 x 37 mm",
-            "temperature": "-20 to +55 C"
-          }
+         "specImage":"img/specs/tiger-4x2-b-specs.jpg"
         },
         {
-          "name": "Tiger G2 Receiver, 7 function relays with SIL3",
-          "image": "img/products/models/tiger-rx-7.jpg",
-          "description": {
-            "en": "7-relay receiver with SIL3 safety certification for critical applications",
-            "et": "7-releeväljundiga vastuvõtja SIL3 ohutuse sertifikaadiga kriitiliste rakenduste jaoks"
-          },
-          "specifications": {
-            "article_433": "TG-R4-1 / 100-001-516-27",
-            "article_915": "TG-R4-3 / 100-001-520-41",
-            "frequency_433": "433 MHz",
-            "frequency_915": "915 MHz",
-            "relays": "7 function relays",
-            "power": "12-48V DC",
-            "protection": "IP65",
-            "certifications": "CE, SIL3",
-            "dimensions": "~140 x 110 x 60 mm",
-            "temperature": "-20 to +55 C"
-          }
-        },
-        {
-          "name": "Tiger G2 Receiver, 17 function relays",
-          "image": "img/products/models/tiger-rx-17.jpg",
-          "description": {
-            "en": "High-capacity receiver with 17 programmable relay outputs",
-            "et": "Suure võimsusega vastuvõtja 17 programmeeritava releeväljundiga"
-          },
-          "specifications": {
-            "article_433": "TG-R4-6 / 100-001-528-94",
-            "article_915": "TG-R4-8 / 100-001-530-89",
-            "frequency_433": "433 MHz",
-            "frequency_915": "915 MHz",
-            "relays": "17 function relays",
-            "power": "12-48V DC",
-            "protection": "IP65",
-            "certifications": "CE, G Lloyd",
-            "dimensions": "~180 x 130 x 70 mm",
-            "temperature": "-20 to +55 C"
-          }
-        },
-        {
-          "name": "Tiger G2 Receiver, 28 function relays",
-          "image": "img/products/models/tiger-rx-28.jpg",
-          "description": {
-            "en": "Maximum capacity receiver with 28 relay outputs for complex systems",
-            "et": "Maksimaalse võimsusega vastuvõtja 28 releeväljundiga keerukatele süsteemidele"
-          },
-          "specifications": {
-            "article_433": "TG-R9-11 / 100-001-532-35",
-            "article_915": "TG-R9-12 / 100-001-532-59",
-            "frequency_433": "433 MHz",
-            "frequency_915": "915 MHz",
-            "relays": "28 function relays",
-            "power": "12-48V DC",
-            "protection": "IP65",
-            "certifications": "CE, G Lloyd",
-            "dimensions": "~220 x 150 x 80 mm",
-            "temperature": "-20 to +55 C"
-          }
-        },
-        {
-          "name": "Tiger G2 Receiver, 7 function relays",
-          "image": "img/products/models/tiger-rx-7b.jpg",
-          "description": {
-            "en": "Compact 7-relay receiver for standard applications",
-            "et": "Kompaktne 7-releeväljundiga vastuvõtja standardrakendusteks"
-          },
-          "specifications": {
-            "article_433": "TG-RO-2 / 100-001-514-00",
-            "frequency_433": "433 MHz",
-            "relays": "7 function relays",
-            "power": "12-48V DC",
-            "protection": "IP65",
-            "certifications": "CE",
-            "dimensions": "~140 x 110 x 60 mm",
-            "temperature": "-20 to +55 C"
-          }
-        },
-        {
-          "name": "Tiger G2 Receiver, 12 function relays",
-          "image": "img/products/models/tiger-rx-12.jpg",
-          "description": {
-            "en": "Mid-capacity receiver with 12 programmable relays",
-            "et": "Keskmise võimsusega vastuvõtja 12 programmeeritava releega"
-          },
-          "specifications": {
-            "article_433": "TG-R9-1 / 100-001-531-46",
-            "article_915": "TG-R9-2 / 100-001-534-85",
-            "frequency_433": "433 MHz",
-            "frequency_915": "915 MHz",
-            "relays": "12 function relays",
-            "power": "12-48V DC",
-            "protection": "IP65",
-            "certifications": "CE, G Lloyd",
-            "dimensions": "~160 x 120 x 65 mm",
-            "temperature": "-20 to +55 C"
-          }
-        },
-        {
-          "name": "Tiger G2 Receiver, 12 function relays",
-          "image": "img/products/models/tiger-rx-12b.jpg",
-          "description": {
-            "en": "Alternative 12-relay receiver configuration",
-            "et": "Alternatiivne 12-releeväljundiga vastuvõtja konfiguratsioon"
-          },
-          "specifications": {
-            "article_433": "TG-RR-6 / 100-001-535-98",
-            "frequency_433": "433 MHz",
-            "relays": "12 function relays",
-            "power": "12-48V DC",
-            "protection": "IP65",
-            "certifications": "CE",
-            "dimensions": "~160 x 120 x 65 mm",
-            "temperature": "-20 to +55 C"
-          }
-        },
-        {
-          "name": "Tiger G2 Receiver, 7 function relays, CANopen",
-          "image": "img/products/models/tiger-rx-can.jpg",
-          "description": {
-            "en": "CANopen bus system receiver with 7 relays for industrial networks",
-            "et": "CANopen siinisüsteemi vastuvõtja 7 releega tööstuslike võrkude jaoks"
-          },
-          "specifications": {
-            "article_433": "TG-R4-26 / 100-001-518-93",
-            "article_915": "TG-R4-28 / 100-001-519-86",
-            "frequency_433": "433 MHz",
-            "frequency_915": "915 MHz",
-            "relays": "7 function relays",
-            "interface": "CANopen",
-            "power": "12-48V DC",
-            "protection": "IP65",
-            "certifications": "CE, CANopen certified",
-            "dimensions": "~140 x 110 x 60 mm",
-            "temperature": "-20 to +55 C"
-          }
-        },
-        {
-          "name": "Tiger G2 Receiver, 7 function relays, J1939",
-          "image": "img/products/models/tiger-rx-j1939.jpg",
-          "description": {
-            "en": "J1939 protocol receiver for heavy-duty vehicle applications",
-            "et": "J1939 protokolli vastuvõtja raskete sõidukite rakenduste jaoks"
-          },
-          "specifications": {
-            "article_433": "TG-R4-47 / 100-001-524-93",
-            "article_915": "TG-R4-43 / 100-001-525-86",
-            "frequency_433": "433 MHz",
-            "frequency_915": "915 MHz",
-            "relays": "7 function relays",
-            "interface": "J1939",
-            "power": "12-48V DC",
-            "protection": "IP65",
-            "certifications": "CE, J1939 certified",
-            "dimensions": "~140 x 110 x 60 mm",
-            "temperature": "-20 to +55 C"
-          }
-        },
-        {
-          "name": "Tiger G2 Receiver, 7 function relays",
+          "name": "Tiger G2, receiver, 7 function relays",
           "image": "img/products/models/tiger-rx-7c.jpg",
           "description": {
-            "en": "Standard 7-relay receiver for general applications",
-            "et": "Standardne 7-releeväljundiga vastuvõtja üldrakendusteks"
+            "en": "",
+            "et": ""
           },
-          "specifications": {
-            "article_433": "TG-R9-1 / 100-001-513-88",
-            "frequency_433": "433 MHz",
-            "relays": "7 function relays",
-            "power": "12-48V DC",
-            "protection": "IP65",
-            "certifications": "CE",
-            "dimensions": "~140 x 110 x 60 mm",
-            "temperature": "-20 to +55 C"
-          }
+         "specImage":"img/specs/tiger-rx-7c-specs.jpg"
         },
         {
-          "name": "Tiger G2 Receiver, 11 function relays",
+          "name": "Tiger G2, receiver, 7 function relays",
+          "image": "img/products/models/tiger-rx-7b.jpg",
+          "description": {
+            "en": "",
+            "et": ""
+          },
+          "specImage":"img/specs/tiger-rx-7b-specs.jpg"
+        },
+        {
+          "name": "Tiger G2, receiver, 7 function relays with SIL3, PLe",
+          "image": "img/products/models/tiger-rx-7.jpg",
+          "description": {
+            "en": "",
+            "et": ""
+          },
+          "specImage":"img/specs/tiger-rx-7-specs.jpg"
+        },
+        {
+          "name": "Tiger G2, receiver, 7 function relays, CANopen",
+          "image": "img/products/models/tiger-rx-can.jpg",
+          "description": {
+            "en": "",
+            "et": ""
+          },
+         "specImage":"img/specs/tiger-rx-can-specs.jpg"
+        },
+        {
+          "name": "Tiger G2, receiver, 7 function relays, J1939",
+          "image": "img/products/models/tiger-rx-j1939.jpg",
+          "description": {
+            "en": "",
+            "et": ""
+          },
+          "specImage":"img/specs/tiger-rx-j1939-specs.jpg"
+        },
+        {
+          "name": "Tiger G2, receiver, 11 function relays",
           "image": "img/products/models/tiger-rx-11.jpg",
           "description": {
-            "en": "11-relay receiver for medium complexity applications",
-            "et": "11-releeväljundiga vastuvõtja keskmise keerukusega rakendusteks"
+            "en": "",
+            "et": ""
           },
-          "specifications": {
-            "article_433": "TG-R4-36 / 100-001-521-54",
-            "article_915": "TG-R4-38 / 100-001-522-47",
-            "frequency_433": "433 MHz",
-            "frequency_915": "915 MHz",
-            "relays": "11 function relays",
-            "power": "12-48V DC",
-            "protection": "IP65",
-            "certifications": "CE, G Lloyd",
-            "dimensions": "~155 x 115 x 65 mm",
-            "temperature": "-20 to +55 C"
-          }
+          "specImage":"img/specs/tiger-rx-11-specs.jpg"
+        },
+        {
+          "name": "Tiger G2, receiver, 12 function relays",
+          "image": "img/products/models/tiger-rx-12.jpg",
+          "description": {
+            "en": "",
+            "et": ""
+          },
+          "specImage":"img/specs/tiger-rx-12-specs.jpg"
+        },
+        {
+          "name": "Tiger G2, receiver, 12 function relays, Modbus/TCP, Profibus",
+          "image": "img/products/models/tiger-rx-12b.jpg",
+          "description": {
+            "en": "",
+            "et": ""
+          },
+         "specImage":"img/specs/tiger-rx-12b-specs.jpg"
+        },
+        {
+          "name": "Tiger G2, receiver, 17 function relays",
+          "image": "img/products/models/tiger-rx-17.jpg",
+          "description": {
+            "en": "",
+            "et": ""
+          },
+         "specImage":"img/specs/tiger-rx-17-specs.jpg"
+        },
+        {
+          "name": "Tiger G2, receiver, 28 function relays",
+          "image": "img/products/models/tiger-rx-28.jpg",
+          "description": {
+            "en": "",
+            "et": ""
+          },
+          "specImage":"img/specs/tiger-rx-28-specs.jpg"
         }
+        
       ]
       
     },
