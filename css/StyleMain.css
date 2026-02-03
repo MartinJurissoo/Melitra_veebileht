@@ -901,7 +901,52 @@ html {
 .model-spec-image {
     border: 1px solid #e0e0e0;
 }
-
+@media (max-width: 768px) {
+    header {
+        grid-template-columns: 1fr !important;
+        grid-template-rows: auto auto auto;
+        height: auto !important;
+        padding: 15px 20px !important;
+        gap: 15px !important;
+    }
+    
+    /* Logo group - centered, smaller */
+    .logo-group {
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .logo.melitra-logo {
+        height: 50px !important;
+    }
+    
+    .logo.teleradio-logo {
+        height: 30px !important;
+    }
+    
+    .partner-text {
+        display: none; /* Hide "partners with" on mobile */
+    }
+    
+    /* Navigation - centered, wrapped */
+    nav {
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 8px;
+    }
+    
+    nav a {
+        padding: 8px 15px;
+        font-size: 0.85rem;
+    }
+    
+    /* Language switcher - centered */
+    .language-switcher {
+        justify-content: center;
+        width: 100%;
+    }
+}
 
 
 
