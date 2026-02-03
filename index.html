@@ -2,6 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#FFD700">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     
     <!-- SEO Meta Tags -->
@@ -529,7 +536,10 @@
                 modelName = modelName.replace(/buttons/g, 'nuppu');
                 modelName = modelName.replace(/button/g, 'nupp');
                 modelName = modelName.replace(/step/g, 'astmelist');
-                modelName = modelName.replace(/function relays/g, 'funktsiooni relee');
+                modelName = modelName.replace(/function relays/g, 'funktsiooni releed');
+                modelName = modelName.replace(/function relay/g, 'funktsiooni relee');
+                modelName = modelName.replace(/relays/g, 'releed');
+                modelName = modelName.replace(/relay/g, 'relee');
             }
             
             let modelHTML = `
@@ -565,7 +575,8 @@
                     weight: { en: 'Weight', et: 'Kaal' },
                     dimensions: { en: 'Dimensions', et: 'Mõõtmed' },
                     temperature: { en: 'Temperature', et: 'Temperatuur' },
-                    relays: { en: 'Relays', et: 'Relee' },
+                    relays: { en: 'Relays', et: 'Releed' },
+                    relay: { en: 'Relay', et: 'Relee' },
                     power: { en: 'Power', et: 'Toide' },
                     interface: { en: 'Interface', et: 'Liides' },
                     range: { en: 'Range', et: 'Ulatus' },
@@ -586,7 +597,9 @@
                     translated = translated.replace(/open field/gi, 'avatud väli');
                     translated = translated.replace(/programmable/gi, 'programmeeritav');
                     translated = translated.replace(/changeover/gi, 'ümberlülitus');
-                    translated = translated.replace(/function relays/gi, 'funktsiooni relee');
+                    translated = translated.replace(/function/gi, 'funktsiooni');
+                    translated = translated.replace(/relays/gi, 'releed');
+                    translated = translated.replace(/relay/gi, 'relee');
                     translated = translated.replace(/protocol/gi, 'protokoll');
                     translated = translated.replace(/certified/gi, 'sertifitseeritud');
                     translated = translated.replace(/ to /g, ' kuni ');
