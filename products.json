@@ -22,7 +22,7 @@
       },
       "models": [
           {
-          "name": "T20 transmitter, 1x1-step buttons",
+          "name": "T20 transmitter, 1x1-step button",
           "image": "img/products/models/t20-tx1.jpg",
           "description": {
             "en": "",
@@ -49,7 +49,7 @@
            "specImage": "img/specs/t20-tx3-specs.jpg"
         },
         {
-          "name": "T60 transmitter, 1x1-step buttons",
+          "name": "T60 transmitter, 1x1-step button",
           "image": "img/products/models/t60-tx01shl.jpg",
           "description": {
             "en": "",
@@ -85,7 +85,7 @@
            "specImage":"img/specs/T60transmitter8x1-step buttons-specs.jpg"
         },
         {
-          "name": "T60 transmitter, 1x1-step buttons",
+          "name": "T60 transmitter, 1x1-step button",
           "image": "img/products/models/t60-tx01stl.jpg",
           "description": {
             "en": "",
@@ -175,7 +175,7 @@
            "specImage":"img/specs/t20-rx3-specs.jpg"
         },
         {
-          "name": "T60 receiver, 3 function relays",
+          "name": "T60 receiver, 3 function relays, on DIN rail",
           "image": "img/products/models/t60-rx03adl.jpg",
           "description": {
             "en": "",
@@ -235,7 +235,7 @@
       },
       "models": [
         {
-          "name": "Panther, transmitter, 3x1-step buttons",
+          "name": "Panther transmitter, 3x1-step buttons",
           "image": "img/products/models/panther-t7-16.jpg",
           "description": {
             "en": "",
@@ -244,7 +244,7 @@
           "specImage":"img/specs/panther-t7-16-specs.jpg"
         },
         {
-          "name": "Panther, transmitter, 6x1-step buttons",
+          "name": "Panther transmitter, 6x1-step buttons",
           "image": "img/products/models/panther-t7-15.jpg",
           "description": {
             "en": "",
@@ -253,7 +253,7 @@
           "specImage":"img/specs/panther-t7-15-specs.jpg"
         },
         {
-          "name": "Panther, transmitter, 8x1-step buttons",
+          "name": "Panther transmitter, 8x1-step buttons",
           "image": "img/products/models/panther-t7-14.jpg",
           "description": {
             "en": "",
@@ -262,7 +262,7 @@
           "specImage":"img/specs/panther-t7-14-specs.jpg"
         },
         {
-          "name": "Panther, transmitter, 3x1-step buttons",
+          "name": "Panther transmitter, 3x1-step buttons",
           "image": "img/products/models/panther-t21-3.jpg",
           "description": {
             "en": "",
@@ -271,7 +271,7 @@
           "specImage":"img/specs/panther-t21-3-specs.jpg"
         },
         {
-          "name": "Panther, transmitter, 4x1-step buttons",
+          "name": "Panther transmitter, 4x1-step buttons",
           "image": "img/products/models/panther-t21-4.jpg",
           "description": {
             "en": "",
@@ -280,7 +280,7 @@
           "specImage":"img/specs/panther-t21-4-specs.jpg"
         },
         {
-          "name": "Panther, transmitter, 6x1-step buttons",
+          "name": "Panther transmitter, 6x1-step buttons",
           "image": "img/products/models/panther-t21-6.jpg",
           "description": {
             "en": "",
@@ -289,7 +289,7 @@
           "specImage":"img/specs/panther-t21-6-specs.jpg"
         },
         {
-          "name": "Panther, transmitter, 8x1-step buttons",
+          "name": "Panther transmitter, 8x1-step buttons",
           "image": "img/products/models/panther-t21-8.jpg",
           "description": {
             "en": "",
@@ -298,7 +298,7 @@
          "specImage":"img/specs/panther-t21-8-specs.jpg"
         },
         {
-          "name": "Panther, transmitter, 10x1-step buttons",
+          "name": "Panther transmitter, 10x1-step buttons",
           "image": "img/products/models/panther-t21-10.jpg",
           "description": {
             "en": "",
@@ -307,7 +307,7 @@
           "specImage":"img/specs/panther-t21-10-specs.jpg"
         },
         {
-          "name": "Panther, transmitter, 4x1-step buttons winch",
+          "name": "Panther transmitter, 4x1-step buttons, winch",
           "image": "img/products/models/panther-t21-4b.jpg",
           "description": {
             "en": "",
@@ -316,7 +316,7 @@
          "specImage":"img/specs/panther-t21-4b-specs.jpg"
         },
         {
-          "name": "Panther, transmitter, 8x2-step buttons, PLd, CAT3",
+          "name": "Panther transmitter, 8x2-step buttons, PLd, CAT3",
           "image": "img/products/models/panther-t19-2.jpg",
           "description": {
             "en": "",
@@ -325,7 +325,7 @@
           "specImage":"img/specs/panther-t19-2-specs.jpg"
         },
         {
-          "name": "Panther, transmitter, 12x2-step buttons, PLd, CAT3",
+          "name": "Panther transmitter, 12x2-step buttons, PLd, CAT3",
           "image": "img/products/models/panther-t29-12.jpg",
           "description": {
             "en": "",
@@ -334,7 +334,7 @@
           "specImage":"img/specs/panther-t29-12-specs.jpg"
         },
         {
-          "name": "Panther, receiver, 1 function relay",
+          "name": "Panther receiver, 1 function relay",
           "image": "img/products/models/panther-r8-20.jpg",
           "description": {
             "en": "",
@@ -343,7 +343,7 @@
           "specImage":"img/specs/panther-r8-20-specs.jpg"
         },
         {
-          "name": "Panther, receiver, 4 function relays",
+          "name": "Panther receiver, 4 function relays",
           "image": "img/products/models/panther-r15-1.jpg",
           "description": {
             "en": "",
@@ -352,7 +352,7 @@
           "specImage":"img/specs/panther-r15-1-specs.jpg"
         },
         {
-          "name": "Panther, receiver, 4 function relays",
+          "name": "Panther receiver, 4 function relays",
           "image": "img/products/models/panther-r8-1.jpg",
           "description": {
             "en": "",
@@ -361,7 +361,7 @@
           "specImage":"img/specs/panther-r8-1-specs.jpg"
         },
         {
-          "name": "Panther, receiver, 5 function relays",
+          "name": "Panther receiver, 5 function relays",
           "image": "img/products/models/panther-r8-1.jpg",
           "description": {
             "en": "",
@@ -370,7 +370,7 @@
           "specImage":"img/specs/panther-r8-11-specs.jpg"
         },
         {
-          "name": "Panther, receiver, 5 function relays",
+          "name": "Panther receiver, 5 function relays",
           "image": "img/products/models/panther-r8-10.jpg",
           "description": {
             "en": "",
@@ -379,7 +379,7 @@
           "specImage":"img/specs/panther-r8-10-specs.jpg"
         },
         {
-          "name": "Panther, receiver, 9 function relays",
+          "name": "Panther receiver, 9 function relays",
           "image": "img/products/models/panther-r8-3.jpg",
           "description": {
             "en": "",
@@ -388,7 +388,7 @@
           "specImage":"img/specs/panther-r8-3-specs.jpg"
         },
         {
-          "name": "Panther, receiver, 10 function relays",
+          "name": "Panther receiver, 10 function relays",
           "image": "img/products/models/panther-r15-1.jpg",
           "description": {
             "en": "",
@@ -397,7 +397,7 @@
           "specImage":"img/specs/panther-r15-3-specs.jpg"
         },
         {
-          "name": "Panther, receiver, 10 function relays",
+          "name": "Panther receiver, 10 function relays",
           "image": "img/products/models/panther-r15-2.jpg",
           "description": {
             "en": "",
@@ -406,7 +406,7 @@
           "specImage":"img/specs/panther-r15-2-specs.jpg"
         },
         {
-          "name": "Panther, receiver, 10 function relays",
+          "name": "Panther receiver, 10 function relays",
           "image": "img/products/models/panther-r15-13.jpg",
           "description": {
             "en": "",
@@ -415,7 +415,7 @@
           "specImage":"img/specs/panther-r15-13-specs.jpg"
         },
         {
-          "name": "Panther, receiver, 11 function relays",
+          "name": "Panther receiver, 11 function relays",
           "image": "img/products/models/panther-r8-6.jpg",
           "description": {
             "en": "",
@@ -424,7 +424,7 @@
           "specImage":"img/specs/panther-r8-6-specs.jpg"
         },
         {
-          "name": "Panther, receiver, 11 function relays",
+          "name": "Panther receiver, 11 function relays",
           "image": "img/products/models/panther-r8-11.jpg",
           "description": {
             "en": "",
@@ -433,7 +433,7 @@
           "specImage":"img/specs/panther-r8-111-specs.jpg"
         },
         {
-          "name": "Panther, receiver, 15 function relays",
+          "name": "Panther receiver, 15 function relays",
           "image": "img/products/models/panther-r8-1.jpg",
           "description": {
             "en": "",
@@ -442,7 +442,7 @@
           "specImage":"img/specs/panther-r8-19-specs.jpg"
         },
         {
-          "name": "Panther, receiver, 19 function relays",
+          "name": "Panther receiver, 19 function relays",
           "image": "img/products/models/panther-r8-7.jpg",
           "description": {
             "en": "",
@@ -451,7 +451,7 @@
         "specImage":"img/specs/panther-r8-7-specs.jpg"
         },
         {
-          "name": "Panther, receiver, CANopen",
+          "name": "Panther receiver, CANopen",
           "image": "img/products/models/panther-rxcan.jpg",
           "description": {
             "en": "",
@@ -460,7 +460,7 @@
          "specImage":"img/specs/panther-rxcan-specs.jpg"
         },
         {
-          "name": "Panther, receiver, 4 transistor outputs",
+          "name": "Panther receiver, 4 transistor outputs",
           "image": "img/products/models/panther-rx4t.jpg",
           "description": {
             "en": "",
@@ -493,7 +493,7 @@
       },
       "models": [
         {
-          "name": "Tiger G2, transmitter, 6x2-step buttons, display, PLe, SIL3",
+          "name": "Tiger G2 transmitter, 6x2-step buttons, display, PLe, SIL3",
           "image": "img/products/models/tiger-6x2.jpg",
           "description": {
             "en": "",
@@ -502,7 +502,7 @@
           "specImage":"img/specs/tiger-6x2-specs.jpg"
         },
         {
-          "name": "Tiger G2, transmitter, 8x2-step buttons, PLe, SIL3",
+          "name": "Tiger G2 transmitter, 8x2-step buttons, PLe, SIL3",
           "image": "img/products/models/tiger-8x2.jpg",
           "description": {
             "en": "",
@@ -511,7 +511,7 @@
           "specImage":"img/specs/tiger-8x2-specs.jpg"
         },
         {
-          "name": "Tiger G2, transmitter, 10x2-step buttons, display, SIL3, PLe",
+          "name": "Tiger G2 transmitter, 10x2-step buttons, display, SIL3, PLe",
           "image": "img/products/models/tiger-10x2.jpg",
           "description": {
             "en": "",
@@ -520,7 +520,7 @@
           "specImage":"img/specs/tiger-10x2-specs.jpg"
         },
         {
-          "name": "Tiger G2, transmitter, 12x2-step buttons, SIL3, PLe",
+          "name": "Tiger G2 transmitter, 12x2-step buttons, SIL3, PLe",
           "image": "img/products/models/tiger-12x2.jpg",
           "description": {
             "en": "",
@@ -529,7 +529,7 @@
           "specImage":"img/specs/tiger-12x2-specs.jpg"
         },
         {
-          "name": "Tiger G2, transmitter, 4x2-step buttons, display, SIL3, PLe",
+          "name": "Tiger G2 transmitter, 4x2-step buttons, display, SIL3, PLe",
           "image": "img/products/models/tiger-4x2-a.jpg",
           "description": {
             "en": "",
@@ -538,7 +538,7 @@
           "specImage":"img/specs/tiger-4x2-a-specs.jpg"
         },
         {
-          "name": "Tiger G2, transmitter, 4x2-step buttons, display, SIL3, PLe",
+          "name": "Tiger G2 transmitter, 4x2-step buttons, display, SIL3, PLe",
           "image": "img/products/models/tiger-4x2-b.jpg",
           "description": {
             "en": "",
@@ -547,7 +547,52 @@
          "specImage":"img/specs/tiger-4x2-b-specs.jpg"
         },
         {
-          "name": "Tiger G2, receiver, 7 function relays",
+          "name": "Tiger G2 transmitter, joystick (digital 2×2 + 0x2), SIL3/PLe",
+          "image": "img/products/models/digital2×2+0x2.jpg",
+          "description": {
+            "en": "",
+            "et": ""
+          },
+         "specImage":"img/specs/digital2×2+0x2-specs.jpg"
+        },
+        {
+          "name": "Tiger G2 transmitter, joystick (digital 2×2 + 2×2), SIL3/PLe",
+          "image": "img/products/models/Digital2×2+2×2.jpg",
+          "description": {
+            "en": "",
+            "et": ""
+          },
+         "specImage":"img/specs/Digital2×2+2×2-specs.jpg"
+        },
+        {
+          "name": "Tiger G2 transmitter, joystick (digital 4×4 + 0x4), SIL3/PLe",
+          "image": "img/products/models/Digital4×4+0x4.jpg",
+          "description": {
+            "en": "",
+            "et": ""
+          },
+         "specImage":"img/specs/Digital4×4+0x4-specs.jpg"
+        },
+        {
+          "name": "Tiger G2 transmitter, joystick (analog X/Y + X/Y), SIL3/PLe",
+          "image": "img/products/models/analogXY+XY.jpg",
+          "description": {
+            "en": "",
+            "et": ""
+          },
+         "specImage":"img/specs/analogXY+XY-specs.jpg"
+        },
+        {
+          "name": "Tiger G2 transmitter, joystick (analog X/Y + Y), SIL3/PLe",
+          "image": "img/products/models/analogXY+Y.jpg",
+          "description": {
+            "en": "",
+            "et": ""
+          },
+         "specImage":"img/specs/analogXY+Y-specs.jpg"
+        },
+        {
+          "name": "Tiger G2 receiver, 7 function relays",
           "image": "img/products/models/tiger-rx-7c.jpg",
           "description": {
             "en": "",
@@ -556,7 +601,7 @@
          "specImage":"img/specs/tiger-rx-7c-specs.jpg"
         },
         {
-          "name": "Tiger G2, receiver, 7 function relays",
+          "name": "Tiger G2 receiver, 7 function relays",
           "image": "img/products/models/tiger-rx-7b.jpg",
           "description": {
             "en": "",
@@ -565,7 +610,7 @@
           "specImage":"img/specs/tiger-rx-7b-specs.jpg"
         },
         {
-          "name": "Tiger G2, receiver, 7 function relays with SIL3, PLe",
+          "name": "Tiger G2 receiver, 7 function relays, SIL3, PLe",
           "image": "img/products/models/tiger-rx-7.jpg",
           "description": {
             "en": "",
@@ -574,7 +619,7 @@
           "specImage":"img/specs/tiger-rx-7-specs.jpg"
         },
         {
-          "name": "Tiger G2, receiver, 7 function relays, CANopen",
+          "name": "Tiger G2 receiver, 7 function relays, CANopen",
           "image": "img/products/models/tiger-rx-can.jpg",
           "description": {
             "en": "",
@@ -583,7 +628,7 @@
          "specImage":"img/specs/tiger-rx-can-specs.jpg"
         },
         {
-          "name": "Tiger G2, receiver, 7 function relays, J1939",
+          "name": "Tiger G2 receiver, 7 function relays, J1939",
           "image": "img/products/models/tiger-rx-j1939.jpg",
           "description": {
             "en": "",
@@ -592,7 +637,7 @@
           "specImage":"img/specs/tiger-rx-j1939-specs.jpg"
         },
         {
-          "name": "Tiger G2, receiver, 11 function relays",
+          "name": "Tiger G2 receiver, 11 function relays",
           "image": "img/products/models/tiger-rx-11.jpg",
           "description": {
             "en": "",
@@ -601,7 +646,7 @@
           "specImage":"img/specs/tiger-rx-11-specs.jpg"
         },
         {
-          "name": "Tiger G2, receiver, 12 function relays",
+          "name": "Tiger G2 receiver, 12 function relays",
           "image": "img/products/models/tiger-rx-12.jpg",
           "description": {
             "en": "",
@@ -610,7 +655,7 @@
           "specImage":"img/specs/tiger-rx-12-specs.jpg"
         },
         {
-          "name": "Tiger G2, receiver, 12 function relays, Modbus/TCP, Profibus",
+          "name": "Tiger G2 receiver, 12 function relays, Modbus/TCP, Profibus",
           "image": "img/products/models/tiger-rx-12b.jpg",
           "description": {
             "en": "",
@@ -619,7 +664,7 @@
          "specImage":"img/specs/tiger-rx-12b-specs.jpg"
         },
         {
-          "name": "Tiger G2, receiver, 17 function relays",
+          "name": "Tiger G2 receiver, 17 function relays",
           "image": "img/products/models/tiger-rx-17.jpg",
           "description": {
             "en": "",
@@ -628,7 +673,7 @@
          "specImage":"img/specs/tiger-rx-17-specs.jpg"
         },
         {
-          "name": "Tiger G2, receiver, 28 function relays",
+          "name": "Tiger G2 receiver, 28 function relays",
           "image": "img/products/models/tiger-rx-28.jpg",
           "description": {
             "en": "",
